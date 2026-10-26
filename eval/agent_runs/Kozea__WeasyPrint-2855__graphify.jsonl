@@ -1,0 +1,18 @@
+{"tool": "issue", "args": [], "out_chars": 1611, "read_path": null}
+{"tool": "grep", "args": ["-n", "InlineFlexBox", "weasyprint"], "out_chars": 0, "read_path": null}
+{"tool": "grep", "args": ["-n", "inline-flex|'inline', 'flex'", "weasyprint"], "out_chars": 0, "read_path": null}
+{"tool": "grep", "args": ["-n", "InlineFlexBox"], "out_chars": 0, "read_path": null}
+{"tool": "grep", "args": ["-n", "inline-flex"], "out_chars": 0, "read_path": null}
+{"tool": "ls", "args": [], "out_chars": 58, "read_path": null}
+{"tool": "grep", "args": ["-n", "InlineFlex", "."], "out_chars": 0, "read_path": null}
+{"tool": "grep", "args": ["InlineFlex", "weasyprint"], "out_chars": 695, "read_path": null}
+{"tool": "grep", "args": ["FlexBox", "weasyprint/layout"], "out_chars": 419, "read_path": null}
+{"tool": "read", "args": ["weasyprint/layout/flex.py", "580", "640"], "out_chars": 3120, "read_path": "weasyprint/layout/flex.py"}
+{"tool": "read", "args": ["weasyprint/layout/flex.py", "940", "980"], "out_chars": 1532, "read_path": "weasyprint/layout/flex.py"}
+{"tool": "grep", "args": ["-n", "_layout\\(|ParentBox|InlineLevel|is_flex_item|blockif", "weasyprint/layout/flex.py"], "out_chars": 0, "read_path": null}
+{"tool": "grep", "args": ["-n", "is_flex_item", "weasyprint"], "out_chars": 0, "read_path": null}
+{"tool": "grep", "args": ["_layout\\(", "weasyprint/layout/flex.py"], "out_chars": 371, "read_path": null}
+{"tool": "grep", "args": ["is_flex_item", "weasyprint"], "out_chars": 1125, "read_path": null}
+{"tool": "read", "args": ["weasyprint/formatting_structure/build.py", "1000", "1060"], "out_chars": 2164, "read_path": "weasyprint/formatting_structure/build.py"}
+{"tool": "read", "args": ["weasyprint/layout/block.py", "60", "135"], "out_chars": 4280, "read_path": "weasyprint/layout/block.py"}
+{"tool": "read", "args": ["weasyprint/formatting_structure/build.py", "970", "1005"], "out_chars": 1646, "read_path": "weasyprint/formatting_structure/build.py"}

@@ -1,0 +1,4 @@
+{"tool": "issue", "args": [], "out_chars": 3623, "read_path": null}
+{"tool": "grep", "args": ["-n", "FcConfigDestroy\\|class FontConfiguration\\|def __init__", "weasyprint/text/fonts.py"], "out_chars": 0, "read_path": null}
+{"tool": "grep", "args": ["FcConfigDestroy"], "out_chars": 365, "read_path": null}
+{"tool": "read", "args": ["weasyprint/text/fonts.py", "60", "115"], "out_chars": 2278, "read_path": "weasyprint/text/fonts.py"}

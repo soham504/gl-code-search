@@ -1,0 +1,1 @@
+{"analyzer":"english","dataset":"fiqa","docs":57638,"index_build":"2.924s","latency_mean":"19.329068ms","latency_p50":"19.189209ms","latency_p99":"35.955ms","ndcg@10":0.2488,"queries":648}

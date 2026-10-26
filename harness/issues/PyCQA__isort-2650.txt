@@ -1,0 +1,44 @@
+multi_line_output=10 emits unparsable code when an import has a trailing comment
+
+### Summary
+
+With `multi_line_output=10` (`HANGING_INDENT_WITH_PARENTHESES`), isort can rewrite a valid file into one that no longer parses when an import carries a trailing comment. Both shapes below start as valid Python.
+
+**Closing parenthesis captured by the comment**
+
+```console
+$ echo 'from a import b, c  # trailing
+from a import d' | isort --multi-line 10 --line-length 40 --force-grid-wrap 2 -
+from a import (b, c, d  # trailing)
+```
+
+`)` is inside the comment, so the statement is never closed.
+
+**Comma lost at a wrap point**
+
+```console
+$ echo 'from mypkg.submodule import alpha, beta, gamma, delta, epsilon, zeta, eta  # noqa: F401' | isort --multi-line 10 -
+from mypkg.submodule import (alpha, beta, delta, epsilon, eta  # noqa: F401
+    gamma, zeta)
+```
+
+The comma after `eta` is gone, so the names read as `eta gamma`.
+
+Both outputs raise `SyntaxError` under `ast.parse`, and isort itself then refuses them with `ExistingSyntaxErrors: Parenthesis is not closed`.
+
+### How much of the option space this affects
+
+Sweeping 7 sources x 12 wrap modes x 3 line lengths x 6 option combinations (1512 runs), **17 produce output that Python cannot parse, and all 17 are `multi_line_output=10`.** The other 11 modes are clean. It reproduces at the default line length and at 88, with `# noqa:` and `# type: ignore` — the comments most likely to sit on an import.
+
+### Why only this mode
+
+The sibling grouped modes hoist the comment onto the `(` line, so their last line never ends in a comment and appending `,` or `)` is always safe. `hanging_indent_with_parentheses` keeps the comment on the import line and then appends punctuation to it unconditionally:
+
+- the final `return` appends `)` after the comment, and
+- at a wrap point, `interface["statement"] + ","` puts the comma after the comment, where `comments.add_to_line` strips it off with the old comment before re-adding it — so the comma is dropped rather than commented out.
+
+### Version
+
+`main` at 131f4adc, isort 9.0.1, CPython 3.12.13.
+
+I have a fix and a regression test ready and will open a PR referencing this issue.

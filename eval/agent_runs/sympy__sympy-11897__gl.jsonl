@@ -1,0 +1,3 @@
+{"tool": "issue", "args": [], "out_chars": 633, "read_path": null}
+{"tool": "grep", "args": ["def _print_Mul|def _print_Pow", "sympy/printing/latex.py"], "out_chars": 119, "read_path": null}
+{"tool": "read", "args": ["sympy/printing/latex.py", "348", "440"], "out_chars": 4212, "read_path": "sympy/printing/latex.py"}

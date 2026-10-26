@@ -1,0 +1,48 @@
+Tidal plugin album and track searches fail with HTTP 400
+
+### Problem
+
+The built-in `tidal` plugin can authenticate successfully, but catalog searches fail with HTTP 400 during autotagging.
+
+For example:
+
+```text
+Error in 'Tidal.candidates': 400 Client Error: Bad Request for url: https://openapi.tidal.com/v2/searchResults/DJ%20Abilities%20First%20Born%20%28Instrumental%20Version%29?explicitFilter=INCLUDE&countryCode=US&include=albums
+```
+
+This affects both album and singleton candidates since both use `TidalAPI.search_results()`.
+
+### Cause
+
+TIDAL changed its v2 search API contract.
+
+The plugin currently sends the query as part of the path:
+
+```text
+GET /v2/searchResults/{query}
+```
+
+The current TIDAL API specification instead defines:
+
+```text
+GET /v2/searchResults?filter[query]={query}
+```
+
+`filter[query]` is now required.
+
+The response shape also changed. Its `data` member is now an array containing the search-results resource rather than the resource object directly. Updating only the request URL would therefore cause subsequent parsing failures.
+
+Current API reference:
+
+https://tidal-music.github.io/tidal-api-reference/#/searchResults
+
+### Expected behavior
+
+Tidal album and track candidates should be returned during imports without errors.
+
+### Setup
+
+- beets version: 2.13.1
+- Python version: 3.14
+- Operating system: Docker/Linux
+- Turning off the `tidal` plugin makes the error go away: yes

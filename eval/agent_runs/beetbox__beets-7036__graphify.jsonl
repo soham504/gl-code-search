@@ -1,0 +1,2 @@
+{"tool": "issue", "args": [], "out_chars": 3677, "read_path": null}
+{"tool": "read", "args": ["beetsplug/hook.py", "1", "100"], "out_chars": 2976, "read_path": "beetsplug/hook.py"}

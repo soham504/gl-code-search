@@ -1,0 +1,371 @@
+{"claim_id": "fiqa:10039:0", "verdict": "not_found", "rationale": "Passage says data can be pulled from Google/Yahoo Finance but not that many individual investors use them."}
+{"claim_id": "fiqa:10039:1", "verdict": "supported", "rationale": "Passage states Google Docs spreadsheets have a function filling in stock and fund prices."}
+{"claim_id": "fiqa:10039:2", "verdict": "supported", "rationale": "Passage says the data can be used to graph fund1/fund2 over a time period."}
+{"claim_id": "fiqa:10039:3", "verdict": "supported", "rationale": "Passage says bond quotes are considerably more difficult to get than stock or mutual fund info."}
+{"claim_id": "fiqa:4011:0", "verdict": "supported", "rationale": "Passage says this is a psychological problem, not a money problem."}
+{"claim_id": "fiqa:4011:1", "verdict": "supported", "rationale": "Passage recommends seeing a counselor or therapist ASAP before symptoms get worse."}
+{"claim_id": "fiqa:4011:2", "verdict": "supported", "rationale": "Passage says it must be done together and you cannot dictate."}
+{"claim_id": "fiqa:4011:3", "verdict": "supported", "rationale": "Passage says agree on a budget each month and don't use it to control your spouse."}
+{"claim_id": "fiqa:4011:4", "verdict": "supported", "rationale": "Passage recommends separate accounts with a joint mortgage account when a partner has compulsive spending habits."}
+{"claim_id": "fiqa:6715:0", "verdict": "supported", "rationale": "Passage describes the IPO commission paid by the seller to the underwriter out of the buyer's price."}
+{"claim_id": "fiqa:6715:1", "verdict": "supported", "rationale": "Passage describes the broker charging the buyer a commission on top of the share price in a normal trade."}
+{"claim_id": "fiqa:6715:2", "verdict": "supported", "rationale": "Passage says in an IPO the seller often pays the commission and buyer pays $2000."}
+{"claim_id": "fiqa:6715:3", "verdict": "supported", "rationale": "Passage says the underwriting bank buys shares wholesale to offer them to the public."}
+{"claim_id": "fiqa:6715:4", "verdict": "not_found", "rationale": "Passage uses 7% only as an illustrative example, not as the common US rate."}
+{"claim_id": "fiqa:3148:0", "verdict": "supported", "rationale": "Passage states they cannot refuse to provide current balance or balance history."}
+{"claim_id": "fiqa:3148:1", "verdict": "supported", "rationale": "Passage says lenders are obligated by truth-in-lending laws to furnish the finance contract on request."}
+{"claim_id": "fiqa:3148:2", "verdict": "supported", "rationale": "Passage advises demanding a response in writing so it is documented."}
+{"claim_id": "fiqa:3148:3", "verdict": "supported", "rationale": "Passage advises keeping copies and certified delivery, noting written responses can't be denied in court."}
+{"claim_id": "fiqa:3148:4", "verdict": "not_found", "rationale": "Passage does not mention the CFPB or state attorney general complaints."}
+{"claim_id": "fiqa:1074:0", "verdict": "not_found", "rationale": "Passage is an opinion about employer insurance and gives no statistic on most Americans' coverage source."}
+{"claim_id": "fiqa:1074:1", "verdict": "supported", "rationale": "Passage says if set up right by the employer premiums can be paid with pre-tax dollars."}
+{"claim_id": "fiqa:1074:2", "verdict": "supported", "rationale": "Passage says premiums are deductible on Form 1040 Line 29 only for months not covered or eligible for an employer-subsidized plan."}
+{"claim_id": "fiqa:1074:3", "verdict": "not_found", "rationale": "Passage does not discuss pass-through premium arrangements being uncommon or ACA restrictions on them."}
+{"claim_id": "fiqa:4981:0", "verdict": "supported", "rationale": "Passage describes wealthbot as an open source wealth management platform targeted at RIAs managing multiple portfolios."}
+{"claim_id": "fiqa:4981:1", "verdict": "supported", "rationale": "Passage lists rebalancing, portfolio accounting and tax loss harvesting."}
+{"claim_id": "fiqa:4981:2", "verdict": "supported", "rationale": "Passage describes it as an open source project to manage your stock portfolio."}
+{"claim_id": "fiqa:4981:3", "verdict": "not_found", "rationale": "Passage only points to a financial section of one list; it does not say such lists often include one or describe portfolio tools in it."}
+{"claim_id": "fiqa:1819:0", "verdict": "not_found", "rationale": "Passage is about paycheck-to-paycheck living and says nothing about stale checks."}
+{"claim_id": "fiqa:1819:1", "verdict": "not_found", "rationale": "Passage says nothing about employers owing wages on expired checks."}
+{"claim_id": "fiqa:1819:2", "verdict": "not_found", "rationale": "Passage says nothing about asking payroll to reissue a check."}
+{"claim_id": "fiqa:1819:3", "verdict": "not_found", "rationale": "Passage says nothing about unclaimed property offices."}
+{"claim_id": "fiqa:1915:0", "verdict": "supported", "rationale": "Passage states non-EU sellers of services to the UK must register for VAT above the threshold."}
+{"claim_id": "fiqa:1915:1", "verdict": "supported", "rationale": "Passage says VAT should have been charged at the time of sale, not months later."}
+{"claim_id": "fiqa:1915:2", "verdict": "supported", "rationale": "Passage states UK and EU law require prices displayed including relevant taxes."}
+{"claim_id": "fiqa:1915:3", "verdict": "supported", "rationale": "Passage says the US business might claim those rules don't apply to them."}
+{"claim_id": "fiqa:1915:4", "verdict": "supported", "rationale": "Passage treats the price as VAT-inclusive and says there is no legal way they can demand money now."}
+{"claim_id": "fiqa:3829:0", "verdict": "not_found", "rationale": "Passage mentions a prepaid Mastercard and bank-linked Visa Electron but does not state some Visa cards lack a bank account link."}
+{"claim_id": "fiqa:3829:1", "verdict": "supported", "rationale": "Passage says the issuer withdraws funds from the holder's bank account if a debit account is used."}
+{"claim_id": "fiqa:3829:2", "verdict": "supported", "rationale": "Passage says the issuer collects through billing if a credit account is used."}
+{"claim_id": "fiqa:3829:3", "verdict": "supported", "rationale": "Passage says the prepaid card only allows spending up to the amount paid into the card account."}
+{"claim_id": "fiqa:3829:4", "verdict": "supported", "rationale": "Passage describes the bank automatically paying off the whole VISA balance monthly from the chequing account."}
+{"claim_id": "fiqa:6441:0", "verdict": "supported", "rationale": "Passage says on a sale you don't receive funds until T+3."}
+{"claim_id": "fiqa:6441:1", "verdict": "supported", "rationale": "Passage says you cannot withdraw the money until it is settled."}
+{"claim_id": "fiqa:6441:2", "verdict": "supported", "rationale": "Passage says in a margin account regulations permit trading unsettled funds, available immediately."}
+{"claim_id": "fiqa:6441:3", "verdict": "supported", "rationale": "Passage describes the FINRA anti-free-riding rule for cash accounts where purchases are paid by sale of the same securities."}
+{"claim_id": "fiqa:6441:4", "verdict": "supported", "rationale": "Passage says it depends on the broker and describes one broker's specific limits."}
+{"claim_id": "fiqa:3781:0", "verdict": "supported", "rationale": "Passage says AMT depends not just on income but more on deductions used."}
+{"claim_id": "fiqa:3781:1", "verdict": "supported", "rationale": "Passage gives the 2015 AMT exemptions of $53,600 individual and $83,400 married filing jointly."}
+{"claim_id": "fiqa:3781:2", "verdict": "supported", "rationale": "Passage says income above the threshold plus paying a tiny amount of tax due to deductions leads to AMT."}
+{"claim_id": "fiqa:3781:3", "verdict": "not_found", "rationale": "Passage discusses option exercise triggering AMT but not that it affects people with moderate salaries."}
+{"claim_id": "fiqa:3781:4", "verdict": "not_found", "rationale": "Passage only gives 2015 exemption amounts; nothing about the 2017 tax law or several-hundred-thousand incomes."}
+{"claim_id": "fiqa:3791:0", "verdict": "supported", "rationale": "Passage says news references to the interest rate almost always mean the Fed-set federal funds rate."}
+{"claim_id": "fiqa:3791:1", "verdict": "supported", "rationale": "Passage says changing the federal funds rate affects all interest rates."}
+{"claim_id": "fiqa:3791:2", "verdict": "supported", "rationale": "Passage states the FOMC meets eight times a year to set the federal funds target."}
+{"claim_id": "fiqa:3791:3", "verdict": "supported", "rationale": "Passage says people generally mean the prime rate, defined as the rate banks lend to their most creditworthy customers."}
+{"claim_id": "fiqa:3791:4", "verdict": "supported", "rationale": "Passage says each person refers to what they look at and long vs short term rates can diverge."}
+{"claim_id": "fiqa:3822:0", "verdict": "supported", "rationale": "Passage says exchange rates are simply supply and demand."}
+{"claim_id": "fiqa:3822:1", "verdict": "not_found", "rationale": "Passage discusses supply and demand, not bank wires or exchange services vs airport counters."}
+{"claim_id": "fiqa:3822:2", "verdict": "not_found", "rationale": "Passage does not mention mid-market rates or spreads."}
+{"claim_id": "fiqa:3822:3", "verdict": "supported", "rationale": "Passage says the forex exposure is going forward as exchange rates change."}
+{"claim_id": "fiqa:3822:4", "verdict": "not_found", "rationale": "Passage does not discuss splitting a conversion into several transactions."}
+{"claim_id": "fiqa:4863:0", "verdict": "supported", "rationale": "Passage states bond price falls when yields rise."}
+{"claim_id": "fiqa:4863:1", "verdict": "supported", "rationale": "Passage says bond value is the PV of future cash flows discounted at the yield to maturity."}
+{"claim_id": "fiqa:4863:2", "verdict": "supported", "rationale": "Passage's method of discounting cash flows at the yield entails recomputing price with a new yield."}
+{"claim_id": "fiqa:4863:3", "verdict": "supported", "rationale": "Passage gives change in price = -price x modified duration x change in yield."}
+{"claim_id": "fiqa:4863:4", "verdict": "supported", "rationale": "Passage says a duration of 5 means a 5% price decrease per 1% yield increase."}
+{"claim_id": "fiqa:6792:0", "verdict": "supported", "rationale": "Passage says the set of orders at each point in time for a security is called the order book."}
+{"claim_id": "fiqa:6792:1", "verdict": "supported", "rationale": "Passage states the best ask is the lowest ask and the best bid is the highest bid."}
+{"claim_id": "fiqa:6792:2", "verdict": "not_found", "rationale": "Passage defines top of the book but does not say standard quotes show only the top of the book."}
+{"claim_id": "fiqa:6792:3", "verdict": "not_found", "rationale": "Passage does not mention Level 2 data, brokerage platforms, exchange feeds or fees."}
+{"claim_id": "fiqa:1877:0", "verdict": "supported", "rationale": "Passage says for a sole proprietor contributions are deducted from gross income and thus don't reduce it."}
+{"claim_id": "fiqa:1877:1", "verdict": "supported", "rationale": "Passage says for an S-Corp employer contributions are excluded from W-2 Box 1 and reduce gross income."}
+{"claim_id": "fiqa:1877:2", "verdict": "supported", "rationale": "Passage says sole proprietors can contribute up to 20% of net profits."}
+{"claim_id": "fiqa:1877:3", "verdict": "supported", "rationale": "Passage says Solo 401k limits are based on self-employment income, not total income."}
+{"claim_id": "fiqa:1877:4", "verdict": "not_found", "rationale": "Passage does not mention Form 1040 adjustments versus Schedule C expense."}
+{"claim_id": "fiqa:2296:0", "verdict": "supported", "rationale": "Passage states a true 0% loan is a losing proposition for the bank."}
+{"claim_id": "fiqa:2296:1", "verdict": "supported", "rationale": "Passage lists late payment fees, prepayment penalties and other clauses making it a good deal on average."}
+{"claim_id": "fiqa:2296:2", "verdict": "supported", "rationale": "Passage says the bank looks to make money on thousands of loans overall, not each loan."}
+{"claim_id": "fiqa:2296:3", "verdict": "supported", "rationale": "Passage says for retailers financing costs are baked into the sales price."}
+{"claim_id": "fiqa:2296:4", "verdict": "not_found", "rationale": "Passage explains collateral and LTV but not seizing collateral on default or 0% loan risk."}
+{"claim_id": "fiqa:5549:0", "verdict": "supported", "rationale": "Passage says you can invest in virtually anything considered an investment."}
+{"claim_id": "fiqa:5549:1", "verdict": "supported", "rationale": "Passage says this is great if your expertise is in an area not easily invested in via traditional securities."}
+{"claim_id": "fiqa:5549:2", "verdict": "supported", "rationale": "Passage calls custodian fees a sore spot and advises researching custodians."}
+{"claim_id": "fiqa:5549:3", "verdict": "not_found", "rationale": "Passage lists prohibited transactions as a con but the shown text does not say they can disqualify the IRA."}
+{"claim_id": "fiqa:9979:0", "verdict": "supported", "rationale": "Passage says gold has kept its value since ancient times and hedges against inflation."}
+{"claim_id": "fiqa:9979:1", "verdict": "supported", "rationale": "Passage describes GLD as a way to own gold without taking physical delivery."}
+{"claim_id": "fiqa:9979:2", "verdict": "supported", "rationale": "Passage argues GLD offers very little protection against serious inflation compared to physical."}
+{"claim_id": "fiqa:9979:3", "verdict": "supported", "rationale": "Passage says gold hedges inflation over long periods and spikes for other reasons short-term."}
+{"claim_id": "fiqa:9979:4", "verdict": "supported", "rationale": "Passage says gold is not an investment with no productive value, at best a hedge."}
+{"claim_id": "fiqa:10137:0", "verdict": "supported", "rationale": "Passage says it is absolutely legal for an F-1 student to trade stocks via US or non-US brokerages."}
+{"claim_id": "fiqa:10137:1", "verdict": "supported", "rationale": "Passage's exempt-individual rule implies students are nonresident for the first five calendar years."}
+{"claim_id": "fiqa:10137:2", "verdict": "supported", "rationale": "Passage says nonresident aliens file 1040NR and residents file 1040."}
+{"claim_id": "fiqa:10137:3", "verdict": "supported", "rationale": "Passage says some US brokers permit direct foreign-exchange purchases, naming Interactive Brokers."}
+{"claim_id": "fiqa:10137:4", "verdict": "supported", "rationale": "Passage says to account for dividends/capital gains on US taxes and university software may be inadequate."}
+{"claim_id": "fiqa:7205:0", "verdict": "supported", "rationale": "Passage says past option prices are available for many options but not for free."}
+{"claim_id": "fiqa:7205:1", "verdict": "supported", "rationale": "Passage names OptionMetrics as a source of past option prices."}
+{"claim_id": "fiqa:7205:2", "verdict": "supported", "rationale": "Passage says OptionMetrics data comes from the National Best Bid and Offer."}
+{"claim_id": "fiqa:7205:3", "verdict": "not_found", "rationale": "Passage does not mention brokerage platforms offering historical option charts."}
+{"claim_id": "fiqa:3091:0", "verdict": "supported", "rationale": "Passage treats taking a home mortgage as borrowing money, i.e. debt."}
+{"claim_id": "fiqa:3091:1", "verdict": "not_found", "rationale": "Passage gives one person's advice excluding a mortgage, not that many people distinguish mortgage from consumer debt."}
+{"claim_id": "fiqa:3091:2", "verdict": "supported", "rationale": "Passage states all debt costs interest and asks whether the benefit is worth the cost."}
+{"claim_id": "fiqa:3091:3", "verdict": "supported", "rationale": "Passage says the mortgage is secured by the house and default leads to foreclosure."}
+{"claim_id": "fiqa:3091:4", "verdict": "supported", "rationale": "Passage advises becoming debt free excluding a regular mortgage within 3-5 years."}
+{"claim_id": "fiqa:7911:0", "verdict": "supported", "rationale": "Passage says a stockbroker arranges buying and selling by finding buyers and sellers."}
+{"claim_id": "fiqa:7911:1", "verdict": "supported", "rationale": "Passage says the broker does not purchase stock for himself but arranges the trade."}
+{"claim_id": "fiqa:7911:2", "verdict": "supported", "rationale": "Passage says a trader purchases stock hoping to sell it for a gain."}
+{"claim_id": "fiqa:7911:3", "verdict": "supported", "rationale": "Passage says the trader uses a broker for purchase and sale."}
+{"claim_id": "fiqa:7911:4", "verdict": "supported", "rationale": "Passage says traders need a proven track record and stockbrokers need a license."}
+{"claim_id": "fiqa:2398:0", "verdict": "supported", "rationale": "Passage says landlords exchange space for regular payments with no drama."}
+{"claim_id": "fiqa:2398:1", "verdict": "supported", "rationale": "Passage says income or demonstrated assets show ability to pay rent, minimizing risk."}
+{"claim_id": "fiqa:2398:2", "verdict": "supported", "rationale": "Passage says Michigan landlords must deposit with a regulated financial institution or post a bond."}
+{"claim_id": "fiqa:2398:3", "verdict": "supported", "rationale": "Passage says the legislation has no mention of interest."}
+{"claim_id": "fiqa:2398:4", "verdict": "unverifiable", "rationale": "Generic advice to follow the law and document everything, not a checkable factual statement."}
+{"claim_id": "fiqa:503:0", "verdict": "supported", "rationale": "Passage says Equifax collects data about individuals and scores creditworthiness."}
+{"claim_id": "fiqa:503:1", "verdict": "not_found", "rationale": "Passage complains about collection without consent but does not state consumers cannot opt out."}
+{"claim_id": "fiqa:503:2", "verdict": "supported", "rationale": "Passage says Equifax was hacked and the data enables large-scale identity fraud."}
+{"claim_id": "fiqa:503:3", "verdict": "not_found", "rationale": "Passage does not mention opting out of prescreened offers or the phone number/website."}
+{"claim_id": "fiqa:503:4", "verdict": "not_found", "rationale": "Passage does not mention credit freezes."}
+{"claim_id": "fiqa:4306:0", "verdict": "supported", "rationale": "Passage says FX works like the stock market with buyers bidding and sellers asking."}
+{"claim_id": "fiqa:4306:1", "verdict": "supported", "rationale": "Passage says like the stock market there are swaps, futures and options."}
+{"claim_id": "fiqa:4306:2", "verdict": "supported", "rationale": "Passage says currencies go up and down based on supply and demand."}
+{"claim_id": "fiqa:4306:3", "verdict": "supported", "rationale": "Passage lists the state of the economy and fiscal policies as factors."}
+{"claim_id": "fiqa:4306:4", "verdict": "not_found", "rationale": "Passage does not mention interest rate differentials or central bank rates."}
+{"claim_id": "fiqa:2088:0", "verdict": "supported", "rationale": "Passage says privately-held company shares are not traded on a stock exchange."}
+{"claim_id": "fiqa:2088:1", "verdict": "supported", "rationale": "Passage says you would need to talk directly to the current owners."}
+{"claim_id": "fiqa:2088:2", "verdict": "not_found", "rationale": "Passage does not mention shareholder agreements or rights of first refusal."}
+{"claim_id": "fiqa:2088:3", "verdict": "not_found", "rationale": "Passage does not mention secondary marketplaces like Forge or EquityZen."}
+{"claim_id": "fiqa:5178:0", "verdict": "supported", "rationale": "Passage says it comes down to whether investing returns more than the 0.99% loan rate."}
+{"claim_id": "fiqa:5178:1", "verdict": "supported", "rationale": "Passage frames paying down high-interest debt as an investment paying that interest rate."}
+{"claim_id": "fiqa:5178:2", "verdict": "supported", "rationale": "Passage says with a 0.99% loan, investing may be better if you can yield more than 0.99%."}
+{"claim_id": "fiqa:5178:3", "verdict": "not_found", "rationale": "Passage does not discuss guaranteed versus uncertain returns."}
+{"claim_id": "fiqa:5178:4", "verdict": "supported", "rationale": "Passage says pay off higher-rate credit card debt before the mortgage."}
+{"claim_id": "fiqa:8247:0", "verdict": "not_found", "rationale": "Passage refers to another answer about gains but does not state gains are taxed as capital gains on sale."}
+{"claim_id": "fiqa:8247:1", "verdict": "supported", "rationale": "Passage refers to the usual long-term 15% rate for stocks and stock ETFs."}
+{"claim_id": "fiqa:8247:2", "verdict": "supported", "rationale": "Passage says precious metal ETFs like IAU are taxed at 28% as collectibles."}
+{"claim_id": "fiqa:8247:3", "verdict": "supported", "rationale": "Passage describes the wash sale rule for repurchase within 30 days before or after a loss sale."}
+{"claim_id": "fiqa:8247:4", "verdict": "not_found", "rationale": "Passage says ETFs have tax advantages but not that they distribute fewer capital gains."}
+{"claim_id": "fiqa:515:0", "verdict": "supported", "rationale": "Passage says the institution would need to see the LLC Operating Agreement."}
+{"claim_id": "fiqa:515:1", "verdict": "supported", "rationale": "Passage says the OA should state single-member status with all managerial powers and the member's equity allocation."}
+{"claim_id": "fiqa:515:2", "verdict": "supported", "rationale": "Passage says every LLC must have an OA though it need not be filed with the State."}
+{"claim_id": "fiqa:515:3", "verdict": "supported", "rationale": "Passage says a single-member LLC is a disregarded entity reflected on the owner's federal return."}
+{"claim_id": "fiqa:4465:0", "verdict": "supported", "rationale": "Passage advises spending time determining which charities make sense before donating."}
+{"claim_id": "fiqa:4465:1", "verdict": "not_found", "rationale": "Passage does not mention GiveWell, Charity Navigator or charity evaluators."}
+{"claim_id": "fiqa:4465:2", "verdict": "supported", "rationale": "Passage says a charitable trust can spread donations over a year or decade."}
+{"claim_id": "fiqa:4465:3", "verdict": "supported", "rationale": "Passage says a CAF account allows anonymous donations while the charity benefits from Gift Aid."}
+{"claim_id": "fiqa:4465:4", "verdict": "supported", "rationale": "Passage says donating to name-brand charities leads to more solicitations because charities sell donor info."}
+{"claim_id": "fiqa:68:0", "verdict": "supported", "rationale": "Passage says incorporating lets you deduct the costs of doing business."}
+{"claim_id": "fiqa:68:1", "verdict": "supported", "rationale": "Passage says only the business-use portion of a dual-use phone is deductible."}
+{"claim_id": "fiqa:68:2", "verdict": "supported", "rationale": "Passage says to keep itemized bills and receipts to support deductions."}
+{"claim_id": "fiqa:68:3", "verdict": "supported", "rationale": "Passage says charitable deductibility aims to provide an economic incentive to give to organizations improving community welfare."}
+{"claim_id": "fiqa:68:4", "verdict": "supported", "rationale": "Passage says the lower rate applies to income eligible for the small business deduction with a business limit."}
+{"claim_id": "fiqa:945:0", "verdict": "not_found", "rationale": "Passage does not state you owe tax where you physically work or mention France as the taxing country."}
+{"claim_id": "fiqa:945:1", "verdict": "supported", "rationale": "Passage says a non-US person outside the US doing contract work for a US employer generally pays no US tax."}
+{"claim_id": "fiqa:945:2", "verdict": "supported", "rationale": "Passage says the employer might withhold and remit to the IRS and you'd chase a refund."}
+{"claim_id": "fiqa:945:3", "verdict": "supported", "rationale": "Passage says the IRS taxes worldwide income of citizens and green card holders."}
+{"claim_id": "fiqa:945:4", "verdict": "supported", "rationale": "Passage mentions foreign taxes reducing US tax, the foreign tax credit, FEIE, and required annual returns."}
+{"claim_id": "fiqa:2790:0", "verdict": "supported", "rationale": "Passage says the primary reason for 20% down is avoiding PMI."}
+{"claim_id": "fiqa:2790:1", "verdict": "supported", "rationale": "Passage recommends against paying more than 20% to keep liquidity for emergencies and investments."}
+{"claim_id": "fiqa:2790:2", "verdict": "supported", "rationale": "Passage says to set extra money aside for retirement savings or an emergency fund."}
+{"claim_id": "fiqa:2790:3", "verdict": "supported", "rationale": "Passage says you can always make extra payments but can't easily get the money back."}
+{"claim_id": "fiqa:2790:4", "verdict": "supported", "rationale": "Passage gives the rule of thumb of mortgage plus property tax at most 28% of gross monthly income."}
+{"claim_id": "fiqa:6713:0", "verdict": "supported", "rationale": "Passage says counting your father as a dependent shouldn't by itself make him ineligible."}
+{"claim_id": "fiqa:6713:1", "verdict": "supported", "rationale": "Passage quotes that those who live together and purchase and prepare meals together are one household."}
+{"claim_id": "fiqa:6713:2", "verdict": "supported", "rationale": "Passage says if he lives and eats elsewhere he is not part of your household."}
+{"claim_id": "fiqa:6713:3", "verdict": "supported", "rationale": "Passage says SNAP has limits on countable resources such as bank accounts and income."}
+{"claim_id": "fiqa:6713:4", "verdict": "supported", "rationale": "Passage says the IRS won't care about benefit filings and the separate SNAP agency is the one that might."}
+{"claim_id": "fiqa:8512:0", "verdict": "supported", "rationale": "Passage says you can't transfer stocks from a brokerage account to a Roth IRA."}
+{"claim_id": "fiqa:8512:1", "verdict": "supported", "rationale": "Passage says only cash can be contributed, so sell stock and transfer cash."}
+{"claim_id": "fiqa:8512:2", "verdict": "supported", "rationale": "Passage states yearly Roth IRA limits of 5.5k."}
+{"claim_id": "fiqa:8512:3", "verdict": "supported", "rationale": "Passage says selling means settling up with the IRS on any gains."}
+{"claim_id": "fiqa:8512:4", "verdict": "not_found", "rationale": "Passage describes the new custodian handling a transfer of money but not an in-kind asset transfer."}
+{"claim_id": "fiqa:6787:0", "verdict": "not_found", "rationale": "Passage discusses Indian accounting treatment of wash sales and does not state a 30-day loss disallowance."}
+{"claim_id": "fiqa:6787:1", "verdict": "not_found", "rationale": "Passage does not mention tax-gain harvesting or resetting cost basis higher."}
+{"claim_id": "fiqa:6787:2", "verdict": "supported", "rationale": "Passage says holding over a year gets long-term capital gains rates."}
+{"claim_id": "fiqa:6787:3", "verdict": "supported", "rationale": "Passage says NIIT applies if modified adjusted income exceeds the threshold."}
+{"claim_id": "fiqa:6787:4", "verdict": "supported", "rationale": "Passage says broke-company shares trade so shareholders can realize losses for tax purposes."}
+{"claim_id": "fiqa:4999:0", "verdict": "supported", "rationale": "Passage says the best source is the company's Investor Relations section."}
+{"claim_id": "fiqa:4999:1", "verdict": "supported", "rationale": "Passage says the 10-K has annual statements and the 10-Q quarterly."}
+{"claim_id": "fiqa:4999:2", "verdict": "not_found", "rationale": "This passage does not mention EDGAR or that filings are free."}
+{"claim_id": "fiqa:4999:3", "verdict": "supported", "rationale": "Passage says normalized balance sheets and income statements are on Google, Yahoo, MSN finance pages."}
+{"claim_id": "fiqa:4999:4", "verdict": "supported", "rationale": "Passage says SEDAR compiles financial statements for Canadian companies."}
+{"claim_id": "fiqa:6080:0", "verdict": "supported", "rationale": "Passage says ScholarShare is the state's 529 plan, legitimately authorized by California."}
+{"claim_id": "fiqa:6080:1", "verdict": "supported", "rationale": "Passage says California does not offer a state tax deduction for 529 contributions."}
+{"claim_id": "fiqa:6080:2", "verdict": "supported", "rationale": "Passage says without the deduction you can pick another state's plan with better fees or options."}
+{"claim_id": "fiqa:6080:3", "verdict": "supported", "rationale": "Passage says you have to at least look at the annual fees before choosing."}
+{"claim_id": "fiqa:4955:0", "verdict": "supported", "rationale": "Passage states bond value is the PV of expected future cash flows."}
+{"claim_id": "fiqa:4955:1", "verdict": "supported", "rationale": "Passage says YTM is equivalent to the discount rate for the cash flows."}
+{"claim_id": "fiqa:4955:2", "verdict": "supported", "rationale": "Passage describes discounting all future cash flows at the yield to get the price."}
+{"claim_id": "fiqa:4955:3", "verdict": "supported", "rationale": "Passage says the basic approach to valuing a bond is TVM."}
+{"claim_id": "fiqa:4955:4", "verdict": "not_found", "rationale": "Passage's example has coupon above yield and price above par but states no general rule."}
+{"claim_id": "scifact:50:0", "verdict": "supported", "rationale": "Passage states Aire is inducibly expressed in human and mouse tumor keratinocytes."}
+{"claim_id": "scifact:50:1", "verdict": "supported", "rationale": "Passage states Aire expression is K17-dependent and K17 is upregulated in many epithelial tumors."}
+{"claim_id": "scifact:50:2", "verdict": "supported", "rationale": "Passage states Aire is required for timely onset of Gli2-induced skin tumorigenesis in mice."}
+{"claim_id": "scifact:50:3", "verdict": "supported", "rationale": "Passage describes Aire turning on tissue-specific antigens in mTECs for negative selection."}
+{"claim_id": "scifact:50:4", "verdict": "supported", "rationale": "Passage states Aire protein has been detected in peripheral lymphoid organs."}
+{"claim_id": "scifact:216:0", "verdict": "supported", "rationale": "Passage states CX3CR1 signaling promoted TH2 survival in inflamed lungs."}
+{"claim_id": "scifact:216:1", "verdict": "supported", "rationale": "Passage states a fraction of CD4+ T cells in asthmatics express CX3CR1."}
+{"claim_id": "scifact:216:2", "verdict": "supported", "rationale": "Passage states CX3CR1-deficient or blocked mice show reduced lung disease."}
+{"claim_id": "scifact:216:3", "verdict": "supported", "rationale": "Passage states WT CD4+ T cell transfer restored cardinal features of asthma."}
+{"claim_id": "scifact:216:4", "verdict": "supported", "rationale": "Passage states Blimp-1 reinforces Th2 differentiation."}
+{"claim_id": "scifact:1339:0", "verdict": "not_found", "rationale": "Results on traumatic procedures are truncated; passage does not state reduction."}
+{"claim_id": "scifact:1339:1", "verdict": "supported", "rationale": "Passage describes this systematic review and meta-analysis of RCTs."}
+{"claim_id": "scifact:1339:2", "verdict": "supported", "rationale": "Passage reports reduced risk of failed procedures with ultrasound (RR 0.21)."}
+{"claim_id": "scifact:1339:3", "verdict": "not_found", "rationale": "Results for insertion attempts and redirections are not present in the truncated passage."}
+{"claim_id": "scifact:1339:4", "verdict": "supported", "rationale": "Passage states diagnostic LPs are associated with adverse events and reviews techniques to reduce them."}
+{"claim_id": "scifact:544:0", "verdict": "not_found", "rationale": "Passage mentions interferon and IFI(T) but not IFIT1's binding/sequestering mechanism."}
+{"claim_id": "scifact:544:1", "verdict": "supported", "rationale": "Passage states cytoplasmic viruses lack host capping access and evolved methyltransferases."}
+{"claim_id": "scifact:544:2", "verdict": "supported", "rationale": "Passage states 2'-O methylation mimics cellular mRNA to evade innate immune restriction."}
+{"claim_id": "scifact:544:3", "verdict": "supported", "rationale": "Passage states such mutant viruses are eliminated and used as attenuated JEV vaccine."}
+{"claim_id": "scifact:544:4", "verdict": "supported", "rationale": "Passage states coronavirus 2'-O-MTase mutants induce more type I IFN dependent on Mda5."}
+{"claim_id": "scifact:975:0", "verdict": "not_found", "rationale": "Passage does not discuss cytokine cascades of secondary mediators generally."}
+{"claim_id": "scifact:975:1", "verdict": "supported", "rationale": "Passage reports curcumin attenuated IL-1beta-induced inflammatory response in FLSs."}
+{"claim_id": "scifact:975:2", "verdict": "supported", "rationale": "Passage describes inflammasomes as multiprotein complexes processing IL-1beta."}
+{"claim_id": "scifact:975:3", "verdict": "not_found", "rationale": "Passage about HDL in macrophages does not mention prostaglandins, chemokines or IL-10."}
+{"claim_id": "scifact:1319:0", "verdict": "supported", "rationale": "Passage states engrafted human GPCs matured into progenitors and astrocytes in mice."}
+{"claim_id": "scifact:1319:1", "verdict": "supported", "rationale": "Passage states recipient brains had large numbers of human astrocytes."}
+{"claim_id": "scifact:1319:2", "verdict": "supported", "rationale": "Passage states engrafted glia were gap-junction-coupled and retained hominid size/pleomorphism."}
+{"claim_id": "scifact:1319:3", "verdict": "supported", "rationale": "Passage reports enhanced LTP and learning in human glial chimeric mice."}
+{"claim_id": "scifact:1319:4", "verdict": "supported", "rationale": "Passage states ES-derived precursors differentiated into neurons and astrocytes after transplant."}
+{"claim_id": "scifact:1150:0", "verdict": "supported", "rationale": "Passage title and findings state Tspan3 is required for AML development and propagation."}
+{"claim_id": "scifact:1150:1", "verdict": "supported", "rationale": "Passage states Tspan3 is a Musashi 2 target, which plays a key role in AML."}
+{"claim_id": "scifact:1150:2", "verdict": "supported", "rationale": "Passage states Tspan3 deletion impaired LSC self-renewal and propagation."}
+{"claim_id": "scifact:1150:3", "verdict": "supported", "rationale": "Passage states Tspan3 deletion markedly improved survival in AML mouse models."}
+{"claim_id": "scifact:1150:4", "verdict": "supported", "rationale": "Passage describes t(8;21) AML with an AML1-ETO fusion transcript."}
+{"claim_id": "scifact:569:0", "verdict": "supported", "rationale": "Passage states adult tissues contain a predominance of memory T cells."}
+{"claim_id": "scifact:569:1", "verdict": "not_found", "rationale": "Passage supports naive predominance early but not accumulation with antigen exposure."}
+{"claim_id": "scifact:569:2", "verdict": "not_found", "rationale": "Passage says some memory T cells become tissue-resident, not that many tissue memory cells are TRM."}
+{"claim_id": "scifact:569:3", "verdict": "supported", "rationale": "Passage states a local macrophage chemokine network maintains vaginal CD4 TRM."}
+{"claim_id": "scifact:218:0", "verdict": "supported", "rationale": "Passage title states CX3CR1 is required for airway inflammation."}
+{"claim_id": "scifact:218:1", "verdict": "supported", "rationale": "Passage states deficient or blocked mice show reduced lung disease."}
+{"claim_id": "scifact:218:2", "verdict": "supported", "rationale": "Passage states CX3CR1 promotes T helper survival and maintenance in inflamed lung."}
+{"claim_id": "scifact:218:3", "verdict": "not_found", "rationale": "Passage supports CD11b+ DCs inducing Th2 immunity but does not state asthma is Th2-dominated."}
+{"claim_id": "scifact:218:4", "verdict": "supported", "rationale": "Passage states IL-33 promotes asthma pathogenesis by expanding TH2 cells."}
+{"claim_id": "scifact:1104:0", "verdict": "not_found", "rationale": "Mortality results comparing NOACs and warfarin are not in the truncated passage."}
+{"claim_id": "scifact:1104:1", "verdict": "supported", "rationale": "Passage describes the 141,311-patient cohort at 1662 GWTG-Stroke hospitals 2013-2016."}
+{"claim_id": "scifact:1104:2", "verdict": "not_found", "rationale": "Mortality comparisons are not present in the truncated passage."}
+{"claim_id": "scifact:1104:3", "verdict": "supported", "rationale": "Passage reports patients with thromboembolic events had lower DOAC levels."}
+{"claim_id": "scifact:72:0", "verdict": "not_found", "rationale": "Passage does not state the organizer secretes Chordin or an activator-inhibitor pair."}
+{"claim_id": "scifact:72:1", "verdict": "supported", "rationale": "Passage title states this directly."}
+{"claim_id": "scifact:72:2", "verdict": "supported", "rationale": "Passage states ADMP transcription in the organizer is activated at low BMP levels."}
+{"claim_id": "scifact:72:3", "verdict": "supported", "rationale": "Passage states quadruple knockdown eliminates self-regulation with ubiquitous neural induction."}
+{"claim_id": "scifact:72:4", "verdict": "supported", "rationale": "Passage describes Chordin as BMP antagonist whose degradation enables scaling."}
+{"claim_id": "scifact:1385:0", "verdict": "supported", "rationale": "Passage states cSMAC formation influences stimulatory potency."}
+{"claim_id": "scifact:1385:1", "verdict": "supported", "rationale": "Passage states the weak-agonist peptide stimulated more proliferation than wild type."}
+{"claim_id": "scifact:1385:2", "verdict": "supported", "rationale": "Passage states inability to form cSMAC could underlie increased proliferation."}
+{"claim_id": "scifact:1385:3", "verdict": "supported", "rationale": "Passage states signaling sustained in microclusters and terminated in cSMAC."}
+{"claim_id": "scifact:1385:4", "verdict": "supported", "rationale": "Passage states cSMAC is enriched in lysobisphosphatidic acid for degradation sorting."}
+{"claim_id": "scifact:1200:0", "verdict": "not_found", "rationale": "Passage is about spindle orientation and does not mention ML-SA1 or TRPML."}
+{"claim_id": "scifact:1200:1", "verdict": "not_found", "rationale": "Passage is about p53 nucleosome binding, not ML-SA1."}
+{"claim_id": "scifact:1200:2", "verdict": "not_found", "rationale": "Passage is about DNA-PK, not ML-SA1 or TRPML."}
+{"claim_id": "scifact:575:0", "verdict": "not_found", "rationale": "Passage does not mention aneuploidy."}
+{"claim_id": "scifact:575:1", "verdict": "supported", "rationale": "Passage reports 157 industrial yeasts in five sublineages separate from wild strains."}
+{"claim_id": "scifact:575:2", "verdict": "not_found", "rationale": "Passage does not mention polyploidy or aneuploidy."}
+{"claim_id": "scifact:575:3", "verdict": "supported", "rationale": "Passage states CenH3 Cse4 is essential and its phosphorylation regulates segregation."}
+{"claim_id": "scifact:1382:0", "verdict": "not_found", "rationale": "Passage does not mention PKCzeta."}
+{"claim_id": "scifact:1382:1", "verdict": "supported", "rationale": "Passage states cancer cells show increased use of glutamine to fuel anabolic processes."}
+{"claim_id": "scifact:1382:2", "verdict": "supported", "rationale": "Passage describes a Kras-regulated non-canonical glutamine pathway required for PDAC growth."}
+{"claim_id": "scifact:1382:3", "verdict": "supported", "rationale": "Passage states glutaminolysis activates Rag-mTORC1 and regulates cell growth."}
+{"claim_id": "scifact:1382:4", "verdict": "supported", "rationale": "Passage states SRC-2 drives glutamine-dependent lipogenesis supporting survival and metastasis."}
+{"claim_id": "scifact:1019:0", "verdict": "supported", "rationale": "Passage describes HKs phosphorylating cognate RRs to sense signals."}
+{"claim_id": "scifact:1019:1", "verdict": "supported", "rationale": "Passage states these reactions are generally highly specific."}
+{"claim_id": "scifact:1019:2", "verdict": "supported", "rationale": "Passage states specificity is tightly controlled to prevent crosstalk."}
+{"claim_id": "scifact:1019:3", "verdict": "not_found", "rationale": "Passage does not discuss kinetic preference or faster cognate phosphotransfer."}
+{"claim_id": "scifact:1019:4", "verdict": "supported", "rationale": "Passage states specificity residues dictate binding affinity."}
+{"claim_id": "scifact:51:0", "verdict": "supported", "rationale": "Passage states ALDH1 expression correlated with poor prognosis."}
+{"claim_id": "scifact:51:1", "verdict": "supported", "rationale": "Passage states high-ALDH mammary cells have stem/progenitor properties."}
+{"claim_id": "scifact:51:2", "verdict": "supported", "rationale": "Passage title states ALDH1 marks normal and malignant mammary stem cells."}
+{"claim_id": "scifact:51:3", "verdict": "supported", "rationale": "Passage title calls ALDH1 a predictor of poor clinical outcome."}
+{"claim_id": "scifact:51:4", "verdict": "supported", "rationale": "Passage states high TAM infiltration indicated worse survival in node-negative breast cancer."}
+{"claim_id": "scifact:967:0", "verdict": "not_found", "rationale": "Passage describes CK-0944636 and CK-0993548, not CK-666."}
+{"claim_id": "scifact:967:1", "verdict": "not_found", "rationale": "Passage notes the lack of reversible inhibitors but does not state these compounds are reversible."}
+{"claim_id": "scifact:967:2", "verdict": "supported", "rationale": "Passage states CK666 dramatically altered lamellipodial actin architecture."}
+{"claim_id": "scifact:967:3", "verdict": "supported", "rationale": "Passage states inhibition changed suspended cell shape and spreading."}
+{"claim_id": "scifact:967:4", "verdict": "supported", "rationale": "Passage states WAVE2 relays Rac signals to Arp2/3 for lamellipodia protrusion."}
+{"claim_id": "scifact:768:0", "verdict": "not_found", "rationale": "Passage does not describe TPMT methylation chemistry or catabolic inactivation."}
+{"claim_id": "scifact:768:1", "verdict": "supported", "rationale": "Passage states leukopenia is associated with TPMT genetic variation."}
+{"claim_id": "scifact:768:2", "verdict": "supported", "rationale": "Passage reports a common NUDT15 variant strongly associated in Koreans, also in Europeans."}
+{"claim_id": "scifact:768:3", "verdict": "supported", "rationale": "Passage names TGNs as active metabolites whose RBC levels correlated with EFS in ALL."}
+{"claim_id": "scifact:659:0", "verdict": "not_found", "rationale": "Passage does not mention ivermectin or albendazole."}
+{"claim_id": "scifact:659:1", "verdict": "supported", "rationale": "Passage states substantive reductions in lymphatic filariasis prevalence and incidence."}
+{"claim_id": "scifact:659:2", "verdict": "not_found", "rationale": "Passage does not mention the named drugs or combined packages."}
+{"claim_id": "scifact:659:3", "verdict": "not_found", "rationale": "Passage does not mention ivermectin."}
+{"claim_id": "scifact:1272:0", "verdict": "not_found", "rationale": "Passage says b-wave reflects postreceptoral activity but does not name ON-bipolar cells."}
+{"claim_id": "scifact:1272:1", "verdict": "supported", "rationale": "Passage states nob mice lack b-wave due to compromised photoreceptor-second-order transmission."}
+{"claim_id": "scifact:1272:2", "verdict": "supported", "rationale": "Passage states nob is a model for X-linked CSNB."}
+{"claim_id": "scifact:1272:3", "verdict": "supported", "rationale": "Passage describes a-wave as photoreceptor-mediated and b-wave as postreceptoral."}
+{"claim_id": "scifact:619:0", "verdict": "supported", "rationale": "Passage reports stromal depletion increased vascularity and gemcitabine delivery with disease stabilization."}
+{"claim_id": "scifact:619:1", "verdict": "supported", "rationale": "Passage states PDA tumors poorly perfused/vascularized and delivery contributes to chemoresistance."}
+{"claim_id": "scifact:619:2", "verdict": "supported", "rationale": "Passage reports Hedgehog inhibition depleted stroma, increased vessel density and gemcitabine levels."}
+{"claim_id": "scifact:619:3", "verdict": "supported", "rationale": "Passage states matrix rigidity modulated lapatinib resistance via YAP/TAZ."}
+{"claim_id": "scifact:1362:0", "verdict": "not_found", "rationale": "Passage does not compare venule and arteriole diameters."}
+{"claim_id": "scifact:1362:1", "verdict": "not_found", "rationale": "Passage does not discuss venule wall structure."}
+{"claim_id": "scifact:1362:2", "verdict": "not_found", "rationale": "Passage does not describe arteriole wall thickness or muscularity."}
+{"claim_id": "scifact:1362:3", "verdict": "supported", "rationale": "Passage shows NO-mediated cerebral arteriole dilation largely inhibited by sGC blocker."}
+{"claim_id": "scifact:1049:0", "verdict": "supported", "rationale": "Passage notes ubiquitous ribosomes yet symptomatically distinct disorders, e.g. craniofacial defects."}
+{"claim_id": "scifact:1049:1", "verdict": "supported", "rationale": "Passage states this directly."}
+{"claim_id": "scifact:1049:2", "verdict": "supported", "rationale": "Passage states RPS19 and RP gene mutations cause DBA, a hypoplastic anemia."}
+{"claim_id": "scifact:1049:3", "verdict": "supported", "rationale": "Passage lists these syndromes as ribosome-biogenesis disorders with specific phenotypes."}
+{"claim_id": "scifact:1049:4", "verdict": "supported", "rationale": "Passage reports nol11 knockdown causes abnormal craniofacial development."}
+{"claim_id": "scifact:1316:0", "verdict": "not_found", "rationale": "Passage does not describe naive UCB T cells acquiring memory phenotype."}
+{"claim_id": "scifact:1316:1", "verdict": "supported", "rationale": "Passage states this directly."}
+{"claim_id": "scifact:1316:2", "verdict": "supported", "rationale": "Passage states this directly."}
+{"claim_id": "scifact:1316:3", "verdict": "supported", "rationale": "Passage reports comparable cumulative incidence (UCB 90% vs BM 81%, P=.12)."}
+{"claim_id": "scifact:163:0", "verdict": "supported", "rationale": "Passage states this directly."}
+{"claim_id": "scifact:163:1", "verdict": "not_found", "rationale": "Passage does not name depression or binge eating in the visible text."}
+{"claim_id": "scifact:163:2", "verdict": "not_found", "rationale": "Postoperative depression findings are not in the truncated passage."}
+{"claim_id": "scifact:163:3", "verdict": "supported", "rationale": "Passage reports psychological improvements maintained up to 4 years."}
+{"claim_id": "scifact:163:4", "verdict": "supported", "rationale": "Passage recommends behavioral health clinicians before and after surgery."}
+{"claim_id": "scifact:130:0", "verdict": "supported", "rationale": "Passage states OA articles are more immediately recognized and cited."}
+{"claim_id": "scifact:130:1", "verdict": "supported", "rationale": "Passage states Eysenbach's PLoS Biology article found this."}
+{"claim_id": "scifact:130:2", "verdict": "supported", "rationale": "Passage states the editors believe OA speeds scientific dialog."}
+{"claim_id": "scifact:130:3", "verdict": "not_found", "rationale": "Passage does not discuss field variation or self-selection."}
+{"claim_id": "scifact:729:0", "verdict": "supported", "rationale": "Passage states SHP2 signal-deficient mice displayed lymphadenopathy."}
+{"claim_id": "scifact:729:1", "verdict": "supported", "rationale": "Passage states this directly."}
+{"claim_id": "scifact:729:2", "verdict": "supported", "rationale": "Passage states enhanced acute phase reaction."}
+{"claim_id": "scifact:729:3", "verdict": "supported", "rationale": "Passage states STAT3-deficient mice died perinatally; title notes reciprocal roles."}
+{"claim_id": "scifact:729:4", "verdict": "supported", "rationale": "Passage states constitutive SHP-2 activation causes NS and perturbs cell-fate decisions."}
+{"claim_id": "scifact:914:0", "verdict": "not_found", "rationale": "Passage does not mention RXR heterodimerization."}
+{"claim_id": "scifact:914:1", "verdict": "supported", "rationale": "Passage reports fenofibrate decreased melanoma metastatic potential via Akt down-regulation."}
+{"claim_id": "scifact:914:2", "verdict": "supported", "rationale": "Passage states rosiglitazone reduced disease severity in Cftr-deficient mice."}
+{"claim_id": "scifact:914:3", "verdict": "supported", "rationale": "Passage describes ligand-activated retinoid receptors recruiting coactivators."}
+{"claim_id": "scifact:914:4", "verdict": "supported", "rationale": "Passage states LXR/RXR activation prevents bacterial-induced macrophage apoptosis."}
+{"claim_id": "scifact:478:0", "verdict": "supported", "rationale": "Passage states this directly."}
+{"claim_id": "scifact:478:1", "verdict": "supported", "rationale": "Passage states this directly."}
+{"claim_id": "scifact:478:2", "verdict": "supported", "rationale": "Passage states golli-deficient T cells were hyperproliferative."}
+{"claim_id": "scifact:478:3", "verdict": "supported", "rationale": "Passage states CRAC Ca2+ entry activates NFAT to promote immune response."}
+{"claim_id": "scifact:478:4", "verdict": "supported", "rationale": "Passage states Golli is expressed in primary lymphoid organs from e16.5."}
+{"claim_id": "scifact:728:0", "verdict": "not_found", "rationale": "Passage does not mention Ly6C."}
+{"claim_id": "scifact:728:1", "verdict": "supported", "rationale": "Passage title and text state this."}
+{"claim_id": "scifact:728:2", "verdict": "supported", "rationale": "Passage states the CX3CR1lo CCR2+ Gr1+ subset is recruited to inflamed tissues."}
+{"claim_id": "scifact:728:3", "verdict": "supported", "rationale": "Passage states CX3CR1hi subset has CX3CR1-dependent recruitment to noninflamed tissues."}
+{"claim_id": "scifact:728:4", "verdict": "not_found", "rationale": "Passage finding is greater Ly6C+ recruitment in KLF2 hemizygous vs WT mice, not as stated."}
+{"claim_id": "scifact:1187:0", "verdict": "supported", "rationale": "Passage states this directly."}
+{"claim_id": "scifact:1187:1", "verdict": "supported", "rationale": "Passage describes YAP as coactivator whose gene induction is mediated by TEAD."}
+{"claim_id": "scifact:1187:2", "verdict": "supported", "rationale": "Passage states TEAD is essential for these YAP functions."}
+{"claim_id": "scifact:1187:3", "verdict": "supported", "rationale": "Passage identifies CTGF as a direct YAP target gene via TEAD."}
+{"claim_id": "scifact:1187:4", "verdict": "supported", "rationale": "Passage states p38-induced TEAD cytoplasmic translocation suppresses YAP-driven growth."}
+{"claim_id": "scifact:742:0", "verdict": "supported", "rationale": "Passage found no effect of prior macrolide use on first-time AMI risk."}
+{"claim_id": "scifact:742:1", "verdict": "not_found", "rationale": "Passage does not mention Chlamydia pneumoniae."}
+{"claim_id": "scifact:742:2", "verdict": "supported", "rationale": "Passage reports lower odds of tetracycline or quinolone use among cases."}
+{"claim_id": "scifact:742:3", "verdict": "supported", "rationale": "Passage states no effect for these antibiotic classes."}
+{"claim_id": "scifact:742:4", "verdict": "not_found", "rationale": "Passage does not mention randomized trials of azithromycin."}
+{"claim_id": "scifact:100:0", "verdict": "supported", "rationale": "Passage states all HSCs segregate chromosomes randomly."}
+{"claim_id": "scifact:100:1", "verdict": "supported", "rationale": "Passage describes the immortal strand hypothesis as stated."}
+{"claim_id": "scifact:100:2", "verdict": "supported", "rationale": "Passage title and findings state this in mice."}
+{"claim_id": "scifact:100:3", "verdict": "supported", "rationale": "Passage states this directly."}
+{"claim_id": "scifact:502:0", "verdict": "not_found", "rationale": "Passage does not address structural/logistical elements in crowded facilities."}
+{"claim_id": "scifact:502:1", "verdict": "supported", "rationale": "Passage states human error often depends on system failures."}
+{"claim_id": "scifact:502:2", "verdict": "not_found", "rationale": "Passage supports system design for safety but not efficiency."}
+{"claim_id": "scifact:502:3", "verdict": "not_found", "rationale": "Passage finds no clear mortality difference between teaching and nonteaching structures."}
+{"claim_id": "scifact:1221:0", "verdict": "not_found", "rationale": "Passage does not discuss metastases versus primary tumours."}
+{"claim_id": "scifact:1221:1", "verdict": "supported", "rationale": "Passage states p16 and p18 deletions activate cyclin/cdk and drive GBM."}
+{"claim_id": "scifact:1221:2", "verdict": "not_found", "rationale": "Passage reports frequent aberrations but not accumulation under selective pressure."}
+{"claim_id": "scifact:1221:3", "verdict": "supported", "rationale": "Passage proposes aberrant luminal progenitors as target for BRCA1 basal tumors."}
+{"claim_id": "scifact:743:0", "verdict": "supported", "rationale": "Passage found no effect of macrolide use."}
+{"claim_id": "scifact:743:1", "verdict": "supported", "rationale": "Passage states the hypothesis of bacterial infections increasing AMI risk."}
+{"claim_id": "scifact:743:2", "verdict": "supported", "rationale": "Passage reports lower odds for tetracyclines/quinolones and no effect for macrolides."}
+{"claim_id": "scifact:743:3", "verdict": "supported", "rationale": "Passage reports IL-33/ST2 reduced apoptosis and improved function after MI."}
+{"claim_id": "scifact:516:0", "verdict": "not_found", "rationale": "Results on CRP and exacerbation risk are truncated."}
+{"claim_id": "scifact:516:1", "verdict": "supported", "rationale": "Passage describes this cohort and hypothesis."}
+{"claim_id": "scifact:516:2", "verdict": "not_found", "rationale": "Results are truncated; higher risk not stated."}
+{"claim_id": "scifact:516:3", "verdict": "supported", "rationale": "Passage states history of exacerbations was the single best predictor, testing a frequent-exacerbation phenotype."}
+{"claim_id": "scifact:1332:0", "verdict": "not_found", "rationale": "Passage does not discuss TNF/IL-1 effects on IL-6 or IL-10 production."}
+{"claim_id": "scifact:1332:1", "verdict": "supported", "rationale": "Passage reports elevated IL-1beta, IL-6 and TNF-alpha with exercise."}
+{"claim_id": "scifact:1332:2", "verdict": "contradicted", "rationale": "Passage found TNF-alpha and IL-6 did not differ between cachectic and noncachectic patients."}
+{"claim_id": "scifact:1332:3", "verdict": "contradicted", "rationale": "Passage states TNF failed to modify glucose Ra or Rd; only IL-1 altered turnover."}
+{"claim_id": "scifact:637:0", "verdict": "not_found", "rationale": "Passage does not address professionals' input and homelessness reduction."}
+{"claim_id": "scifact:637:1", "verdict": "contradicted", "rationale": "Passage reports no significant impact on parental mental health."}
+{"claim_id": "scifact:637:2", "verdict": "supported", "rationale": "Passage reports persistently higher mental health problems after rehousing."}
+{"claim_id": "scifact:637:3", "verdict": "supported", "rationale": "Passage states this directly."}
+{"claim_id": "scifact:637:4", "verdict": "not_found", "rationale": "Passage does not mention Housing First or effectiveness at reducing homelessness."}

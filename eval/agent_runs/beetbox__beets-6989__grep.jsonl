@@ -1,0 +1,6 @@
+{"tool": "issue", "args": [], "out_chars": 1418, "read_path": null}
+{"tool": "grep", "args": ["-n", "searchResults|def search_results|search_results\\("], "out_chars": 0, "read_path": null}
+{"tool": "grep", "args": ["searchResults|search_results"], "out_chars": 919, "read_path": null}
+{"tool": "read", "args": ["beetsplug/tidal/api.py", "40", "110"], "out_chars": 2470, "read_path": "beetsplug/tidal/api.py"}
+{"tool": "read", "args": ["beetsplug/tidal/__init__.py", "185", "260"], "out_chars": 3154, "read_path": "beetsplug/tidal/__init__.py"}
+{"tool": "read", "args": ["beetsplug/tidal/api_types.py", "170", "215"], "out_chars": 1053, "read_path": "beetsplug/tidal/api_types.py"}

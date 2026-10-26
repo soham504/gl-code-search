@@ -1,0 +1,25 @@
+BUG: bfs_successors yields (node, []) for nodes with no successors
+
+`bfs_successors` always performs a final `yield (parent, children)`  after iterating over `bfs_edges`, even when no successors were discovered.
+
+As a result, when the source node has no successors,
+(example: an isolated node or a sink node in a `DiGraph`), the function returns `(source, [])`.
+
+This contradicts the documented contract, which states:
+> "`successors` is the non-empty list of successors of `node`.
+> To appear in the iterator, `node` must have successors."
+
+## Steps to Reproduce
+
+```python
+import networkx as nx
+
+# isolated node
+G = nx.Graph()
+G.add_node(0)
+list(nx.bfs_successors(G, source=0))  # returns [(0, [])] — expected []
+
+# sink node in DiGraph
+D = nx.DiGraph([(0, 1)])
+list(nx.bfs_successors(D, source=1))  # returns [(1, [])] — expected []
+```

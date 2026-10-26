@@ -1,0 +1,15 @@
+{"tool": "issue", "args": [], "out_chars": 1545, "read_path": null}
+{"tool": "read", "args": ["beetsplug/permissions.py", "1", "150"], "out_chars": 5119, "read_path": "beetsplug/permissions.py"}
+{"tool": "grep", "args": ["def sanitize_path|def components|def ancestry|def legalize_path|def _legalize|CHAR_REPLACE|def destination|def normpath|def bytestring_path", "beets"], "out_chars": 651, "read_path": null}
+{"tool": "read", "args": ["beets/util/__init__.py", "170", "200"], "out_chars": 1039, "read_path": "beets/util/__init__.py"}
+{"tool": "read", "args": ["beets/util/__init__.py", "350", "400"], "out_chars": 1643, "read_path": "beets/util/__init__.py"}
+{"tool": "read", "args": ["beets/util/__init__.py", "665", "790"], "out_chars": 5315, "read_path": "beets/util/__init__.py"}
+{"tool": "read", "args": ["beets/library/models.py", "1240", "1330"], "out_chars": 3881, "read_path": "beets/library/models.py"}
+{"tool": "grep", "args": ["for_path|sep_replace|path_sep", "beets"], "out_chars": 1769, "read_path": null}
+{"tool": "read", "args": ["beets/dbcore/db.py", "100", "175"], "out_chars": 2871, "read_path": "beets/dbcore/db.py"}
+{"tool": "read", "args": ["beets/util/__init__.py", "1015", "1045"], "out_chars": 1401, "read_path": "beets/util/__init__.py"}
+{"tool": "grep", "args": ["def syspath|def displayable_path|replace\\(.\\\\\\\\", "beets"], "out_chars": 333, "read_path": null}
+{"tool": "read", "args": ["beets/util/__init__.py", "186", "215"], "out_chars": 952, "read_path": "beets/util/__init__.py"}
+{"tool": "grep", "args": ["as_posix|PureWindowsPath|WindowsPath|\\\\\\\\\\\\\\\\\"|os\\.sep", "beets"], "out_chars": 1324, "read_path": null}
+{"tool": "read", "args": ["beets/dbcore/pathutils.py"], "out_chars": 1849, "read_path": "beets/dbcore/pathutils.py"}
+{"tool": "read", "args": ["beets/util/__init__.py", "265", "280"], "out_chars": 583, "read_path": "beets/util/__init__.py"}

@@ -1,0 +1,4 @@
+{"tool": "issue", "args": [], "out_chars": 3183, "read_path": null}
+{"tool": "grep", "args": ["-i", "ignore_video_tracks|ignore_data_tracks|video"], "out_chars": 1742, "read_path": null}
+{"tool": "read", "args": ["beetsplug/musicbrainz.py", "530", "640"], "out_chars": 5304, "read_path": "beetsplug/musicbrainz.py"}
+{"tool": "read", "args": ["beetsplug/musicbrainz.py", "640", "790"], "out_chars": 6446, "read_path": "beetsplug/musicbrainz.py"}

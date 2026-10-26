@@ -1,0 +1,223 @@
+{
+  "generator": "LLM agent, answer-box style, 3-5 single-citation sentences",
+  "judge": "independent LLM agent, blind to verifier scores",
+  "verifier": "cross-encoder/nli-deberta-v3-base",
+  "overall": {
+    "claims": 370,
+    "support_rate": 0.7595,
+    "support_rate_95ci": [
+      0.7134,
+      0.8002
+    ],
+    "not_found_rate": 0.2324,
+    "contradicted_rate": 0.0081,
+    "answers": 80,
+    "fully_grounded_rate": 0.3375,
+    "unverifiable_claims": 1,
+    "auroc_entail_vs_supported": 0.8994
+  },
+  "by_dataset": {
+    "fiqa": {
+      "claims": 189,
+      "support_rate": 0.7937,
+      "support_rate_95ci": [
+        0.7304,
+        0.8452
+      ],
+      "not_found_rate": 0.2063,
+      "contradicted_rate": 0.0,
+      "answers": 40,
+      "fully_grounded_rate": 0.35,
+      "unverifiable_claims": 1,
+      "auroc_entail_vs_supported": 0.931
+    },
+    "scifact": {
+      "claims": 181,
+      "support_rate": 0.7238,
+      "support_rate_95ci": [
+        0.6545,
+        0.7837
+      ],
+      "not_found_rate": 0.2597,
+      "contradicted_rate": 0.0166,
+      "answers": 40,
+      "fully_grounded_rate": 0.325,
+      "unverifiable_claims": 0,
+      "auroc_entail_vs_supported": 0.8744
+    }
+  },
+  "cited_passage_in_qrels": {
+    "fiqa": 0.3316,
+    "scifact": 0.4696
+  },
+  "gate": {
+    "all": [
+      {
+        "tau": 0.1,
+        "claims_kept": 216,
+        "precision_kept_supported": 0.9676,
+        "recall_supported_retained": 0.7438,
+        "unsupported_removed": 0.9213,
+        "abstention_rate": 0.025,
+        "fully_grounded_rate_after": 0.9231
+      },
+      {
+        "tau": 0.2,
+        "claims_kept": 209,
+        "precision_kept_supported": 0.9713,
+        "recall_supported_retained": 0.7224,
+        "unsupported_removed": 0.9326,
+        "abstention_rate": 0.0375,
+        "fully_grounded_rate_after": 0.9221
+      },
+      {
+        "tau": 0.3,
+        "claims_kept": 208,
+        "precision_kept_supported": 0.9712,
+        "recall_supported_retained": 0.7189,
+        "unsupported_removed": 0.9326,
+        "abstention_rate": 0.0375,
+        "fully_grounded_rate_after": 0.9221
+      },
+      {
+        "tau": 0.5,
+        "claims_kept": 205,
+        "precision_kept_supported": 0.9707,
+        "recall_supported_retained": 0.7082,
+        "unsupported_removed": 0.9326,
+        "abstention_rate": 0.0375,
+        "fully_grounded_rate_after": 0.9221
+      },
+      {
+        "tau": 0.7,
+        "claims_kept": 199,
+        "precision_kept_supported": 0.9698,
+        "recall_supported_retained": 0.6868,
+        "unsupported_removed": 0.9326,
+        "abstention_rate": 0.0375,
+        "fully_grounded_rate_after": 0.9221
+      },
+      {
+        "tau": 0.9,
+        "claims_kept": 190,
+        "precision_kept_supported": 0.9789,
+        "recall_supported_retained": 0.6619,
+        "unsupported_removed": 0.9551,
+        "abstention_rate": 0.0625,
+        "fully_grounded_rate_after": 0.9467
+      }
+    ],
+    "fiqa": [
+      {
+        "tau": 0.1,
+        "claims_kept": 108,
+        "precision_kept_supported": 0.9815,
+        "recall_supported_retained": 0.7067,
+        "unsupported_removed": 0.9487,
+        "abstention_rate": 0.025,
+        "fully_grounded_rate_after": 0.9487
+      },
+      {
+        "tau": 0.2,
+        "claims_kept": 103,
+        "precision_kept_supported": 0.9806,
+        "recall_supported_retained": 0.6733,
+        "unsupported_removed": 0.9487,
+        "abstention_rate": 0.05,
+        "fully_grounded_rate_after": 0.9474
+      },
+      {
+        "tau": 0.3,
+        "claims_kept": 102,
+        "precision_kept_supported": 0.9804,
+        "recall_supported_retained": 0.6667,
+        "unsupported_removed": 0.9487,
+        "abstention_rate": 0.05,
+        "fully_grounded_rate_after": 0.9474
+      },
+      {
+        "tau": 0.5,
+        "claims_kept": 100,
+        "precision_kept_supported": 0.98,
+        "recall_supported_retained": 0.6533,
+        "unsupported_removed": 0.9487,
+        "abstention_rate": 0.05,
+        "fully_grounded_rate_after": 0.9474
+      },
+      {
+        "tau": 0.7,
+        "claims_kept": 98,
+        "precision_kept_supported": 0.9796,
+        "recall_supported_retained": 0.64,
+        "unsupported_removed": 0.9487,
+        "abstention_rate": 0.05,
+        "fully_grounded_rate_after": 0.9474
+      },
+      {
+        "tau": 0.9,
+        "claims_kept": 95,
+        "precision_kept_supported": 0.9789,
+        "recall_supported_retained": 0.62,
+        "unsupported_removed": 0.9487,
+        "abstention_rate": 0.05,
+        "fully_grounded_rate_after": 0.9474
+      }
+    ],
+    "scifact": [
+      {
+        "tau": 0.1,
+        "claims_kept": 108,
+        "precision_kept_supported": 0.9537,
+        "recall_supported_retained": 0.7863,
+        "unsupported_removed": 0.9,
+        "abstention_rate": 0.025,
+        "fully_grounded_rate_after": 0.8974
+      },
+      {
+        "tau": 0.2,
+        "claims_kept": 106,
+        "precision_kept_supported": 0.9623,
+        "recall_supported_retained": 0.7786,
+        "unsupported_removed": 0.92,
+        "abstention_rate": 0.025,
+        "fully_grounded_rate_after": 0.8974
+      },
+      {
+        "tau": 0.3,
+        "claims_kept": 106,
+        "precision_kept_supported": 0.9623,
+        "recall_supported_retained": 0.7786,
+        "unsupported_removed": 0.92,
+        "abstention_rate": 0.025,
+        "fully_grounded_rate_after": 0.8974
+      },
+      {
+        "tau": 0.5,
+        "claims_kept": 105,
+        "precision_kept_supported": 0.9619,
+        "recall_supported_retained": 0.771,
+        "unsupported_removed": 0.92,
+        "abstention_rate": 0.025,
+        "fully_grounded_rate_after": 0.8974
+      },
+      {
+        "tau": 0.7,
+        "claims_kept": 101,
+        "precision_kept_supported": 0.9604,
+        "recall_supported_retained": 0.7405,
+        "unsupported_removed": 0.92,
+        "abstention_rate": 0.025,
+        "fully_grounded_rate_after": 0.8974
+      },
+      {
+        "tau": 0.9,
+        "claims_kept": 95,
+        "precision_kept_supported": 0.9789,
+        "recall_supported_retained": 0.7099,
+        "unsupported_removed": 0.96,
+        "abstention_rate": 0.075,
+        "fully_grounded_rate_after": 0.9459
+      }
+    ]
+  }
+}

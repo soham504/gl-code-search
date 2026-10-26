@@ -1,0 +1,7 @@
+{"tool": "issue", "args": [], "out_chars": 3183, "read_path": null}
+{"tool": "grep", "args": ["-i", "ignore_video_tracks|ignore_data_tracks|ignored_media"], "out_chars": 1110, "read_path": null}
+{"tool": "read", "args": ["beetsplug/musicbrainz.py", "540", "660"], "out_chars": 5560, "read_path": "beetsplug/musicbrainz.py"}
+{"tool": "grep", "args": ["-i", "video|BROWSE_INCLUDES|TRACK_INCLUDES", "beetsplug", "beets"], "out_chars": 637, "read_path": null}
+{"tool": "read", "args": ["test/plugins/test_musicbrainz.py", "380", "440"], "out_chars": 2491, "read_path": "test/plugins/test_musicbrainz.py"}
+{"tool": "read", "args": ["beetsplug/_utils/musicbrainz.py", "400", "470"], "out_chars": 1959, "read_path": "beetsplug/_utils/musicbrainz.py"}
+{"tool": "read", "args": ["beetsplug/musicbrainz.py", "690", "813"], "out_chars": 5189, "read_path": "beetsplug/musicbrainz.py"}

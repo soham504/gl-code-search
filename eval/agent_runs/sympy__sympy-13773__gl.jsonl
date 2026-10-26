@@ -1,0 +1,6 @@
+{"tool": "issue", "args": [], "out_chars": 628, "read_path": null}
+{"tool": "grep", "args": ["-n", "__matmul__|__rmatmul__", "sympy/matrices"], "out_chars": 0, "read_path": null}
+{"tool": "grep", "args": ["matmul__", "sympy"], "out_chars": 512, "read_path": null}
+{"tool": "read", "args": ["sympy/matrices/common.py", "1970", "1980"], "out_chars": 470, "read_path": "sympy/matrices/common.py"}
+{"tool": "read", "args": ["sympy/matrices/common.py", "2066", "2075"], "out_chars": 379, "read_path": "sympy/matrices/common.py"}
+{"tool": "read", "args": ["sympy/matrices/expressions/matexpr.py", "110", "130"], "out_chars": 810, "read_path": "sympy/matrices/expressions/matexpr.py"}

@@ -1,0 +1,816 @@
+[
+ {
+  "id": "django__django-16139",
+  "cond": "grep",
+  "out": {
+   "files": [
+    "django/contrib/auth/forms.py"
+   ],
+   "functions": [
+    "django/contrib/auth/forms.py::UserChangeForm.__init__"
+   ],
+   "confidence": "high"
+  }
+ },
+ {
+  "id": "django__django-16139",
+  "cond": "graphify",
+  "out": {
+   "files": [
+    "django/contrib/auth/forms.py"
+   ],
+   "functions": [
+    "django/contrib/auth/forms.py::UserChangeForm.__init__"
+   ],
+   "confidence": "high"
+  }
+ },
+ {
+  "id": "django__django-16139",
+  "cond": "gl",
+  "out": {
+   "files": [
+    "django/contrib/auth/forms.py"
+   ],
+   "functions": [
+    "django/contrib/auth/forms.py::UserChangeForm.__init__"
+   ],
+   "confidence": "high"
+  }
+ },
+ {
+  "id": "sympy__sympy-13773",
+  "cond": "grep",
+  "out": {
+   "files": [
+    "sympy/matrices/common.py",
+    "sympy/matrices/expressions/matexpr.py"
+   ],
+   "functions": [
+    "sympy/matrices/common.py::MatrixArithmetic.__matmul__",
+    "sympy/matrices/common.py::MatrixArithmetic.__rmatmul__",
+    "sympy/matrices/expressions/matexpr.py::MatrixExpr.__matmul__",
+    "sympy/matrices/expressions/matexpr.py::MatrixExpr.__rmatmul__"
+   ],
+   "confidence": "high"
+  }
+ },
+ {
+  "id": "sympy__sympy-13773",
+  "cond": "graphify",
+  "out": {
+   "files": [
+    "sympy/matrices/common.py",
+    "sympy/matrices/expressions/matexpr.py"
+   ],
+   "functions": [
+    "sympy/matrices/common.py::MatrixArithmetic.__matmul__",
+    "sympy/matrices/common.py::MatrixArithmetic.__rmatmul__",
+    "sympy/matrices/expressions/matexpr.py::MatrixExpr.__matmul__",
+    "sympy/matrices/expressions/matexpr.py::MatrixExpr.__rmatmul__"
+   ],
+   "confidence": "high"
+  }
+ },
+ {
+  "id": "sympy__sympy-13773",
+  "cond": "gl",
+  "out": {
+   "files": [
+    "sympy/matrices/common.py",
+    "sympy/matrices/expressions/matexpr.py"
+   ],
+   "functions": [
+    "sympy/matrices/common.py::MatrixArithmetic.__matmul__",
+    "sympy/matrices/common.py::MatrixArithmetic.__rmatmul__",
+    "sympy/matrices/expressions/matexpr.py::MatrixExpr.__matmul__",
+    "sympy/matrices/expressions/matexpr.py::MatrixExpr.__rmatmul__"
+   ],
+   "confidence": "high"
+  }
+ },
+ {
+  "id": "django__django-12497",
+  "cond": "grep",
+  "out": {
+   "files": [
+    "django/db/models/fields/related.py"
+   ],
+   "functions": [
+    "django/db/models/fields/related.py::ManyToManyField._check_relationship_model"
+   ],
+   "confidence": "high"
+  }
+ },
+ {
+  "id": "django__django-12497",
+  "cond": "graphify",
+  "out": {
+   "files": [
+    "django/db/models/fields/related.py"
+   ],
+   "functions": [
+    "django/db/models/fields/related.py::ManyToManyField._check_relationship_model"
+   ],
+   "confidence": "high"
+  }
+ },
+ {
+  "id": "django__django-12497",
+  "cond": "gl",
+  "out": {
+   "files": [
+    "django/db/models/fields/related.py"
+   ],
+   "functions": [
+    "django/db/models/fields/related.py::ManyToManyField._check_relationship_model"
+   ],
+   "confidence": "high"
+  }
+ },
+ {
+  "id": "django__django-15320",
+  "cond": "grep",
+  "out": {
+   "files": [
+    "django/db/models/expressions.py"
+   ],
+   "functions": [
+    "django/db/models/expressions.py::Subquery.__init__"
+   ],
+   "confidence": "high"
+  }
+ },
+ {
+  "id": "django__django-15320",
+  "cond": "graphify",
+  "out": {
+   "files": [
+    "django/db/models/expressions.py"
+   ],
+   "functions": [
+    "django/db/models/expressions.py::Subquery.__init__"
+   ],
+   "confidence": "high"
+  }
+ },
+ {
+  "id": "django__django-15320",
+  "cond": "gl",
+  "out": {
+   "files": [
+    "django/db/models/expressions.py"
+   ],
+   "functions": [
+    "django/db/models/expressions.py::Subquery.__init__"
+   ],
+   "confidence": "high"
+  }
+ },
+ {
+  "id": "django__django-12284",
+  "cond": "grep",
+  "out": {
+   "files": [
+    "django/db/models/fields/__init__.py"
+   ],
+   "functions": [
+    "django/db/models/fields/__init__.py::Field.contribute_to_class"
+   ],
+   "confidence": "high"
+  }
+ },
+ {
+  "id": "django__django-12284",
+  "cond": "graphify",
+  "out": {
+   "files": [
+    "django/db/models/fields/__init__.py"
+   ],
+   "functions": [
+    "django/db/models/fields/__init__.py::Field.contribute_to_class"
+   ],
+   "confidence": "high"
+  }
+ },
+ {
+  "id": "django__django-12284",
+  "cond": "gl",
+  "out": {
+   "files": [
+    "django/db/models/fields/__init__.py"
+   ],
+   "functions": [
+    "django/db/models/fields/__init__.py::Field.contribute_to_class"
+   ],
+   "confidence": "high"
+  }
+ },
+ {
+  "id": "sympy__sympy-15308",
+  "cond": "grep",
+  "out": {
+   "files": [
+    "sympy/printing/latex.py"
+   ],
+   "functions": [
+    "sympy/printing/latex.py::LatexPrinter._print_Trace"
+   ],
+   "confidence": "high"
+  }
+ },
+ {
+  "id": "sympy__sympy-15308",
+  "cond": "graphify",
+  "out": {
+   "files": [
+    "sympy/printing/latex.py"
+   ],
+   "functions": [
+    "sympy/printing/latex.py::LatexPrinter._print_Trace"
+   ],
+   "confidence": "high"
+  }
+ },
+ {
+  "id": "sympy__sympy-15308",
+  "cond": "gl",
+  "out": {
+   "files": [
+    "sympy/printing/latex.py"
+   ],
+   "functions": [
+    "sympy/printing/latex.py::LatexPrinter._print_Trace"
+   ],
+   "confidence": "high"
+  }
+ },
+ {
+  "id": "scikit-learn__scikit-learn-13439",
+  "cond": "grep",
+  "out": {
+   "files": [
+    "sklearn/pipeline.py"
+   ],
+   "functions": [
+    "sklearn/pipeline.py::Pipeline.__len__"
+   ],
+   "confidence": "high"
+  }
+ },
+ {
+  "id": "scikit-learn__scikit-learn-13439",
+  "cond": "graphify",
+  "out": {
+   "files": [
+    "sklearn/pipeline.py"
+   ],
+   "functions": [
+    "sklearn/pipeline.py::Pipeline.__len__",
+    "sklearn/pipeline.py::Pipeline.__getitem__"
+   ],
+   "confidence": "high"
+  }
+ },
+ {
+  "id": "scikit-learn__scikit-learn-13439",
+  "cond": "gl",
+  "out": {
+   "files": [
+    "sklearn/pipeline.py"
+   ],
+   "functions": [
+    "sklearn/pipeline.py::Pipeline.__len__",
+    "sklearn/pipeline.py::Pipeline.__getitem__"
+   ],
+   "confidence": "high"
+  }
+ },
+ {
+  "id": "matplotlib__matplotlib-18869",
+  "cond": "grep",
+  "out": {
+   "files": [
+    "lib/matplotlib/__init__.py"
+   ],
+   "functions": [
+    "lib/matplotlib/__init__.py::__getattr__"
+   ],
+   "confidence": "high"
+  }
+ },
+ {
+  "id": "matplotlib__matplotlib-18869",
+  "cond": "graphify",
+  "out": {
+   "files": [
+    "lib/matplotlib/__init__.py"
+   ],
+   "functions": [
+    "lib/matplotlib/__init__.py::__getattr__"
+   ],
+   "confidence": "high"
+  }
+ },
+ {
+  "id": "matplotlib__matplotlib-18869",
+  "cond": "gl",
+  "out": {
+   "files": [
+    "lib/matplotlib/__init__.py"
+   ],
+   "functions": [
+    "lib/matplotlib/__init__.py::__getattr__"
+   ],
+   "confidence": "high"
+  }
+ },
+ {
+  "id": "django__django-11620",
+  "cond": "grep",
+  "out": {
+   "files": [
+    "django/views/debug.py"
+   ],
+   "functions": [
+    "django/views/debug.py::technical_404_response"
+   ],
+   "confidence": "high"
+  }
+ },
+ {
+  "id": "django__django-11620",
+  "cond": "graphify",
+  "out": {
+   "files": [
+    "django/views/debug.py",
+    "django/urls/resolvers.py"
+   ],
+   "functions": [
+    "django/views/debug.py::technical_404_response"
+   ],
+   "confidence": "high"
+  }
+ },
+ {
+  "id": "django__django-11620",
+  "cond": "gl",
+  "out": {
+   "files": [
+    "django/views/debug.py",
+    "django/urls/resolvers.py"
+   ],
+   "functions": [
+    "django/views/debug.py::technical_404_response"
+   ],
+   "confidence": "high"
+  }
+ },
+ {
+  "id": "sympy__sympy-11897",
+  "cond": "grep",
+  "out": {
+   "files": [
+    "sympy/printing/latex.py"
+   ],
+   "functions": [
+    "sympy/printing/latex.py::LatexPrinter._print_Mul",
+    "sympy/printing/latex.py::LatexPrinter._print_Pow"
+   ],
+   "confidence": "high"
+  }
+ },
+ {
+  "id": "sympy__sympy-11897",
+  "cond": "graphify",
+  "out": {
+   "files": [
+    "sympy/printing/latex.py"
+   ],
+   "functions": [
+    "sympy/printing/latex.py::LatexPrinter._print_Mul",
+    "sympy/printing/latex.py::LatexPrinter._print_Pow"
+   ],
+   "confidence": "high"
+  }
+ },
+ {
+  "id": "sympy__sympy-11897",
+  "cond": "gl",
+  "out": {
+   "files": [
+    "sympy/printing/latex.py"
+   ],
+   "functions": [
+    "sympy/printing/latex.py::LatexPrinter._print_Mul",
+    "sympy/printing/latex.py::LatexPrinter._print_Pow"
+   ],
+   "confidence": "high"
+  }
+ },
+ {
+  "id": "django__django-11848",
+  "cond": "grep",
+  "out": {
+   "files": [
+    "django/utils/http.py"
+   ],
+   "functions": [
+    "django/utils/http.py::parse_http_date"
+   ],
+   "confidence": "high"
+  }
+ },
+ {
+  "id": "django__django-11848",
+  "cond": "graphify",
+  "out": {
+   "files": [
+    "django/utils/http.py"
+   ],
+   "functions": [
+    "django/utils/http.py::parse_http_date"
+   ],
+   "confidence": "high"
+  }
+ },
+ {
+  "id": "django__django-11848",
+  "cond": "gl",
+  "out": {
+   "files": [
+    "django/utils/http.py"
+   ],
+   "functions": [
+    "django/utils/http.py::parse_http_date"
+   ],
+   "confidence": "high"
+  }
+ },
+ {
+  "id": "sympy__sympy-24066",
+  "cond": "grep",
+  "out": {
+   "files": [
+    "sympy/physics/units/unitsystem.py"
+   ],
+   "functions": [
+    "sympy/physics/units/unitsystem.py::UnitSystem._collect_factor_and_dimension"
+   ],
+   "confidence": "high"
+  }
+ },
+ {
+  "id": "sympy__sympy-24066",
+  "cond": "graphify",
+  "out": {
+   "files": [
+    "sympy/physics/units/unitsystem.py"
+   ],
+   "functions": [
+    "sympy/physics/units/unitsystem.py::UnitSystem._collect_factor_and_dimension"
+   ],
+   "confidence": "high"
+  }
+ },
+ {
+  "id": "sympy__sympy-24066",
+  "cond": "gl",
+  "out": {
+   "files": [
+    "sympy/physics/units/unitsystem.py"
+   ],
+   "functions": [
+    "sympy/physics/units/unitsystem.py::UnitSystem._collect_factor_and_dimension"
+   ],
+   "confidence": "high"
+  }
+ },
+ {
+  "id": "django__django-15996",
+  "cond": "grep",
+  "out": {
+   "files": [
+    "django/db/migrations/serializer.py"
+   ],
+   "functions": [
+    "django/db/migrations/serializer.py::EnumSerializer.serialize"
+   ],
+   "confidence": "high"
+  }
+ },
+ {
+  "id": "django__django-15996",
+  "cond": "graphify",
+  "out": {
+   "files": [
+    "django/db/migrations/serializer.py"
+   ],
+   "functions": [
+    "django/db/migrations/serializer.py::EnumSerializer.serialize"
+   ],
+   "confidence": "high"
+  }
+ },
+ {
+  "id": "django__django-15996",
+  "cond": "gl",
+  "out": {
+   "files": [
+    "django/db/migrations/serializer.py"
+   ],
+   "functions": [
+    "django/db/migrations/serializer.py::EnumSerializer.serialize"
+   ],
+   "confidence": "high"
+  }
+ },
+ {
+  "id": "sphinx-doc__sphinx-8713",
+  "cond": "grep",
+  "out": {
+   "files": [
+    "sphinx/ext/napoleon/docstring.py"
+   ],
+   "functions": [
+    "sphinx/ext/napoleon/docstring.py::GoogleDocstring._parse_other_parameters_section"
+   ],
+   "confidence": "high"
+  }
+ },
+ {
+  "id": "sphinx-doc__sphinx-8713",
+  "cond": "graphify",
+  "out": {
+   "files": [
+    "sphinx/ext/napoleon/docstring.py"
+   ],
+   "functions": [
+    "sphinx/ext/napoleon/docstring.py::GoogleDocstring._parse_other_parameters_section"
+   ],
+   "confidence": "high"
+  }
+ },
+ {
+  "id": "sphinx-doc__sphinx-8713",
+  "cond": "gl",
+  "out": {
+   "files": [
+    "sphinx/ext/napoleon/docstring.py"
+   ],
+   "functions": [
+    "sphinx/ext/napoleon/docstring.py::GoogleDocstring._parse_other_parameters_section"
+   ],
+   "confidence": "high"
+  }
+ },
+ {
+  "id": "scikit-learn__scikit-learn-25638",
+  "cond": "grep",
+  "out": {
+   "files": [
+    "sklearn/utils/multiclass.py",
+    "sklearn/utils/validation.py"
+   ],
+   "functions": [
+    "sklearn/utils/multiclass.py::type_of_target",
+    "sklearn/utils/multiclass.py::is_multilabel",
+    "sklearn/utils/multiclass.py::unique_labels"
+   ],
+   "confidence": "high"
+  }
+ },
+ {
+  "id": "scikit-learn__scikit-learn-25638",
+  "cond": "graphify",
+  "out": {
+   "files": [
+    "sklearn/utils/multiclass.py",
+    "sklearn/utils/validation.py"
+   ],
+   "functions": [
+    "sklearn/utils/multiclass.py::type_of_target",
+    "sklearn/utils/multiclass.py::is_multilabel",
+    "sklearn/utils/multiclass.py::unique_labels"
+   ],
+   "confidence": "high"
+  }
+ },
+ {
+  "id": "scikit-learn__scikit-learn-25638",
+  "cond": "gl",
+  "out": {
+   "files": [
+    "sklearn/utils/multiclass.py",
+    "sklearn/utils/validation.py"
+   ],
+   "functions": [
+    "sklearn/utils/multiclass.py::type_of_target",
+    "sklearn/utils/multiclass.py::is_multilabel"
+   ],
+   "confidence": "high"
+  }
+ },
+ {
+  "id": "sympy__sympy-24152",
+  "cond": "grep",
+  "out": {
+   "files": [
+    "sympy/physics/quantum/tensorproduct.py"
+   ],
+   "functions": [
+    "sympy/physics/quantum/tensorproduct.py::TensorProduct._eval_expand_tensorproduct"
+   ],
+   "confidence": "high"
+  }
+ },
+ {
+  "id": "sympy__sympy-24152",
+  "cond": "graphify",
+  "out": {
+   "files": [
+    "sympy/physics/quantum/tensorproduct.py"
+   ],
+   "functions": [
+    "sympy/physics/quantum/tensorproduct.py::TensorProduct._eval_expand_tensorproduct"
+   ],
+   "confidence": "high"
+  }
+ },
+ {
+  "id": "sympy__sympy-24152",
+  "cond": "gl",
+  "out": {
+   "files": [
+    "sympy/physics/quantum/tensorproduct.py"
+   ],
+   "functions": [
+    "sympy/physics/quantum/tensorproduct.py::TensorProduct._eval_expand_tensorproduct"
+   ],
+   "confidence": "high"
+  }
+ },
+ {
+  "id": "sympy__sympy-22840",
+  "cond": "grep",
+  "out": {
+   "files": [
+    "sympy/simplify/cse_main.py"
+   ],
+   "functions": [
+    "sympy/simplify/cse_main.py::tree_cse"
+   ],
+   "confidence": "high"
+  }
+ },
+ {
+  "id": "sympy__sympy-22840",
+  "cond": "graphify",
+  "out": {
+   "files": [
+    "sympy/simplify/cse_main.py"
+   ],
+   "functions": [
+    "sympy/simplify/cse_main.py::tree_cse",
+    "sympy/simplify/cse_main.py::_find_repeated"
+   ],
+   "confidence": "high"
+  }
+ },
+ {
+  "id": "sympy__sympy-22840",
+  "cond": "gl",
+  "out": {
+   "files": [
+    "sympy/simplify/cse_main.py"
+   ],
+   "functions": [
+    "sympy/simplify/cse_main.py::tree_cse"
+   ],
+   "confidence": "high"
+  }
+ },
+ {
+  "id": "django__django-12589",
+  "cond": "grep",
+  "out": {
+   "files": [
+    "django/db/models/sql/query.py"
+   ],
+   "functions": [
+    "django/db/models/sql/query.py::Query.set_group_by"
+   ],
+   "confidence": "high"
+  }
+ },
+ {
+  "id": "django__django-12589",
+  "cond": "graphify",
+  "out": {
+   "files": [
+    "django/db/models/sql/query.py"
+   ],
+   "functions": [
+    "django/db/models/sql/query.py::Query.set_group_by"
+   ],
+   "confidence": "high"
+  }
+ },
+ {
+  "id": "django__django-12589",
+  "cond": "gl",
+  "out": {
+   "files": [
+    "django/db/models/sql/query.py"
+   ],
+   "functions": [
+    "django/db/models/sql/query.py::Query.set_group_by"
+   ],
+   "confidence": "high"
+  }
+ },
+ {
+  "id": "pydata__xarray-4248",
+  "cond": "grep",
+  "out": {
+   "files": [
+    "xarray/core/formatting.py",
+    "xarray/core/formatting_html.py"
+   ],
+   "functions": [
+    "xarray/core/formatting.py::summarize_variable",
+    "xarray/core/formatting.py::summarize_datavar",
+    "xarray/core/formatting.py::summarize_coord",
+    "xarray/core/formatting.py::_calculate_col_width"
+   ],
+   "confidence": "medium"
+  }
+ },
+ {
+  "id": "pydata__xarray-4248",
+  "cond": "graphify",
+  "out": {
+   "files": [
+    "xarray/core/formatting.py"
+   ],
+   "functions": [
+    "xarray/core/formatting.py::inline_variable_array_repr",
+    "xarray/core/formatting.py::summarize_variable"
+   ],
+   "confidence": "medium"
+  }
+ },
+ {
+  "id": "pydata__xarray-4248",
+  "cond": "gl",
+  "out": {
+   "files": [
+    "xarray/core/formatting.py"
+   ],
+   "functions": [
+    "xarray/core/formatting.py::inline_variable_array_repr",
+    "xarray/core/formatting.py::summarize_variable"
+   ],
+   "confidence": "high"
+  }
+ },
+ {
+  "id": "pytest-dev__pytest-5495",
+  "cond": "grep",
+  "out": {
+   "files": [
+    "src/_pytest/assertion/util.py"
+   ],
+   "functions": [
+    "src/_pytest/assertion/util.py::_compare_eq_sequence"
+   ],
+   "confidence": "high"
+  }
+ },
+ {
+  "id": "pytest-dev__pytest-5495",
+  "cond": "graphify",
+  "out": {
+   "files": [
+    "src/_pytest/assertion/util.py"
+   ],
+   "functions": [
+    "src/_pytest/assertion/util.py::_compare_eq_sequence"
+   ],
+   "confidence": "high"
+  }
+ },
+ {
+  "id": "pytest-dev__pytest-5495",
+  "cond": "gl",
+  "out": {
+   "files": [
+    "src/_pytest/assertion/util.py"
+   ],
+   "functions": [
+    "src/_pytest/assertion/util.py::_compare_eq_sequence"
+   ],
+   "confidence": "high"
+  }
+ }
+]

@@ -1,0 +1,3 @@
+{"tool": "issue", "args": [], "out_chars": 589, "read_path": null}
+{"tool": "grep", "args": ["-n", "class EnumSerializer", "django/db/migrations/serializer.py"], "out_chars": 0, "read_path": null}
+{"tool": "grep", "args": ["class EnumSerializer"], "out_chars": 78, "read_path": null}

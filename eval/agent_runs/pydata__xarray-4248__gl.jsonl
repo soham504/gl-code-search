@@ -1,0 +1,4 @@
+{"tool": "issue", "args": [], "out_chars": 844, "read_path": null}
+{"tool": "grep", "args": ["def summarize_variable|def _summarize_coord_levels|def summarize_datavar|def summarize_coord|def _calculate_col_width", "xarray/core/formatting.py"], "out_chars": 372, "read_path": null}
+{"tool": "read", "args": ["xarray/core/formatting.py", "265", "370"], "out_chars": 4175, "read_path": "xarray/core/formatting.py"}
+{"tool": "read", "args": ["xarray/core/formatting.py", "245", "270"], "out_chars": 1084, "read_path": "xarray/core/formatting.py"}

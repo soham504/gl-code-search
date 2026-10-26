@@ -1,0 +1,4 @@
+{"tool": "issue", "args": [], "out_chars": 4558, "read_path": null}
+{"tool": "read", "args": ["xarray/namedarray/utils.py", "180", "290"], "out_chars": 4535, "read_path": "xarray/namedarray/utils.py"}
+{"tool": "read", "args": ["xarray/namedarray/parallelcompat.py", "330", "375"], "out_chars": 1838, "read_path": "xarray/namedarray/parallelcompat.py"}
+{"tool": "read", "args": ["xarray/namedarray/core.py", "800", "850"], "out_chars": 2129, "read_path": "xarray/namedarray/core.py"}

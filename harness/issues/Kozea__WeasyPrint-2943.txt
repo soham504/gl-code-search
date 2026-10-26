@@ -1,0 +1,31 @@
+SVG text uses only the first font-family, then falls back to the default font
+
+**Version:** WeasyPrint 70.0 (macOS 26.7)
+
+For `<text>` in an SVG image, WeasyPrint uses only the first family in a `font-family` list. When that family does not resolve, it falls back to the default face instead of trying the next family. Nothing is printed on stderr.
+
+```html
+<!doctype html>
+<html lang="en">
+<head><meta charset="utf-8"><title>svg font</title></head>
+<body><img src="text.svg"></body>
+</html>
+```
+
+```svg
+<svg xmlns="http://www.w3.org/2000/svg" width="300" height="60">
+  <text x="10" y="35" style="font-family: 'Nonexistent Face', 'Arial'; font-size: 20px">Information technology</text>
+</svg>
+```
+
+Embedded fonts, read with `pdffonts`, one file per `font-family` value:
+
+| `font-family` | Embedded face |
+|---|---|
+| `'Arial', 'Nonexistent Face'` | Arial |
+| `'Nonexistent Face', 'Arial'` | Verdana |
+| `'Arial Bold', 'Arial'` | Verdana |
+
+Expected: CSS font fallback, trying each family in turn.
+
+Charts hit this often: matplotlib's SVG backend (with `svg.fonttype: none`) writes its whole fallback list into every text element. When the first family is a full face name such as `'Arial Bold'`, or a face that is not installed, the chart renders in the default face (the wider Verdana on macOS). Its labels can then overflow the figure.

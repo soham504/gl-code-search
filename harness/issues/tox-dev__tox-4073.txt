@@ -1,0 +1,40 @@
+Empty TOX_FACTOR_mode is ignored by {factor:mode} in env_base
+
+Setting `TOX_FACTOR_mode` to an empty string leaves `{factor:mode}` set to the factor from the environment name. In `replace_factor`, the environment override is tested for truthiness, so a present empty value is treated as absent.
+
+### Minimal example
+
+```sh
+cat > tox.toml <<'TOML'
+[env_base.task]
+factors = [{mode = ["strict"]}]
+description = "Mode [{factor:mode}]"
+package = "skip"
+TOML
+
+env TOX_FACTOR_mode='' tox c -c tox.toml -e task-strict -k description
+```
+
+Actual output:
+
+```text
+[testenv:task-strict]
+description = Mode [strict]
+```
+
+Expected: `description = Mode []`, because the explicitly supplied override is empty. This matters when using the override to clear a substituted value for one run.
+
+The [factor-label documentation](https://github.com/tox-dev/tox/blob/40a5d2b11361a96c47d0ba364b44c86d1e1a71ba/docs/reference/config.rst#L303-L312) says `TOX_FACTOR_<label>` makes the substitution resolve to the supplied value, whatever the environment name says.
+
+### Environment and proposed fix
+
+Reproduced twice with tox 4.61.5 at `40a5d2b11361a96c47d0ba364b44c86d1e1a71ba`, Python 3.12.12, macOS 26.5.1.
+
+In [`replace_factor`](https://github.com/tox-dev/tox/blob/40a5d2b11361a96c47d0ba364b44c86d1e1a71ba/src/tox/config/loader/replacer.py#L322-L337), checking presence instead of truthiness fixes the example:
+
+```python
+if (override := os.environ.get(f"{_FACTOR_ENV_PREFIX}{label}")) is not None:
+    return override
+```
+
+Adding an empty-value case to `test_env_base_factor_env_override` fails on the current implementation and passes with this change. The configuration tests also pass with the change (6,742 passed, 2 skipped).

@@ -1,0 +1,5 @@
+{"tool": "issue", "args": [], "out_chars": 303, "read_path": null}
+{"tool": "grep", "args": ["def test_sel", "xarray/tests/test_indexes.py"], "out_chars": 443, "read_path": null}
+{"tool": "grep", "args": ["get_loc|get_loc_level|exceeds", "xarray/core/indexes.py"], "out_chars": 839, "read_path": null}
+{"tool": "read", "args": ["xarray/tests/test_indexes.py", "504", "530"], "out_chars": 1349, "read_path": "xarray/tests/test_indexes.py"}
+{"tool": "read", "args": ["xarray/core/indexes.py", "1330", "1420"], "out_chars": 4949, "read_path": "xarray/core/indexes.py"}

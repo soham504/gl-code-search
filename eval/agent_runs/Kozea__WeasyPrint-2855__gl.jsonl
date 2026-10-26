@@ -1,0 +1,9 @@
+{"tool": "issue", "args": [], "out_chars": 1611, "read_path": null}
+{"tool": "grep", "args": ["-i", "InlineFlex|inline_flex", "weasyprint/layout"], "out_chars": 271, "read_path": null}
+{"tool": "grep", "args": ["-i", "InlineFlex|InlineBlock|inline-flex", "weasyprint/formatting_structure/build.py"], "out_chars": 363, "read_path": null}
+{"tool": "read", "args": ["weasyprint/layout/flex.py", "930", "990"], "out_chars": 1910, "read_path": "weasyprint/layout/flex.py"}
+{"tool": "grep", "args": ["block_level_layout|layout_box|InlineBox|LineBox|ParentBox|isinstance", "weasyprint/layout/flex.py"], "out_chars": 1175, "read_path": null}
+{"tool": "grep", "args": ["-i", "def block_level_layout_switch|FlexBox|flex_layout|InlineBlock", "weasyprint/layout/block.py"], "out_chars": 396, "read_path": null}
+{"tool": "read", "args": ["weasyprint/layout/block.py", "20", "120"], "out_chars": 5598, "read_path": "weasyprint/layout/block.py"}
+{"tool": "grep", "args": ["-n", "class .*Flex|class InlineBlockBox|class FlexContainerBox", "weasyprint/formatting_structure/boxes.py"], "out_chars": 0, "read_path": null}
+{"tool": "read", "args": ["weasyprint/formatting_structure/build.py", "955", "1010"], "out_chars": 2556, "read_path": "weasyprint/formatting_structure/build.py"}

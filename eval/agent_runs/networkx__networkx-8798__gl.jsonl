@@ -1,0 +1,2 @@
+{"tool": "issue", "args": [], "out_chars": 839, "read_path": null}
+{"tool": "gl", "args": ["symbol", "bfs_successors"], "out_chars": 76, "read_path": null}

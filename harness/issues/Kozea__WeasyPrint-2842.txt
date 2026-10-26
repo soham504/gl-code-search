@@ -1,0 +1,55 @@
+ZeroDivisionError in auto_table_layout
+
+`HTML(...).write_pdf()` raises `ZeroDivisionError: float division by zero` inside `weasyprint/layout/table.py auto_table_layout`, at:
+
+`available_ratio = (assignable_width - sum(lower_guess)) / sum(added_widths)`
+
+This is the same crash reported long ago in #1190 (then in tables.py) and related to #704. Both were closed, but the automatic table-layout code in current table.py still hits it: when the width-distribution algorithm picks a `lower_guess` and an `upper_guess` that are different vectors but have equal (float) sums, sum(added_widths) is 0.0 and the division blows up.
+
+The reproducer below is fully synthetic and does not depend on installed fonts (it uses fixed-px inline-block boxes), so it should reproduce anywhere.
+
+Reproducible Minimal HTML
+```html
+<table style="border-spacing:0;width:136.66666666666487px">
+  <tr>
+    <th rowspan="2" style="width:40%"><span style="display:inline-block;width:20px;height:8px"></span></th>
+    <th colspan="2"><span style="display:inline-block;width:80px;height:8px"></span></th>
+  </tr>
+  <tr>
+    <th><span style="display:inline-block;width:10px;height:8px"></span></th>
+    <th><span style="display:inline-block;width:8px;height:8px"></span><span style="display:inline-block;width:8px;height:8px"></span></th>
+  </tr>
+</table>
+```
+
+Notes:
+- The table width 136.66666666666487px is deliberately the largest float strictly below this table's max-content width (410/3 ≈ 136.6667px). This is a floating-point edge case, so the value must be exact — rounding it (e.g. 136.667px) does not crash. Because all cell sizes are in px, the max-content width is font-independent, so the same literal reproduces on any system.
+- The 40% column is what makes tmin < tmax (without it the layout takes a safe branch); the colspan cell plus the two-box sub-cell are what make two width-guess vectors share an identical float sum.
+
+Traceback
+```python
+Traceback (most recent call last):
+  File ".../weasyprint/__init__.py", line 265, in write_pdf
+    self.render(font_config, counter_style, color_profiles, **options)
+  File ".../weasyprint/__init__.py", line 221, in render
+    return Document._render(
+  File ".../weasyprint/document.py", line 208, in _render
+    [Page(page_box) for page_box in page_boxes],
+  File ".../weasyprint/layout/__init__.py", line 131, in layout_document
+    pages = list(make_all_pages(context, root_box, html, pages))
+  File ".../weasyprint/layout/page.py", line 1009, in make_all_pages
+    page, resume_at = remake_page(i, context, root_box, html)
+  File ".../weasyprint/layout/page.py", line 950, in remake_page
+    page, resume_at, next_page = make_page(
+  File ".../weasyprint/layout/page.py", line 668, in make_page
+    root_box, resume_at, next_page, _, _, _ = block_level_layout(
+  ...  # block_box_layout / block_container_layout recurse through html > body > table wrapper
+  File ".../weasyprint/layout/block.py", line 122, in block_box_layout
+    table_wrapper_width(
+  File ".../weasyprint/layout/table.py", line 833, in table_wrapper_width
+    auto_table_layout(context, wrapper, containing_block)
+  File ".../weasyprint/layout/table.py", line 813, in auto_table_layout
+    available_ratio = (assignable_width - sum(lower_guess)) / sum(added_widths)
+                      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~
+ZeroDivisionError: float division by zero
+```

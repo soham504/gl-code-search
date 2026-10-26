@@ -1,0 +1,837 @@
+[
+ {
+  "id": "pydata__xarray-11567",
+  "cond": "grep",
+  "out": {
+   "files": [
+    "xarray/namedarray/parallelcompat.py",
+    "xarray/namedarray/utils.py",
+    "xarray/namedarray/core.py"
+   ],
+   "functions": [
+    "xarray/namedarray/parallelcompat.py::ChunkManagerEntrypoint.rechunk",
+    "xarray/namedarray/utils.py::_get_chunk"
+   ],
+   "confidence": "high"
+  }
+ },
+ {
+  "id": "pydata__xarray-11567",
+  "cond": "graphify",
+  "out": {
+   "files": [
+    "xarray/namedarray/parallelcompat.py",
+    "xarray/namedarray/utils.py",
+    "xarray/namedarray/core.py"
+   ],
+   "functions": [
+    "xarray/namedarray/parallelcompat.py::ChunkManagerEntrypoint.rechunk",
+    "xarray/namedarray/utils.py::_get_chunk"
+   ],
+   "confidence": "high"
+  }
+ },
+ {
+  "id": "pydata__xarray-11567",
+  "cond": "gl",
+  "out": {
+   "files": [
+    "xarray/namedarray/parallelcompat.py",
+    "xarray/namedarray/utils.py"
+   ],
+   "functions": [
+    "xarray/namedarray/parallelcompat.py::ChunkManagerEntrypoint.rechunk",
+    "xarray/namedarray/utils.py::_get_chunk"
+   ],
+   "confidence": "high"
+  }
+ },
+ {
+  "id": "beetbox__beets-7056",
+  "cond": "grep",
+  "out": {
+   "files": [
+    "beets/dbcore/pathutils.py",
+    "beets/util/__init__.py"
+   ],
+   "functions": [
+    "beets/dbcore/pathutils.py::_to_db_path",
+    "beets/dbcore/pathutils.py::_from_db_path",
+    "beets/util/__init__.py::path_as_posix"
+   ],
+   "confidence": "high"
+  }
+ },
+ {
+  "id": "beetbox__beets-7056",
+  "cond": "graphify",
+  "out": {
+   "files": [
+    "beetsplug/permissions.py",
+    "beets/util/__init__.py",
+    "beets/library/models.py"
+   ],
+   "functions": [
+    "beetsplug/permissions.py::check_permissions",
+    "beetsplug/permissions.py::Permissions.set_permissions",
+    "beetsplug/permissions.py::assert_permissions",
+    "beetsplug/permissions.py::Permissions.fix_album"
+   ],
+   "confidence": "medium"
+  }
+ },
+ {
+  "id": "beetbox__beets-7056",
+  "cond": "gl",
+  "out": {
+   "files": [
+    "beets/dbcore/pathutils.py",
+    "beets/util/__init__.py"
+   ],
+   "functions": [
+    "beets/dbcore/pathutils.py::_to_db_path",
+    "beets/dbcore/pathutils.py::_from_db_path",
+    "beets/util/__init__.py::path_as_posix"
+   ],
+   "confidence": "high"
+  }
+ },
+ {
+  "id": "PyCQA__isort-2646",
+  "cond": "grep",
+  "out": {
+   "files": [
+    "isort/literal.py",
+    "isort/core.py"
+   ],
+   "functions": [
+    "isort/literal.py::assignment"
+   ],
+   "confidence": "high"
+  }
+ },
+ {
+  "id": "PyCQA__isort-2646",
+  "cond": "graphify",
+  "out": {
+   "files": [
+    "isort/literal.py",
+    "isort/core.py"
+   ],
+   "functions": [
+    "isort/literal.py::assignment"
+   ],
+   "confidence": "high"
+  }
+ },
+ {
+  "id": "PyCQA__isort-2646",
+  "cond": "gl",
+  "out": {
+   "files": [
+    "isort/literal.py",
+    "isort/core.py"
+   ],
+   "functions": [
+    "isort/literal.py::assignment"
+   ],
+   "confidence": "high"
+  }
+ },
+ {
+  "id": "beetbox__beets-7036",
+  "cond": "grep",
+  "out": {
+   "files": [
+    "beetsplug/hook.py"
+   ],
+   "functions": [
+    "beetsplug/hook.py::HookPlugin.__init__"
+   ],
+   "confidence": "high"
+  }
+ },
+ {
+  "id": "beetbox__beets-7036",
+  "cond": "graphify",
+  "out": {
+   "files": [
+    "beetsplug/hook.py"
+   ],
+   "functions": [
+    "beetsplug/hook.py::HookPlugin.__init__"
+   ],
+   "confidence": "high"
+  }
+ },
+ {
+  "id": "beetbox__beets-7036",
+  "cond": "gl",
+  "out": {
+   "files": [
+    "beetsplug/hook.py"
+   ],
+   "functions": [
+    "beetsplug/hook.py::HookPlugin.__init__"
+   ],
+   "confidence": "high"
+  }
+ },
+ {
+  "id": "beetbox__beets-6953",
+  "cond": "grep",
+  "out": {
+   "files": [
+    "beetsplug/edit.py"
+   ],
+   "functions": [
+    "beetsplug/edit.py::EditPlugin.importer_edit",
+    "beetsplug/edit.py::EditPlugin._importer_edit_album_header"
+   ],
+   "confidence": "high"
+  }
+ },
+ {
+  "id": "beetbox__beets-6953",
+  "cond": "graphify",
+  "out": {
+   "files": [
+    "beetsplug/edit.py"
+   ],
+   "functions": [
+    "beetsplug/edit.py::EditPlugin.importer_edit",
+    "beetsplug/edit.py::EditPlugin._importer_edit_album_header"
+   ],
+   "confidence": "high"
+  }
+ },
+ {
+  "id": "beetbox__beets-6953",
+  "cond": "gl",
+  "out": {
+   "files": [
+    "beetsplug/edit.py"
+   ],
+   "functions": [
+    "beetsplug/edit.py::EditPlugin.importer_edit",
+    "beetsplug/edit.py::EditPlugin._importer_edit_album_header"
+   ],
+   "confidence": "high"
+  }
+ },
+ {
+  "id": "tox-dev__tox-4073",
+  "cond": "grep",
+  "out": {
+   "files": [
+    "src/tox/config/loader/replacer.py"
+   ],
+   "functions": [
+    "src/tox/config/loader/replacer.py::replace_factor"
+   ],
+   "confidence": "high"
+  }
+ },
+ {
+  "id": "tox-dev__tox-4073",
+  "cond": "graphify",
+  "out": {
+   "files": [
+    "src/tox/config/loader/replacer.py"
+   ],
+   "functions": [
+    "src/tox/config/loader/replacer.py::replace_factor"
+   ],
+   "confidence": "high"
+  }
+ },
+ {
+  "id": "tox-dev__tox-4073",
+  "cond": "gl",
+  "out": {
+   "files": [
+    "src/tox/config/loader/replacer.py"
+   ],
+   "functions": [
+    "src/tox/config/loader/replacer.py::replace_factor"
+   ],
+   "confidence": "high"
+  }
+ },
+ {
+  "id": "networkx__networkx-8798",
+  "cond": "grep",
+  "out": {
+   "files": [
+    "networkx/algorithms/traversal/breadth_first_search.py"
+   ],
+   "functions": [
+    "networkx/algorithms/traversal/breadth_first_search.py::bfs_successors"
+   ],
+   "confidence": "high"
+  }
+ },
+ {
+  "id": "networkx__networkx-8798",
+  "cond": "graphify",
+  "out": {
+   "files": [
+    "networkx/algorithms/traversal/breadth_first_search.py"
+   ],
+   "functions": [
+    "networkx/algorithms/traversal/breadth_first_search.py::bfs_successors"
+   ],
+   "confidence": "high"
+  }
+ },
+ {
+  "id": "networkx__networkx-8798",
+  "cond": "gl",
+  "out": {
+   "files": [
+    "networkx/algorithms/traversal/breadth_first_search.py"
+   ],
+   "functions": [
+    "networkx/algorithms/traversal/breadth_first_search.py::bfs_successors"
+   ],
+   "confidence": "high"
+  }
+ },
+ {
+  "id": "Kozea__WeasyPrint-2855",
+  "cond": "grep",
+  "out": {
+   "files": [
+    "weasyprint/formatting_structure/build.py"
+   ],
+   "functions": [
+    "weasyprint/formatting_structure/build.py::blockify"
+   ],
+   "confidence": "high"
+  }
+ },
+ {
+  "id": "Kozea__WeasyPrint-2855",
+  "cond": "graphify",
+  "out": {
+   "files": [
+    "weasyprint/formatting_structure/build.py"
+   ],
+   "functions": [
+    "weasyprint/formatting_structure/build.py::blockify"
+   ],
+   "confidence": "high"
+  }
+ },
+ {
+  "id": "Kozea__WeasyPrint-2855",
+  "cond": "gl",
+  "out": {
+   "files": [
+    "weasyprint/formatting_structure/build.py"
+   ],
+   "functions": [
+    "weasyprint/formatting_structure/build.py::blockify"
+   ],
+   "confidence": "high"
+  }
+ },
+ {
+  "id": "Kozea__WeasyPrint-2843",
+  "cond": "grep",
+  "out": {
+   "files": [
+    "weasyprint/text/fonts.py"
+   ],
+   "functions": [
+    "weasyprint/text/fonts.py::FontConfiguration.__init__"
+   ],
+   "confidence": "high"
+  }
+ },
+ {
+  "id": "Kozea__WeasyPrint-2843",
+  "cond": "graphify",
+  "out": {
+   "files": [
+    "weasyprint/text/fonts.py"
+   ],
+   "functions": [
+    "weasyprint/text/fonts.py::FontConfiguration.__init__"
+   ],
+   "confidence": "high"
+  }
+ },
+ {
+  "id": "Kozea__WeasyPrint-2843",
+  "cond": "gl",
+  "out": {
+   "files": [
+    "weasyprint/text/fonts.py"
+   ],
+   "functions": [
+    "weasyprint/text/fonts.py::FontConfiguration.__init__"
+   ],
+   "confidence": "high"
+  }
+ },
+ {
+  "id": "Kozea__WeasyPrint-2842",
+  "cond": "grep",
+  "out": {
+   "files": [
+    "weasyprint/layout/table.py"
+   ],
+   "functions": [
+    "weasyprint/layout/table.py::auto_table_layout"
+   ],
+   "confidence": "high"
+  }
+ },
+ {
+  "id": "Kozea__WeasyPrint-2842",
+  "cond": "graphify",
+  "out": {
+   "files": [
+    "weasyprint/layout/table.py"
+   ],
+   "functions": [
+    "weasyprint/layout/table.py::auto_table_layout"
+   ],
+   "confidence": "high"
+  }
+ },
+ {
+  "id": "Kozea__WeasyPrint-2842",
+  "cond": "gl",
+  "out": {
+   "files": [
+    "weasyprint/layout/table.py"
+   ],
+   "functions": [
+    "weasyprint/layout/table.py::auto_table_layout"
+   ],
+   "confidence": "high"
+  }
+ },
+ {
+  "id": "beetbox__beets-6989",
+  "cond": "grep",
+  "out": {
+   "files": [
+    "beetsplug/tidal/api.py",
+    "beetsplug/tidal/__init__.py",
+    "beetsplug/tidal/api_types.py"
+   ],
+   "functions": [
+    "beetsplug/tidal/api.py::TidalAPI.search_results",
+    "beetsplug/tidal/__init__.py::TidalPlugin.search_tracks_by_query",
+    "beetsplug/tidal/__init__.py::TidalPlugin.search_albums_by_query"
+   ],
+   "confidence": "high"
+  }
+ },
+ {
+  "id": "beetbox__beets-6989",
+  "cond": "graphify",
+  "out": {
+   "files": [
+    "beetsplug/tidal/api.py",
+    "beetsplug/tidal/__init__.py",
+    "beetsplug/tidal/api_types.py"
+   ],
+   "functions": [
+    "beetsplug/tidal/api.py::TidalAPI.search_results",
+    "beetsplug/tidal/__init__.py::search_tracks_by_query",
+    "beetsplug/tidal/__init__.py::search_albums_by_query"
+   ],
+   "confidence": "high"
+  }
+ },
+ {
+  "id": "beetbox__beets-6989",
+  "cond": "gl",
+  "out": {
+   "files": [
+    "beetsplug/tidal/api.py",
+    "beetsplug/tidal/__init__.py",
+    "beetsplug/tidal/api_types.py"
+   ],
+   "functions": [
+    "beetsplug/tidal/api.py::TidalAPI.search_results",
+    "beetsplug/tidal/__init__.py::search_tracks_by_query",
+    "beetsplug/tidal/__init__.py::search_albums_by_query"
+   ],
+   "confidence": "high"
+  }
+ },
+ {
+  "id": "PyCQA__isort-2650",
+  "cond": "grep",
+  "out": {
+   "files": [
+    "isort/wrap_modes.py"
+   ],
+   "functions": [
+    "isort/wrap_modes.py::hanging_indent_with_parentheses"
+   ],
+   "confidence": "high"
+  }
+ },
+ {
+  "id": "PyCQA__isort-2650",
+  "cond": "graphify",
+  "out": {
+   "files": [
+    "isort/wrap_modes.py"
+   ],
+   "functions": [
+    "isort/wrap_modes.py::hanging_indent_with_parentheses"
+   ],
+   "confidence": "high"
+  }
+ },
+ {
+  "id": "PyCQA__isort-2650",
+  "cond": "gl",
+  "out": {
+   "files": [
+    "isort/wrap_modes.py"
+   ],
+   "functions": [
+    "isort/wrap_modes.py::hanging_indent_with_parentheses"
+   ],
+   "confidence": "high"
+  }
+ },
+ {
+  "id": "beetbox__beets-6836",
+  "cond": "grep",
+  "out": {
+   "files": [
+    "beetsplug/musicbrainz.py",
+    "beetsplug/_utils/musicbrainz.py"
+   ],
+   "functions": [
+    "beetsplug/musicbrainz.py::MusicBrainzPlugin.get_tracks_from_medium",
+    "beetsplug/musicbrainz.py::MusicBrainzPlugin.album_info"
+   ],
+   "confidence": "medium"
+  }
+ },
+ {
+  "id": "beetbox__beets-6836",
+  "cond": "graphify",
+  "out": {
+   "files": [
+    "beetsplug/musicbrainz.py",
+    "beets/autotag/match.py"
+   ],
+   "functions": [
+    "beetsplug/musicbrainz.py::MusicBrainzPlugin.get_tracks_from_medium",
+    "beetsplug/musicbrainz.py::MusicBrainzPlugin.album_info"
+   ],
+   "confidence": "medium"
+  }
+ },
+ {
+  "id": "beetbox__beets-6836",
+  "cond": "gl",
+  "out": {
+   "confidence": "medium",
+   "files": [
+    "beetsplug/musicbrainz.py"
+   ],
+   "functions": [
+    "beetsplug/musicbrainz.py::MusicBrainzPlugin.get_tracks_from_medium",
+    "beetsplug/musicbrainz.py::MusicBrainzPlugin.album_info"
+   ]
+  }
+ },
+ {
+  "id": "pydata__xarray-11672",
+  "cond": "grep",
+  "out": {
+   "files": [
+    "xarray/core/datatree.py"
+   ],
+   "functions": [
+    "xarray/core/datatree.py::DataTree.load"
+   ],
+   "confidence": "high"
+  }
+ },
+ {
+  "id": "pydata__xarray-11672",
+  "cond": "graphify",
+  "out": {
+   "files": [
+    "xarray/core/datatree.py"
+   ],
+   "functions": [
+    "xarray/core/datatree.py::DataTree.load"
+   ],
+   "confidence": "high"
+  }
+ },
+ {
+  "id": "pydata__xarray-11672",
+  "cond": "gl",
+  "out": {
+   "files": [
+    "xarray/core/datatree.py"
+   ],
+   "functions": [
+    "xarray/core/datatree.py::DataTree.load"
+   ],
+   "confidence": "high"
+  }
+ },
+ {
+  "id": "networkx__networkx-8811",
+  "cond": "grep",
+  "out": {
+   "files": [
+    "networkx/algorithms/shortest_paths/generic.py"
+   ],
+   "functions": [
+    "networkx/algorithms/shortest_paths/generic.py::all_shortest_paths",
+    "networkx/algorithms/shortest_paths/generic.py::single_source_all_shortest_paths",
+    "networkx/algorithms/shortest_paths/generic.py::all_pairs_all_shortest_paths"
+   ],
+   "confidence": "high"
+  }
+ },
+ {
+  "id": "networkx__networkx-8811",
+  "cond": "graphify",
+  "out": {
+   "files": [
+    "networkx/algorithms/shortest_paths/generic.py"
+   ],
+   "functions": [
+    "networkx/algorithms/shortest_paths/generic.py::all_shortest_paths",
+    "networkx/algorithms/shortest_paths/generic.py::single_source_all_shortest_paths",
+    "networkx/algorithms/shortest_paths/generic.py::all_pairs_all_shortest_paths"
+   ],
+   "confidence": "high"
+  }
+ },
+ {
+  "id": "networkx__networkx-8811",
+  "cond": "gl",
+  "out": {
+   "files": [
+    "networkx/algorithms/shortest_paths/generic.py"
+   ],
+   "functions": [
+    "networkx/algorithms/shortest_paths/generic.py::all_shortest_paths",
+    "networkx/algorithms/shortest_paths/generic.py::single_source_all_shortest_paths"
+   ],
+   "confidence": "high"
+  }
+ },
+ {
+  "id": "tox-dev__tox-4076",
+  "cond": "grep",
+  "out": {
+   "files": [
+    "src/tox/config/set_env.py"
+   ],
+   "functions": [
+    "src/tox/config/set_env.py::SetEnv.__init__",
+    "src/tox/config/set_env.py::SetEnv._parse_dict",
+    "src/tox/config/set_env.py::SetEnv.use_replacer",
+    "src/tox/config/set_env.py::SetEnv._iter_needs_replacement"
+   ],
+   "confidence": "high"
+  }
+ },
+ {
+  "id": "tox-dev__tox-4076",
+  "cond": "graphify",
+  "out": {
+   "files": [
+    "src/tox/config/set_env.py"
+   ],
+   "functions": [
+    "src/tox/config/set_env.py::SetEnv.__init__",
+    "src/tox/config/set_env.py::SetEnv._parse_dict",
+    "src/tox/config/set_env.py::SetEnv.use_replacer",
+    "src/tox/config/set_env.py::SetEnv._iter_needs_replacement"
+   ],
+   "confidence": "high"
+  }
+ },
+ {
+  "id": "tox-dev__tox-4076",
+  "cond": "gl",
+  "out": {
+   "files": [
+    "src/tox/config/set_env.py"
+   ],
+   "functions": [
+    "src/tox/config/set_env.py::SetEnv.__init__",
+    "src/tox/config/set_env.py::SetEnv._parse_dict",
+    "src/tox/config/set_env.py::SetEnv.use_replacer"
+   ],
+   "confidence": "high"
+  }
+ },
+ {
+  "id": "pydata__xarray-11652",
+  "cond": "grep",
+  "out": {
+   "files": [
+    "xarray/core/indexes.py"
+   ],
+   "functions": [
+    "xarray/core/indexes.py::PandasMultiIndex.sel"
+   ],
+   "confidence": "high"
+  }
+ },
+ {
+  "id": "pydata__xarray-11652",
+  "cond": "graphify",
+  "out": {
+   "files": [
+    "xarray/core/indexes.py"
+   ],
+   "functions": [
+    "xarray/core/indexes.py::PandasMultiIndex.sel"
+   ],
+   "confidence": "high"
+  }
+ },
+ {
+  "id": "pydata__xarray-11652",
+  "cond": "gl",
+  "out": {
+   "files": [
+    "xarray/core/indexes.py"
+   ],
+   "functions": [
+    "xarray/core/indexes.py::PandasMultiIndex.sel"
+   ],
+   "confidence": "high"
+  }
+ },
+ {
+  "id": "pydata__xarray-11790",
+  "cond": "grep",
+  "out": {
+   "files": [
+    "doc/conf.py"
+   ],
+   "functions": [
+    "doc/conf.py::rediraffe_redirects"
+   ],
+   "confidence": "high"
+  }
+ },
+ {
+  "id": "pydata__xarray-11790",
+  "cond": "graphify",
+  "out": {
+   "files": [
+    "doc/conf.py"
+   ],
+   "functions": [
+    "doc/conf.py::rediraffe_redirects"
+   ],
+   "confidence": "medium"
+  }
+ },
+ {
+  "id": "pydata__xarray-11790",
+  "cond": "gl",
+  "out": {
+   "files": [
+    "doc/conf.py"
+   ],
+   "functions": [
+    "doc/conf.py::rediraffe_redirects"
+   ],
+   "confidence": "high"
+  }
+ },
+ {
+  "id": "sqlfluff__sqlfluff-8179",
+  "cond": "grep",
+  "out": {
+   "files": [
+    "src/sqlfluff/rules/convention/CV10.py"
+   ],
+   "functions": [
+    "src/sqlfluff/rules/convention/CV10.py::Rule_CV10._normalize_preferred_quoted_literal_style"
+   ],
+   "confidence": "high"
+  }
+ },
+ {
+  "id": "sqlfluff__sqlfluff-8179",
+  "cond": "graphify",
+  "out": {
+   "files": [
+    "src/sqlfluff/rules/convention/CV10.py"
+   ],
+   "functions": [
+    "src/sqlfluff/rules/convention/CV10.py::Rule_CV10._normalize_preferred_quoted_literal_style"
+   ],
+   "confidence": "high"
+  }
+ },
+ {
+  "id": "sqlfluff__sqlfluff-8179",
+  "cond": "gl",
+  "out": {
+   "files": [
+    "src/sqlfluff/rules/convention/CV10.py"
+   ],
+   "functions": [
+    "src/sqlfluff/rules/convention/CV10.py::Rule_CV10._normalize_preferred_quoted_literal_style"
+   ],
+   "confidence": "high"
+  }
+ },
+ {
+  "id": "Kozea__WeasyPrint-2943",
+  "cond": "grep",
+  "out": {
+   "confidence": "high",
+   "files": [
+    "weasyprint/svg/text.py"
+   ],
+   "functions": [
+    "weasyprint/svg/text.py::text"
+   ]
+  }
+ },
+ {
+  "id": "Kozea__WeasyPrint-2943",
+  "cond": "graphify",
+  "out": {
+   "files": [
+    "weasyprint/svg/text.py"
+   ],
+   "functions": [
+    "weasyprint/svg/text.py::text"
+   ],
+   "confidence": "high"
+  }
+ },
+ {
+  "id": "Kozea__WeasyPrint-2943",
+  "cond": "gl",
+  "out": {
+   "files": [
+    "weasyprint/svg/text.py"
+   ],
+   "functions": [
+    "weasyprint/svg/text.py::text"
+   ],
+   "confidence": "high"
+  }
+ }
+]

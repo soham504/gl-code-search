@@ -1,0 +1,36 @@
+name: gl issue triage
+description: Comment on new issues with the source files most likely to need changes (code-aware BM25, no LLM).
+branding:
+  icon: search
+  color: blue
+inputs:
+  k:
+    description: Number of files to suggest
+    default: "5"
+  github-token:
+    description: Token used to post the comment
+    default: ${{ github.token }}
+runs:
+  using: composite
+  steps:
+    - uses: actions/setup-go@v5
+      with:
+        go-version: "1.22"
+        cache: false
+    - name: Build gl
+      shell: bash
+      run: cd "${{ github.action_path }}" && go build -o "$RUNNER_TEMP/gl" ./go/cmd/gl
+    - name: Rank files for the issue
+      shell: bash
+      env:
+        TITLE: ${{ github.event.issue.title }}
+        BODY: ${{ github.event.issue.body }}
+      run: |
+        printf '%s\n\n%s\n' "$TITLE" "$BODY" > "$RUNNER_TEMP/issue.txt"
+        "$RUNNER_TEMP/gl" -no-cache -k "${{ inputs.k }}" -markdown locate < "$RUNNER_TEMP/issue.txt" > "$RUNNER_TEMP/comment.md"
+        cat "$RUNNER_TEMP/comment.md"
+    - name: Post comment
+      shell: bash
+      env:
+        GH_TOKEN: ${{ inputs.github-token }}
+      run: gh issue comment "${{ github.event.issue.number }}" --repo "${{ github.repository }}" --body-file "$RUNNER_TEMP/comment.md"

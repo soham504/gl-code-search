@@ -1,0 +1,4 @@
+{"tool": "issue", "args": [], "out_chars": 3094, "read_path": null}
+{"tool": "grep", "args": ["lazy_data", "xarray/core/datatree.py"], "out_chars": 1132, "read_path": null}
+{"tool": "read", "args": ["xarray/core/datatree.py", "2450", "2575"], "out_chars": 5452, "read_path": "xarray/core/datatree.py"}
+{"tool": "grep", "args": ["not in lazy_data", "xarray"], "out_chars": 67, "read_path": null}

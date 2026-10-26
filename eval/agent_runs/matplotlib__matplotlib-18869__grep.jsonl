@@ -1,0 +1,4 @@
+{"tool": "issue", "args": [], "out_chars": 1680, "read_path": null}
+{"tool": "grep", "args": ["-n", "__version__\\|def __getattr__", "lib/matplotlib/__init__.py"], "out_chars": 0, "read_path": null}
+{"tool": "grep", "args": ["__version__", "lib/matplotlib/__init__.py"], "out_chars": 825, "read_path": null}
+{"tool": "read", "args": ["lib/matplotlib/__init__.py", "125", "155"], "out_chars": 1342, "read_path": "lib/matplotlib/__init__.py"}

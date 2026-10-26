@@ -1,0 +1,3 @@
+{"tool": "issue", "args": [], "out_chars": 287, "read_path": null}
+{"tool": "grep", "args": ["Trace|_print_Tr", "sympy/printing"], "out_chars": 1256, "read_path": null}
+{"tool": "grep", "args": ["def |class ", "sympy/matrices/expressions/trace.py"], "out_chars": 534, "read_path": null}

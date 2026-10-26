@@ -1,0 +1,2 @@
+{"tool": "issue", "args": [], "out_chars": 3397, "read_path": null}
+{"tool": "read", "args": ["weasyprint/layout/table.py", "770", "830"], "out_chars": 3084, "read_path": "weasyprint/layout/table.py"}

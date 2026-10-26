@@ -1,0 +1,2 @@
+{"tool": "issue", "args": [], "out_chars": 2297, "read_path": null}
+{"tool": "grep", "args": ["_eval_expand_tensorproduct", "sympy/physics/quantum"], "out_chars": 197, "read_path": null}

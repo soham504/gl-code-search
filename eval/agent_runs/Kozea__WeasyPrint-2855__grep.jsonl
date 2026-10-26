@@ -1,0 +1,3 @@
+{"tool": "issue", "args": [], "out_chars": 1611, "read_path": null}
+{"tool": "grep", "args": ["-i", "InlineFlexBox|inline-flex|blockif", "weasyprint"], "out_chars": 1194, "read_path": null}
+{"tool": "read", "args": ["weasyprint/formatting_structure/build.py", "985", "1080"], "out_chars": 3768, "read_path": "weasyprint/formatting_structure/build.py"}

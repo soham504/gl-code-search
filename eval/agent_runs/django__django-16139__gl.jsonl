@@ -1,0 +1,2 @@
+{"tool": "issue", "args": [], "out_chars": 1412, "read_path": null}
+{"tool": "grep", "args": ["format\\(\"../password/\"\\)"], "out_chars": 109, "read_path": null}

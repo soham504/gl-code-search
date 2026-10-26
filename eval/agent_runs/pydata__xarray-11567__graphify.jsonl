@@ -1,0 +1,5 @@
+{"tool": "issue", "args": [], "out_chars": 4558, "read_path": null}
+{"tool": "read", "args": ["xarray/namedarray/parallelcompat.py", "320", "380"], "out_chars": 2376, "read_path": "xarray/namedarray/parallelcompat.py"}
+{"tool": "read", "args": ["xarray/namedarray/utils.py", "185", "240"], "out_chars": 2243, "read_path": "xarray/namedarray/utils.py"}
+{"tool": "read", "args": ["xarray/namedarray/core.py", "800", "860"], "out_chars": 2840, "read_path": "xarray/namedarray/core.py"}
+{"tool": "read", "args": ["xarray/namedarray/daskmanager.py", "285", "300"], "out_chars": 578, "read_path": "xarray/namedarray/daskmanager.py"}

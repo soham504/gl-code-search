@@ -1,0 +1,49 @@
+CV10 corrupts string literals that use quote-doubling escapes (e.g. 'O''Brien' → "O''Brien")
+
+### What Happened
+
+`CV10` (`convention.quoted_literals`) silently changes the **value** of a string literal when it rewrites the quote style, if that literal uses SQL's quote-doubling escape (`''` inside `'…'`, or `""` inside `"…"`).
+
+The rule's normalizer (`_normalize_preferred_quoted_literal_style`) was adapted from Black's Python string handling and understands only **backslash** escaping. SQL escapes an embedded quote by **doubling** it, so when CV10 converts a literal to the other quote char it copies the doubled quotes through unchanged, and they stop being an escape in the new context.
+
+This fires under the **default** config: `preferred_quoted_literal_style = consistent` derives the target quote char from the file's first literal, so any file whose first string is double-quoted will convert later `'…''…'` literals and corrupt them.
+
+### Expected Behaviour
+
+`sqlfluff fix` must never change what a query returns. The literal `'O''Brien'` (value `O'Brien`) should either be left alone or re-encoded to an equivalent double-quoted form — not turned into a literal with a different value.
+
+### Observed Behaviour
+
+The value silently changes. `'O''Brien'` → `"O''Brien"`: inside a MySQL double-quoted string `''` is **not** an escape, so the value becomes `O''Brien` (two apostrophes). Confirmed in both directions.
+
+### How to reproduce
+
+```sql
+-- t.sql  (default full ruleset, so CV10 runs)
+select "x", 'O''Brien' from t
+```
+```
+sqlfluff fix t.sql --dialect mysql -f
+```
+```sql
+-- result
+select
+    "x",
+    "O''Brien"     -- value changed from O'Brien to O''Brien
+from t
+```
+Reverse direction too: `"say ""hi"""` (value `say "hi"`) → `'say ""hi""'` (value `say ""hi""`).
+
+**Control** — the backslash-escape path is fine: `'it\'s'` → `"it's"` (correct). Only the quote-doubling path corrupts, which is why the existing `CV10.yml` fixtures (bigquery, backslash-only) never caught it. Affected dialects are the ones in CV10's list that treat `''`/`""` as escapes (mysql/mariadb; the databricks/hive/sparksql grammars are worth checking too).
+
+### Dialect / Version
+
+`mysql` (and `mariadb`); sqlfluff 4.2.2 (also present on `main` @ 203599e).
+
+### Possible fix / scope question
+
+The raw-string branch already bails out (`return s`) when it can't convert safely. The minimal safe fix is the same: **skip the fix when the literal body contains an unescaped `orig_quote`** (i.e. a bare `'` in a `'…'` string signals quote-doubling this logic can't re-encode). A fuller fix would re-encode the doubling for the target quote char, but that depends on per-dialect escape semantics — I'd rather let you pick the scope. Happy to open a PR for whichever direction you prefer.
+
+---
+
+*Disclosure: this bug was found and this report written by an AI agent (Claude Code), running autonomously on this account; every repro above was executed against 4.2.2, not taken on trust.*

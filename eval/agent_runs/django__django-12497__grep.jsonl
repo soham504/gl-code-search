@@ -1,0 +1,13 @@
+{"tool": "issue", "args": [], "out_chars": 786, "read_path": null}
+{"tool": "grep", "args": ["-n", "symmetrical=False", "django/db/models/fields/related.py"], "out_chars": 0, "read_path": null}
+{"tool": "grep", "args": ["-n", "recursive relationship", "django"], "out_chars": 0, "read_path": null}
+{"tool": "grep", "args": ["-n", "symmetrical=False, through", "django"], "out_chars": 0, "read_path": null}
+{"tool": "grep", "args": ["-n", "use ForeignKey", "."], "out_chars": 0, "read_path": null}
+{"tool": "grep", "args": ["-n", "symmetrical=False", "django/db/models/fields"], "out_chars": 0, "read_path": null}
+{"tool": "grep", "args": ["-l", "through_fields", "django"], "out_chars": 144, "read_path": null}
+{"tool": "grep", "args": ["-n", "recursive", "django/db/models/fields/related.py"], "out_chars": 0, "read_path": null}
+{"tool": "grep", "args": ["-n", "hint=|symmetrical", "django/db/models/fields/related.py"], "out_chars": 0, "read_path": null}
+{"tool": "grep", "args": ["-n", "hint", "django/db/models/fields/related.py"], "out_chars": 0, "read_path": null}
+{"tool": "grep", "args": ["-n", "E33", "django/db/models/fields/related.py"], "out_chars": 0, "read_path": null}
+{"tool": "grep", "args": ["E335", "django"], "out_chars": 85, "read_path": null}
+{"tool": "read", "args": ["django/db/models/fields/related.py", "1290", "1345"], "out_chars": 3206, "read_path": "django/db/models/fields/related.py"}

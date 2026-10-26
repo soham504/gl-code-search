@@ -1,0 +1,19 @@
+{"tool": "issue", "args": [], "out_chars": 1545, "read_path": null}
+{"tool": "read", "args": ["beetsplug/permissions.py", "1", "150"], "out_chars": 5119, "read_path": "beetsplug/permissions.py"}
+{"tool": "grep", "args": ["-n", "def sanitize_path|def legalize_path|def _legalize_stage|def truncate_path|def destination", "beets"], "out_chars": 0, "read_path": null}
+{"tool": "grep", "args": ["def (sanitize_path|legalize_path|_legalize_stage|truncate_path|destination)", "beets"], "out_chars": 317, "read_path": null}
+{"tool": "read", "args": ["beets/util/__init__.py", "640", "790"], "out_chars": 6185, "read_path": "beets/util/__init__.py"}
+{"tool": "read", "args": ["beets/library/models.py", "1240", "1330"], "out_chars": 3881, "read_path": "beets/library/models.py"}
+{"tool": "grep", "args": ["os.sep|altsep|for_path", "beets/dbcore/db.py"], "out_chars": 769, "read_path": null}
+{"tool": "read", "args": ["beets/dbcore/db.py", "100", "175"], "out_chars": 2871, "read_path": "beets/dbcore/db.py"}
+{"tool": "grep", "args": ["-n", "def (normpath|syspath|bytestring_path|components|ancestry)", "beets/util/__init__.py"], "out_chars": 0, "read_path": null}
+{"tool": "grep", "args": ["def (normpath|syspath|bytestring_path|components|ancestry)", "beets/util/__init__.py"], "out_chars": 345, "read_path": null}
+{"tool": "read", "args": ["beets/util/__init__.py", "170", "215"], "out_chars": 1456, "read_path": "beets/util/__init__.py"}
+{"tool": "read", "args": ["beets/util/__init__.py", "355", "445"], "out_chars": 3262, "read_path": "beets/util/__init__.py"}
+{"tool": "grep", "args": ["-n", "def asciify_path", "beets"], "out_chars": 0, "read_path": null}
+{"tool": "grep", "args": ["def asciify_path", "beets"], "out_chars": 63, "read_path": null}
+{"tool": "read", "args": ["beets/util/__init__.py", "1010", "1045"], "out_chars": 1707, "read_path": "beets/util/__init__.py"}
+{"tool": "find", "args": ["config_default*"], "out_chars": 27, "read_path": null}
+{"tool": "grep", "args": ["def (_get_replacements|get_replacements)|replacements =", "beets"], "out_chars": 337, "read_path": null}
+{"tool": "read", "args": ["beets/library/library.py", "70", "100"], "out_chars": 1258, "read_path": "beets/library/library.py"}
+{"tool": "grep", "args": ["path_sep_replace|replace", "beets/config_default.yaml"], "out_chars": 0, "read_path": null}

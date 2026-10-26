@@ -1,0 +1,16 @@
+# Copy to .github/workflows/issue-triage.yml in the repository you want triaged.
+name: issue triage
+on:
+  issues:
+    types: [opened]
+permissions:
+  issues: write
+  contents: read
+jobs:
+  suggest-files:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4       # the repository being triaged
+      - uses: soham504/gl-code-search@main
+        with:
+          k: "5"

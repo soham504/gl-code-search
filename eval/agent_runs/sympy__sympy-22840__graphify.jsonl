@@ -1,0 +1,3 @@
+{"tool": "issue", "args": [], "out_chars": 3369, "read_path": null}
+{"tool": "grep", "args": ["-n", "def _find_repeated|is_Atom or|MatrixSymbol", "sympy/simplify/cse_main.py"], "out_chars": 0, "read_path": null}
+{"tool": "grep", "args": ["_find_repeated|is_Atom|MatrixSymbol", "sympy/simplify/cse_main.py"], "out_chars": 643, "read_path": null}

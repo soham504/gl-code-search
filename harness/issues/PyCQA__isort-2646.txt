@@ -1,0 +1,52 @@
+Sorting a literal drops a trailing comment, and raises if the comment contains "="
+
+Sorting a literal rebuilds it from its parsed value, so anything written after the value on that line is not carried over. Two separate symptoms, both on `main` at `131f4adc` and both independent of any open PR.
+
+### 1. A trailing comment is silently deleted
+
+```python
+>>> isort.code('__all__ = ["b", "a"]  # noqa: F401\n\nx = 1\n', sort_reexports=True)
+'__all__ = ["a", "b"]\n\nx = 1\n'
+```
+
+The same happens through `# isort: list`, so it is the shared literal path rather than the reexport path:
+
+```python
+>>> isort.code('# isort: list\n__all__ = ["b", "a"]  # exports\n\nx = 1\n')
+'# isort: list\n__all__ = ["a", "b"]\n\nx = 1\n'
+```
+
+A dropped comment on `__all__` is usually a directive, which makes this more than cosmetic:
+
+| input | result |
+|---|---|
+| `# noqa: F401` | removed, so the lint error it suppressed comes back |
+| `# type: ignore` | removed, so a previously clean mypy run can start failing |
+
+The file still runs, and nothing is reported, so it surfaces later as a CI failure in an unrelated job.
+
+### 2. A trailing comment containing `=` raises
+
+```python
+>>> isort.code('# isort: list\n__all__ = ["b", "a"]  # pylint: disable=invalid-name\n\nx = 1\n')
+ValueError: too many values to unpack (expected 2)
+```
+
+`isort/literal.py:42` splits the whole section on every `=`:
+
+```python
+variable_name, literal = code.split("=")
+```
+
+so a second `=` anywhere on the line, including inside a comment, breaks the unpack. `# pylint: disable=...`, `# type: ignore[assignment]` with a default, or a URL in a comment all reach it. `code.split("=", 1)` fixes this half.
+
+### Notes
+
+Found while working on #2627, which fixes a different failure on the same seam (a statement or standalone comment following the literal). Both cases above are unchanged by that PR, in either direction, so this is a separate report rather than a review comment.
+
+@Manny7717 offered to look at the trailing-comment case if it were filed.
+
+Reproduced on `main` at `131f4adc`, CPython 3.13.
+
+---
+AI-assisted: written with Claude Code, reproduced and tested by me before filing.

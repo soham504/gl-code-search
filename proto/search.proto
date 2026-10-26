@@ -1,0 +1,65 @@
+syntax = "proto3";
+
+package groundline.v1;
+
+option go_package = "github.com/soham504/gl-code-search/go/gen/groundlinev1";
+
+// Search is served by each index shard; the gateway fans out and merges.
+service Search {
+  rpc Search(SearchRequest) returns (SearchResponse);
+}
+
+// Verify checks each claim of a generated answer against its cited passage.
+service Verify {
+  rpc VerifyAnswer(VerifyRequest) returns (VerifyResponse);
+}
+
+message Document {
+  string id = 1;
+  string title = 2;
+  string url = 3;
+  string body = 4;
+  // "web", "forum" or "transcript": forums and transcripts were the blind
+  // spot in the IMC 2026 AI Overviews audit.
+  string source = 5;
+  int64 published_unix = 6;
+}
+
+message SearchRequest {
+  string query = 1;
+  int32 k = 2;
+}
+
+message Hit {
+  Document doc = 1;
+  double score = 2;
+  string passage = 3;
+}
+
+message SearchResponse {
+  repeated Hit hits = 1;
+  // Query performance prediction: the gate abstains from answering below a threshold.
+  double qpp_score = 2;
+}
+
+message Claim {
+  string text = 1;
+  string cited_doc_id = 2;
+}
+
+enum Verdict {
+  VERDICT_UNSPECIFIED = 0;
+  SUPPORTED = 1;
+  NOT_FOUND = 2;
+  CONTRADICTED = 3;
+  UNVERIFIABLE = 4;
+}
+
+message VerifyRequest {
+  repeated Claim claims = 1;
+  repeated Hit evidence = 2;
+}
+
+message VerifyResponse {
+  repeated Verdict verdicts = 1;
+}

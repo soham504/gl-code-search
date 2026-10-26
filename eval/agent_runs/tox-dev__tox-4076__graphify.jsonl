@@ -1,0 +1,5 @@
+{"tool": "issue", "args": [], "out_chars": 5601, "read_path": null}
+{"tool": "grep", "args": ["-n", "marker", "src/tox/config/set_env.py"], "out_chars": 0, "read_path": null}
+{"tool": "grep", "args": ["-l", "marker", "src/tox"], "out_chars": 467, "read_path": null}
+{"tool": "read", "args": ["src/tox/config/set_env.py", "1", "150"], "out_chars": 7235, "read_path": "src/tox/config/set_env.py"}
+{"tool": "read", "args": ["src/tox/config/set_env.py", "150", "300"], "out_chars": 4613, "read_path": "src/tox/config/set_env.py"}

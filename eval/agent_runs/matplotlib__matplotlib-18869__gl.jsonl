@@ -1,0 +1,2 @@
+{"tool": "issue", "args": [], "out_chars": 1680, "read_path": null}
+{"tool": "grep", "args": ["__version__|def __getattr__", "lib/matplotlib/__init__.py"], "out_chars": 879, "read_path": null}

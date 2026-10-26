@@ -1,0 +1,6 @@
+{"tool": "issue", "args": [], "out_chars": 889, "read_path": null}
+{"tool": "grep", "args": ["-n", "Http404\\|Resolver404", "django/views/debug.py"], "out_chars": 0, "read_path": null}
+{"tool": "grep", "args": ["-n", "to_python\\|except ValueError", "django/urls/resolvers.py"], "out_chars": 0, "read_path": null}
+{"tool": "grep", "args": ["Resolver404", "django/views/debug.py"], "out_chars": 119, "read_path": null}
+{"tool": "grep", "args": ["to_python", "django/urls/resolvers.py"], "out_chars": 89, "read_path": null}
+{"tool": "read", "args": ["django/views/debug.py", "470", "500"], "out_chars": 1268, "read_path": "django/views/debug.py"}

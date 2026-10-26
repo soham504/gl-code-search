@@ -1,0 +1,181 @@
+{"claim_id": "scifact:50:0", "verdict": "supported", "rationale": "Passage states Aire is inducibly expressed in human and mouse tumor keratinocytes."}
+{"claim_id": "scifact:50:1", "verdict": "supported", "rationale": "Passage states Aire expression is K17-dependent and K17 is upregulated in many epithelial tumors."}
+{"claim_id": "scifact:50:2", "verdict": "supported", "rationale": "Passage states Aire is required for timely onset of Gli2-induced skin tumorigenesis in mice."}
+{"claim_id": "scifact:50:3", "verdict": "supported", "rationale": "Passage describes Aire turning on tissue-specific antigens in mTECs for negative selection."}
+{"claim_id": "scifact:50:4", "verdict": "supported", "rationale": "Passage states Aire protein has been detected in peripheral lymphoid organs."}
+{"claim_id": "scifact:216:0", "verdict": "supported", "rationale": "Passage states CX3CR1 signaling promoted TH2 survival in inflamed lungs."}
+{"claim_id": "scifact:216:1", "verdict": "supported", "rationale": "Passage states a fraction of CD4+ T cells in asthmatics express CX3CR1."}
+{"claim_id": "scifact:216:2", "verdict": "supported", "rationale": "Passage states CX3CR1-deficient or blocked mice show reduced lung disease."}
+{"claim_id": "scifact:216:3", "verdict": "supported", "rationale": "Passage states WT CD4+ T cell transfer restored cardinal features of asthma."}
+{"claim_id": "scifact:216:4", "verdict": "supported", "rationale": "Passage states Blimp-1 reinforces Th2 differentiation."}
+{"claim_id": "scifact:1339:0", "verdict": "not_found", "rationale": "Results on traumatic procedures are truncated; passage does not state reduction."}
+{"claim_id": "scifact:1339:1", "verdict": "supported", "rationale": "Passage describes this systematic review and meta-analysis of RCTs."}
+{"claim_id": "scifact:1339:2", "verdict": "supported", "rationale": "Passage reports reduced risk of failed procedures with ultrasound (RR 0.21)."}
+{"claim_id": "scifact:1339:3", "verdict": "not_found", "rationale": "Results for insertion attempts and redirections are not present in the truncated passage."}
+{"claim_id": "scifact:1339:4", "verdict": "supported", "rationale": "Passage states diagnostic LPs are associated with adverse events and reviews techniques to reduce them."}
+{"claim_id": "scifact:544:0", "verdict": "not_found", "rationale": "Passage mentions interferon and IFI(T) but not IFIT1's binding/sequestering mechanism."}
+{"claim_id": "scifact:544:1", "verdict": "supported", "rationale": "Passage states cytoplasmic viruses lack host capping access and evolved methyltransferases."}
+{"claim_id": "scifact:544:2", "verdict": "supported", "rationale": "Passage states 2'-O methylation mimics cellular mRNA to evade innate immune restriction."}
+{"claim_id": "scifact:544:3", "verdict": "supported", "rationale": "Passage states such mutant viruses are eliminated and used as attenuated JEV vaccine."}
+{"claim_id": "scifact:544:4", "verdict": "supported", "rationale": "Passage states coronavirus 2'-O-MTase mutants induce more type I IFN dependent on Mda5."}
+{"claim_id": "scifact:975:0", "verdict": "not_found", "rationale": "Passage does not discuss cytokine cascades of secondary mediators generally."}
+{"claim_id": "scifact:975:1", "verdict": "supported", "rationale": "Passage reports curcumin attenuated IL-1beta-induced inflammatory response in FLSs."}
+{"claim_id": "scifact:975:2", "verdict": "supported", "rationale": "Passage describes inflammasomes as multiprotein complexes processing IL-1beta."}
+{"claim_id": "scifact:975:3", "verdict": "not_found", "rationale": "Passage about HDL in macrophages does not mention prostaglandins, chemokines or IL-10."}
+{"claim_id": "scifact:1319:0", "verdict": "supported", "rationale": "Passage states engrafted human GPCs matured into progenitors and astrocytes in mice."}
+{"claim_id": "scifact:1319:1", "verdict": "supported", "rationale": "Passage states recipient brains had large numbers of human astrocytes."}
+{"claim_id": "scifact:1319:2", "verdict": "supported", "rationale": "Passage states engrafted glia were gap-junction-coupled and retained hominid size/pleomorphism."}
+{"claim_id": "scifact:1319:3", "verdict": "supported", "rationale": "Passage reports enhanced LTP and learning in human glial chimeric mice."}
+{"claim_id": "scifact:1319:4", "verdict": "supported", "rationale": "Passage states ES-derived precursors differentiated into neurons and astrocytes after transplant."}
+{"claim_id": "scifact:1150:0", "verdict": "supported", "rationale": "Passage title and findings state Tspan3 is required for AML development and propagation."}
+{"claim_id": "scifact:1150:1", "verdict": "supported", "rationale": "Passage states Tspan3 is a Musashi 2 target, which plays a key role in AML."}
+{"claim_id": "scifact:1150:2", "verdict": "supported", "rationale": "Passage states Tspan3 deletion impaired LSC self-renewal and propagation."}
+{"claim_id": "scifact:1150:3", "verdict": "supported", "rationale": "Passage states Tspan3 deletion markedly improved survival in AML mouse models."}
+{"claim_id": "scifact:1150:4", "verdict": "supported", "rationale": "Passage describes t(8;21) AML with an AML1-ETO fusion transcript."}
+{"claim_id": "scifact:569:0", "verdict": "supported", "rationale": "Passage states adult tissues contain a predominance of memory T cells."}
+{"claim_id": "scifact:569:1", "verdict": "not_found", "rationale": "Passage supports naive predominance early but not accumulation with antigen exposure."}
+{"claim_id": "scifact:569:2", "verdict": "not_found", "rationale": "Passage says some memory T cells become tissue-resident, not that many tissue memory cells are TRM."}
+{"claim_id": "scifact:569:3", "verdict": "supported", "rationale": "Passage states a local macrophage chemokine network maintains vaginal CD4 TRM."}
+{"claim_id": "scifact:218:0", "verdict": "supported", "rationale": "Passage title states CX3CR1 is required for airway inflammation."}
+{"claim_id": "scifact:218:1", "verdict": "supported", "rationale": "Passage states deficient or blocked mice show reduced lung disease."}
+{"claim_id": "scifact:218:2", "verdict": "supported", "rationale": "Passage states CX3CR1 promotes T helper survival and maintenance in inflamed lung."}
+{"claim_id": "scifact:218:3", "verdict": "not_found", "rationale": "Passage supports CD11b+ DCs inducing Th2 immunity but does not state asthma is Th2-dominated."}
+{"claim_id": "scifact:218:4", "verdict": "supported", "rationale": "Passage states IL-33 promotes asthma pathogenesis by expanding TH2 cells."}
+{"claim_id": "scifact:1104:0", "verdict": "not_found", "rationale": "Mortality results comparing NOACs and warfarin are not in the truncated passage."}
+{"claim_id": "scifact:1104:1", "verdict": "supported", "rationale": "Passage describes the 141,311-patient cohort at 1662 GWTG-Stroke hospitals 2013-2016."}
+{"claim_id": "scifact:1104:2", "verdict": "not_found", "rationale": "Mortality comparisons are not present in the truncated passage."}
+{"claim_id": "scifact:1104:3", "verdict": "supported", "rationale": "Passage reports patients with thromboembolic events had lower DOAC levels."}
+{"claim_id": "scifact:72:0", "verdict": "not_found", "rationale": "Passage does not state the organizer secretes Chordin or an activator-inhibitor pair."}
+{"claim_id": "scifact:72:1", "verdict": "supported", "rationale": "Passage title states this directly."}
+{"claim_id": "scifact:72:2", "verdict": "supported", "rationale": "Passage states ADMP transcription in the organizer is activated at low BMP levels."}
+{"claim_id": "scifact:72:3", "verdict": "supported", "rationale": "Passage states quadruple knockdown eliminates self-regulation with ubiquitous neural induction."}
+{"claim_id": "scifact:72:4", "verdict": "supported", "rationale": "Passage describes Chordin as BMP antagonist whose degradation enables scaling."}
+{"claim_id": "scifact:1385:0", "verdict": "supported", "rationale": "Passage states cSMAC formation influences stimulatory potency."}
+{"claim_id": "scifact:1385:1", "verdict": "supported", "rationale": "Passage states the weak-agonist peptide stimulated more proliferation than wild type."}
+{"claim_id": "scifact:1385:2", "verdict": "supported", "rationale": "Passage states inability to form cSMAC could underlie increased proliferation."}
+{"claim_id": "scifact:1385:3", "verdict": "supported", "rationale": "Passage states signaling sustained in microclusters and terminated in cSMAC."}
+{"claim_id": "scifact:1385:4", "verdict": "supported", "rationale": "Passage states cSMAC is enriched in lysobisphosphatidic acid for degradation sorting."}
+{"claim_id": "scifact:1200:0", "verdict": "not_found", "rationale": "Passage is about spindle orientation and does not mention ML-SA1 or TRPML."}
+{"claim_id": "scifact:1200:1", "verdict": "not_found", "rationale": "Passage is about p53 nucleosome binding, not ML-SA1."}
+{"claim_id": "scifact:1200:2", "verdict": "not_found", "rationale": "Passage is about DNA-PK, not ML-SA1 or TRPML."}
+{"claim_id": "scifact:575:0", "verdict": "not_found", "rationale": "Passage does not mention aneuploidy."}
+{"claim_id": "scifact:575:1", "verdict": "supported", "rationale": "Passage reports 157 industrial yeasts in five sublineages separate from wild strains."}
+{"claim_id": "scifact:575:2", "verdict": "not_found", "rationale": "Passage does not mention polyploidy or aneuploidy."}
+{"claim_id": "scifact:575:3", "verdict": "supported", "rationale": "Passage states CenH3 Cse4 is essential and its phosphorylation regulates segregation."}
+{"claim_id": "scifact:1382:0", "verdict": "not_found", "rationale": "Passage does not mention PKCzeta."}
+{"claim_id": "scifact:1382:1", "verdict": "supported", "rationale": "Passage states cancer cells show increased use of glutamine to fuel anabolic processes."}
+{"claim_id": "scifact:1382:2", "verdict": "supported", "rationale": "Passage describes a Kras-regulated non-canonical glutamine pathway required for PDAC growth."}
+{"claim_id": "scifact:1382:3", "verdict": "supported", "rationale": "Passage states glutaminolysis activates Rag-mTORC1 and regulates cell growth."}
+{"claim_id": "scifact:1382:4", "verdict": "supported", "rationale": "Passage states SRC-2 drives glutamine-dependent lipogenesis supporting survival and metastasis."}
+{"claim_id": "scifact:1019:0", "verdict": "supported", "rationale": "Passage describes HKs phosphorylating cognate RRs to sense signals."}
+{"claim_id": "scifact:1019:1", "verdict": "supported", "rationale": "Passage states these reactions are generally highly specific."}
+{"claim_id": "scifact:1019:2", "verdict": "supported", "rationale": "Passage states specificity is tightly controlled to prevent crosstalk."}
+{"claim_id": "scifact:1019:3", "verdict": "not_found", "rationale": "Passage does not discuss kinetic preference or faster cognate phosphotransfer."}
+{"claim_id": "scifact:1019:4", "verdict": "supported", "rationale": "Passage states specificity residues dictate binding affinity."}
+{"claim_id": "scifact:51:0", "verdict": "supported", "rationale": "Passage states ALDH1 expression correlated with poor prognosis."}
+{"claim_id": "scifact:51:1", "verdict": "supported", "rationale": "Passage states high-ALDH mammary cells have stem/progenitor properties."}
+{"claim_id": "scifact:51:2", "verdict": "supported", "rationale": "Passage title states ALDH1 marks normal and malignant mammary stem cells."}
+{"claim_id": "scifact:51:3", "verdict": "supported", "rationale": "Passage title calls ALDH1 a predictor of poor clinical outcome."}
+{"claim_id": "scifact:51:4", "verdict": "supported", "rationale": "Passage states high TAM infiltration indicated worse survival in node-negative breast cancer."}
+{"claim_id": "scifact:967:0", "verdict": "not_found", "rationale": "Passage describes CK-0944636 and CK-0993548, not CK-666."}
+{"claim_id": "scifact:967:1", "verdict": "not_found", "rationale": "Passage notes the lack of reversible inhibitors but does not state these compounds are reversible."}
+{"claim_id": "scifact:967:2", "verdict": "supported", "rationale": "Passage states CK666 dramatically altered lamellipodial actin architecture."}
+{"claim_id": "scifact:967:3", "verdict": "supported", "rationale": "Passage states inhibition changed suspended cell shape and spreading."}
+{"claim_id": "scifact:967:4", "verdict": "supported", "rationale": "Passage states WAVE2 relays Rac signals to Arp2/3 for lamellipodia protrusion."}
+{"claim_id": "scifact:768:0", "verdict": "not_found", "rationale": "Passage does not describe TPMT methylation chemistry or catabolic inactivation."}
+{"claim_id": "scifact:768:1", "verdict": "supported", "rationale": "Passage states leukopenia is associated with TPMT genetic variation."}
+{"claim_id": "scifact:768:2", "verdict": "supported", "rationale": "Passage reports a common NUDT15 variant strongly associated in Koreans, also in Europeans."}
+{"claim_id": "scifact:768:3", "verdict": "supported", "rationale": "Passage names TGNs as active metabolites whose RBC levels correlated with EFS in ALL."}
+{"claim_id": "scifact:659:0", "verdict": "not_found", "rationale": "Passage does not mention ivermectin or albendazole."}
+{"claim_id": "scifact:659:1", "verdict": "supported", "rationale": "Passage states substantive reductions in lymphatic filariasis prevalence and incidence."}
+{"claim_id": "scifact:659:2", "verdict": "not_found", "rationale": "Passage does not mention the named drugs or combined packages."}
+{"claim_id": "scifact:659:3", "verdict": "not_found", "rationale": "Passage does not mention ivermectin."}
+{"claim_id": "scifact:1272:0", "verdict": "not_found", "rationale": "Passage says b-wave reflects postreceptoral activity but does not name ON-bipolar cells."}
+{"claim_id": "scifact:1272:1", "verdict": "supported", "rationale": "Passage states nob mice lack b-wave due to compromised photoreceptor-second-order transmission."}
+{"claim_id": "scifact:1272:2", "verdict": "supported", "rationale": "Passage states nob is a model for X-linked CSNB."}
+{"claim_id": "scifact:1272:3", "verdict": "supported", "rationale": "Passage describes a-wave as photoreceptor-mediated and b-wave as postreceptoral."}
+{"claim_id": "scifact:619:0", "verdict": "supported", "rationale": "Passage reports stromal depletion increased vascularity and gemcitabine delivery with disease stabilization."}
+{"claim_id": "scifact:619:1", "verdict": "supported", "rationale": "Passage states PDA tumors poorly perfused/vascularized and delivery contributes to chemoresistance."}
+{"claim_id": "scifact:619:2", "verdict": "supported", "rationale": "Passage reports Hedgehog inhibition depleted stroma, increased vessel density and gemcitabine levels."}
+{"claim_id": "scifact:619:3", "verdict": "supported", "rationale": "Passage states matrix rigidity modulated lapatinib resistance via YAP/TAZ."}
+{"claim_id": "scifact:1362:0", "verdict": "not_found", "rationale": "Passage does not compare venule and arteriole diameters."}
+{"claim_id": "scifact:1362:1", "verdict": "not_found", "rationale": "Passage does not discuss venule wall structure."}
+{"claim_id": "scifact:1362:2", "verdict": "not_found", "rationale": "Passage does not describe arteriole wall thickness or muscularity."}
+{"claim_id": "scifact:1362:3", "verdict": "supported", "rationale": "Passage shows NO-mediated cerebral arteriole dilation largely inhibited by sGC blocker."}
+{"claim_id": "scifact:1049:0", "verdict": "supported", "rationale": "Passage notes ubiquitous ribosomes yet symptomatically distinct disorders, e.g. craniofacial defects."}
+{"claim_id": "scifact:1049:1", "verdict": "supported", "rationale": "Passage states this directly."}
+{"claim_id": "scifact:1049:2", "verdict": "supported", "rationale": "Passage states RPS19 and RP gene mutations cause DBA, a hypoplastic anemia."}
+{"claim_id": "scifact:1049:3", "verdict": "supported", "rationale": "Passage lists these syndromes as ribosome-biogenesis disorders with specific phenotypes."}
+{"claim_id": "scifact:1049:4", "verdict": "supported", "rationale": "Passage reports nol11 knockdown causes abnormal craniofacial development."}
+{"claim_id": "scifact:1316:0", "verdict": "not_found", "rationale": "Passage does not describe naive UCB T cells acquiring memory phenotype."}
+{"claim_id": "scifact:1316:1", "verdict": "supported", "rationale": "Passage states this directly."}
+{"claim_id": "scifact:1316:2", "verdict": "supported", "rationale": "Passage states this directly."}
+{"claim_id": "scifact:1316:3", "verdict": "supported", "rationale": "Passage reports comparable cumulative incidence (UCB 90% vs BM 81%, P=.12)."}
+{"claim_id": "scifact:163:0", "verdict": "supported", "rationale": "Passage states this directly."}
+{"claim_id": "scifact:163:1", "verdict": "not_found", "rationale": "Passage does not name depression or binge eating in the visible text."}
+{"claim_id": "scifact:163:2", "verdict": "not_found", "rationale": "Postoperative depression findings are not in the truncated passage."}
+{"claim_id": "scifact:163:3", "verdict": "supported", "rationale": "Passage reports psychological improvements maintained up to 4 years."}
+{"claim_id": "scifact:163:4", "verdict": "supported", "rationale": "Passage recommends behavioral health clinicians before and after surgery."}
+{"claim_id": "scifact:130:0", "verdict": "supported", "rationale": "Passage states OA articles are more immediately recognized and cited."}
+{"claim_id": "scifact:130:1", "verdict": "supported", "rationale": "Passage states Eysenbach's PLoS Biology article found this."}
+{"claim_id": "scifact:130:2", "verdict": "supported", "rationale": "Passage states the editors believe OA speeds scientific dialog."}
+{"claim_id": "scifact:130:3", "verdict": "not_found", "rationale": "Passage does not discuss field variation or self-selection."}
+{"claim_id": "scifact:729:0", "verdict": "supported", "rationale": "Passage states SHP2 signal-deficient mice displayed lymphadenopathy."}
+{"claim_id": "scifact:729:1", "verdict": "supported", "rationale": "Passage states this directly."}
+{"claim_id": "scifact:729:2", "verdict": "supported", "rationale": "Passage states enhanced acute phase reaction."}
+{"claim_id": "scifact:729:3", "verdict": "supported", "rationale": "Passage states STAT3-deficient mice died perinatally; title notes reciprocal roles."}
+{"claim_id": "scifact:729:4", "verdict": "supported", "rationale": "Passage states constitutive SHP-2 activation causes NS and perturbs cell-fate decisions."}
+{"claim_id": "scifact:914:0", "verdict": "not_found", "rationale": "Passage does not mention RXR heterodimerization."}
+{"claim_id": "scifact:914:1", "verdict": "supported", "rationale": "Passage reports fenofibrate decreased melanoma metastatic potential via Akt down-regulation."}
+{"claim_id": "scifact:914:2", "verdict": "supported", "rationale": "Passage states rosiglitazone reduced disease severity in Cftr-deficient mice."}
+{"claim_id": "scifact:914:3", "verdict": "supported", "rationale": "Passage describes ligand-activated retinoid receptors recruiting coactivators."}
+{"claim_id": "scifact:914:4", "verdict": "supported", "rationale": "Passage states LXR/RXR activation prevents bacterial-induced macrophage apoptosis."}
+{"claim_id": "scifact:478:0", "verdict": "supported", "rationale": "Passage states this directly."}
+{"claim_id": "scifact:478:1", "verdict": "supported", "rationale": "Passage states this directly."}
+{"claim_id": "scifact:478:2", "verdict": "supported", "rationale": "Passage states golli-deficient T cells were hyperproliferative."}
+{"claim_id": "scifact:478:3", "verdict": "supported", "rationale": "Passage states CRAC Ca2+ entry activates NFAT to promote immune response."}
+{"claim_id": "scifact:478:4", "verdict": "supported", "rationale": "Passage states Golli is expressed in primary lymphoid organs from e16.5."}
+{"claim_id": "scifact:728:0", "verdict": "not_found", "rationale": "Passage does not mention Ly6C."}
+{"claim_id": "scifact:728:1", "verdict": "supported", "rationale": "Passage title and text state this."}
+{"claim_id": "scifact:728:2", "verdict": "supported", "rationale": "Passage states the CX3CR1lo CCR2+ Gr1+ subset is recruited to inflamed tissues."}
+{"claim_id": "scifact:728:3", "verdict": "supported", "rationale": "Passage states CX3CR1hi subset has CX3CR1-dependent recruitment to noninflamed tissues."}
+{"claim_id": "scifact:728:4", "verdict": "not_found", "rationale": "Passage finding is greater Ly6C+ recruitment in KLF2 hemizygous vs WT mice, not as stated."}
+{"claim_id": "scifact:1187:0", "verdict": "supported", "rationale": "Passage states this directly."}
+{"claim_id": "scifact:1187:1", "verdict": "supported", "rationale": "Passage describes YAP as coactivator whose gene induction is mediated by TEAD."}
+{"claim_id": "scifact:1187:2", "verdict": "supported", "rationale": "Passage states TEAD is essential for these YAP functions."}
+{"claim_id": "scifact:1187:3", "verdict": "supported", "rationale": "Passage identifies CTGF as a direct YAP target gene via TEAD."}
+{"claim_id": "scifact:1187:4", "verdict": "supported", "rationale": "Passage states p38-induced TEAD cytoplasmic translocation suppresses YAP-driven growth."}
+{"claim_id": "scifact:742:0", "verdict": "supported", "rationale": "Passage found no effect of prior macrolide use on first-time AMI risk."}
+{"claim_id": "scifact:742:1", "verdict": "not_found", "rationale": "Passage does not mention Chlamydia pneumoniae."}
+{"claim_id": "scifact:742:2", "verdict": "supported", "rationale": "Passage reports lower odds of tetracycline or quinolone use among cases."}
+{"claim_id": "scifact:742:3", "verdict": "supported", "rationale": "Passage states no effect for these antibiotic classes."}
+{"claim_id": "scifact:742:4", "verdict": "not_found", "rationale": "Passage does not mention randomized trials of azithromycin."}
+{"claim_id": "scifact:100:0", "verdict": "supported", "rationale": "Passage states all HSCs segregate chromosomes randomly."}
+{"claim_id": "scifact:100:1", "verdict": "supported", "rationale": "Passage describes the immortal strand hypothesis as stated."}
+{"claim_id": "scifact:100:2", "verdict": "supported", "rationale": "Passage title and findings state this in mice."}
+{"claim_id": "scifact:100:3", "verdict": "supported", "rationale": "Passage states this directly."}
+{"claim_id": "scifact:502:0", "verdict": "not_found", "rationale": "Passage does not address structural/logistical elements in crowded facilities."}
+{"claim_id": "scifact:502:1", "verdict": "supported", "rationale": "Passage states human error often depends on system failures."}
+{"claim_id": "scifact:502:2", "verdict": "not_found", "rationale": "Passage supports system design for safety but not efficiency."}
+{"claim_id": "scifact:502:3", "verdict": "not_found", "rationale": "Passage finds no clear mortality difference between teaching and nonteaching structures."}
+{"claim_id": "scifact:1221:0", "verdict": "not_found", "rationale": "Passage does not discuss metastases versus primary tumours."}
+{"claim_id": "scifact:1221:1", "verdict": "supported", "rationale": "Passage states p16 and p18 deletions activate cyclin/cdk and drive GBM."}
+{"claim_id": "scifact:1221:2", "verdict": "not_found", "rationale": "Passage reports frequent aberrations but not accumulation under selective pressure."}
+{"claim_id": "scifact:1221:3", "verdict": "supported", "rationale": "Passage proposes aberrant luminal progenitors as target for BRCA1 basal tumors."}
+{"claim_id": "scifact:743:0", "verdict": "supported", "rationale": "Passage found no effect of macrolide use."}
+{"claim_id": "scifact:743:1", "verdict": "supported", "rationale": "Passage states the hypothesis of bacterial infections increasing AMI risk."}
+{"claim_id": "scifact:743:2", "verdict": "supported", "rationale": "Passage reports lower odds for tetracyclines/quinolones and no effect for macrolides."}
+{"claim_id": "scifact:743:3", "verdict": "supported", "rationale": "Passage reports IL-33/ST2 reduced apoptosis and improved function after MI."}
+{"claim_id": "scifact:516:0", "verdict": "not_found", "rationale": "Results on CRP and exacerbation risk are truncated."}
+{"claim_id": "scifact:516:1", "verdict": "supported", "rationale": "Passage describes this cohort and hypothesis."}
+{"claim_id": "scifact:516:2", "verdict": "not_found", "rationale": "Results are truncated; higher risk not stated."}
+{"claim_id": "scifact:516:3", "verdict": "supported", "rationale": "Passage states history of exacerbations was the single best predictor, testing a frequent-exacerbation phenotype."}
+{"claim_id": "scifact:1332:0", "verdict": "not_found", "rationale": "Passage does not discuss TNF/IL-1 effects on IL-6 or IL-10 production."}
+{"claim_id": "scifact:1332:1", "verdict": "supported", "rationale": "Passage reports elevated IL-1beta, IL-6 and TNF-alpha with exercise."}
+{"claim_id": "scifact:1332:2", "verdict": "contradicted", "rationale": "Passage found TNF-alpha and IL-6 did not differ between cachectic and noncachectic patients."}
+{"claim_id": "scifact:1332:3", "verdict": "contradicted", "rationale": "Passage states TNF failed to modify glucose Ra or Rd; only IL-1 altered turnover."}
+{"claim_id": "scifact:637:0", "verdict": "not_found", "rationale": "Passage does not address professionals' input and homelessness reduction."}
+{"claim_id": "scifact:637:1", "verdict": "contradicted", "rationale": "Passage reports no significant impact on parental mental health."}
+{"claim_id": "scifact:637:2", "verdict": "supported", "rationale": "Passage reports persistently higher mental health problems after rehousing."}
+{"claim_id": "scifact:637:3", "verdict": "supported", "rationale": "Passage states this directly."}
+{"claim_id": "scifact:637:4", "verdict": "not_found", "rationale": "Passage does not mention Housing First or effectiveness at reducing homelessness."}

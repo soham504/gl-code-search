@@ -1,0 +1,59 @@
+Duplicated inline flex item borders
+
+When generating a PDF, a bordered inline flex element nested inside another flex layout incorrectly appears with two separated borders instead of one.
+
+As requested in #2854 a reproducer for the issue we're having
+
+With `display: flex` it looks like:
+
+<img width="200" height="200" alt="Image" src="https://github.com/user-attachments/assets/1297f653-6773-4778-b9dd-bf2f94d6b0b0" />
+
+But with `display: inline-flex` the border is drawn twice:
+
+<img width="200" height="200" alt="Image" src="https://github.com/user-attachments/assets/bab93fa1-770c-4674-9a84-98c0f94f76e2" />
+
+Reproducer script:
+
+```python
+#!/usr/bin/env -S uv run --script
+# /// script
+# requires-python = ">=3.10"
+# dependencies = [
+#   "pymupdf>=1.24.0",
+#   "weasyprint @ git+https://github.com/Kozea/WeasyPrint.git@515f6761ac8bf7005d42acfc3e5d615558829bf6",
+# ]
+# ///
+
+from pathlib import Path
+
+import pymupdf
+from weasyprint import HTML
+
+
+HTML_TEMPLATE = '''
+<style>
+  @page { size: 200px; margin: 0 }
+  body { display: flex; margin: 0 }
+  div {
+    display: DISPLAY;
+    width: 80px;
+    height: 80px;
+    padding: 20px;
+    border: 5px solid red;
+  }
+  span { width: 40px; height: 40px; background: blue }
+</style>
+<div><span></span></div>
+'''
+
+for display in ('flex', 'inline-flex'):
+    pdf_path = Path(f'{display}.pdf')
+    png_path = Path(f'{display}.png')
+
+    HTML(string=HTML_TEMPLATE.replace('DISPLAY', display)).write_pdf(pdf_path)
+    pdf = pymupdf.open(pdf_path)
+    page = pdf[0]
+    page.get_pixmap(dpi=96, alpha=False).save(png_path)
+
+    print(f'Created {pdf_path} and {png_path}')
+```

@@ -1,0 +1,83 @@
+Possible double-unref in text.FontConfiguration.__init__()
+
+I see sporadic crashes for frozen onefile executables at our build server under windows.
+
+- python 3.13.9
+- weasyprint 66.0
+
+Most crashes occur at the very end of the programme: 
+```
+Windows fatal exception: access violation
+Current thread 0x00003740 (most recent call first):
+  Garbage-collecting
+  <no Python frame>
+```
+However, sometimes it crashes like this or even in unrelated parts of the code:
+```
+Windows fatal exception: access violation
+Current thread 0x00005cb4 (most recent call first):
+  Garbage-collecting
+  File "fontTools\ttLib\tables\_g_l_y_f.py", line 690 in __init__
+  File "__init__", line ??? in __init__
+  File "fontTools\ttLib\tables\_g_l_y_f.py", line 116 in decompile
+  File "fontTools\ttLib\ttFont.py", line 475 in _readTable
+  File "fontTools\ttLib\ttFont.py", line 458 in __getitem__
+  File "fontTools\subset\__init__.py", line 3587 in _prune_pre_subset
+  File "fontTools\subset\__init__.py", line 3856 in subset
+  File "weasyprint\pdf\fonts.py", line 268 in _fonttools_subset
+  File "weasyprint\pdf\fonts.py", line 190 in subset
+  File "weasyprint\pdf\fonts.py", line 117 in clean
+  File "weasyprint\pdf\fonts.py", line 299 in build_fonts_dictionary
+  File "weasyprint\pdf\__init__.py", line 286 in generate_pdf
+  File "weasyprint\document.py", line 383 in write_pdf
+  File "lib\pdfreport.py", line 170 in write_pdf_report
+  File "MyApplication.py", line 404 in main
+  File "MyApplication.py", line 81 in mocked
+  File "MyApplication.py", line 428 in <module>
+```
+The eventlog always shows the following:
+```
+Message            : Fehlerhafter Anwendungsname: MyApplication.exe, Version: 0.0.10.0, Zeitstempel: 0x6a55f21d
+                     Fehlerhafter Modulname: libfontconfig-1.dll, Version: 0.0.0.0, Zeitstempel: 0x6865935a
+                     Ausnahmecode: 0xc0000005
+                     Fehleroffset: 0x00000000000058f5
+                     Fehlerhafte Prozess-ID: 0x49a8
+ 
+```
+Uncommenting weasyprint completely and saving the same documents as html makes the crashes go away.
+ 
+During further testing I found that I can avoid most but not all crashes by calling `import weasyprint`
+directly before using it the first time, not at the beginning of the programme. 
+That leads me to review the initialisation code of weasyprint.
+
+I think there's may be a double-unref here, so adding some quick fix:
+```python
+class FontConfiguration:
+    def __init__(self):
+        """Create a Fontconfig font configuration.
+ 
+        See Behdad's blog:
+        https://mces.blogspot.fr/2015/05/how-to-use-custom-application-fonts.html
+ 
+        """
+        # Load the main config file and the fonts.
+        self._config = ffi.gc(
+            fontconfig.FcInitLoadConfigAndFonts(), fontconfig.FcConfigDestroy)
+        self.font_map = ffi.gc(
+            pangoft2.pango_ft2_font_map_new(), gobject.g_object_unref)
+        pangoft2.pango_fc_font_map_set_config(
+            ffi.cast('PangoFcFontMap *', self.font_map), self._config)
+        # pango_fc_font_map_set_config keeps a reference to config.
+        fontconfig.FcConfigDestroy(self._config)
+ 
+        # HotFix: Remove the CFFI Finalizer after manually destroying it.
+        self._config = ffi.gc(self._config, None)
+ 
+        # Temporary folder storing fonts.
+        self._folder = None
+```
+ 
+Although this code isn’t executed at the time of `import`, I can no longer reproduce the crash with the fix in place.
+ 
+I checked for memory leaks using the code from https://github.com/Kozea/WeasyPrint/issues/2319.
+If there were one it would be small. Same for reverting commit 150dec6.

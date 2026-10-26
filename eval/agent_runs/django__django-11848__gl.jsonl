@@ -1,0 +1,2 @@
+{"tool": "issue", "args": [], "out_chars": 625, "read_path": null}
+{"tool": "grep", "args": ["def parse_http_date", "django/utils/http.py"], "out_chars": 108, "read_path": null}

@@ -1,0 +1,190 @@
+{"claim_id": "fiqa:10039:0", "verdict": "not_found", "rationale": "Passage says data can be pulled from Google/Yahoo Finance but not that many individual investors use them."}
+{"claim_id": "fiqa:10039:1", "verdict": "supported", "rationale": "Passage states Google Docs spreadsheets have a function filling in stock and fund prices."}
+{"claim_id": "fiqa:10039:2", "verdict": "supported", "rationale": "Passage says the data can be used to graph fund1/fund2 over a time period."}
+{"claim_id": "fiqa:10039:3", "verdict": "supported", "rationale": "Passage says bond quotes are considerably more difficult to get than stock or mutual fund info."}
+{"claim_id": "fiqa:4011:0", "verdict": "supported", "rationale": "Passage says this is a psychological problem, not a money problem."}
+{"claim_id": "fiqa:4011:1", "verdict": "supported", "rationale": "Passage recommends seeing a counselor or therapist ASAP before symptoms get worse."}
+{"claim_id": "fiqa:4011:2", "verdict": "supported", "rationale": "Passage says it must be done together and you cannot dictate."}
+{"claim_id": "fiqa:4011:3", "verdict": "supported", "rationale": "Passage says agree on a budget each month and don't use it to control your spouse."}
+{"claim_id": "fiqa:4011:4", "verdict": "supported", "rationale": "Passage recommends separate accounts with a joint mortgage account when a partner has compulsive spending habits."}
+{"claim_id": "fiqa:6715:0", "verdict": "supported", "rationale": "Passage describes the IPO commission paid by the seller to the underwriter out of the buyer's price."}
+{"claim_id": "fiqa:6715:1", "verdict": "supported", "rationale": "Passage describes the broker charging the buyer a commission on top of the share price in a normal trade."}
+{"claim_id": "fiqa:6715:2", "verdict": "supported", "rationale": "Passage says in an IPO the seller often pays the commission and buyer pays $2000."}
+{"claim_id": "fiqa:6715:3", "verdict": "supported", "rationale": "Passage says the underwriting bank buys shares wholesale to offer them to the public."}
+{"claim_id": "fiqa:6715:4", "verdict": "not_found", "rationale": "Passage uses 7% only as an illustrative example, not as the common US rate."}
+{"claim_id": "fiqa:3148:0", "verdict": "supported", "rationale": "Passage states they cannot refuse to provide current balance or balance history."}
+{"claim_id": "fiqa:3148:1", "verdict": "supported", "rationale": "Passage says lenders are obligated by truth-in-lending laws to furnish the finance contract on request."}
+{"claim_id": "fiqa:3148:2", "verdict": "supported", "rationale": "Passage advises demanding a response in writing so it is documented."}
+{"claim_id": "fiqa:3148:3", "verdict": "supported", "rationale": "Passage advises keeping copies and certified delivery, noting written responses can't be denied in court."}
+{"claim_id": "fiqa:3148:4", "verdict": "not_found", "rationale": "Passage does not mention the CFPB or state attorney general complaints."}
+{"claim_id": "fiqa:1074:0", "verdict": "not_found", "rationale": "Passage is an opinion about employer insurance and gives no statistic on most Americans' coverage source."}
+{"claim_id": "fiqa:1074:1", "verdict": "supported", "rationale": "Passage says if set up right by the employer premiums can be paid with pre-tax dollars."}
+{"claim_id": "fiqa:1074:2", "verdict": "supported", "rationale": "Passage says premiums are deductible on Form 1040 Line 29 only for months not covered or eligible for an employer-subsidized plan."}
+{"claim_id": "fiqa:1074:3", "verdict": "not_found", "rationale": "Passage does not discuss pass-through premium arrangements being uncommon or ACA restrictions on them."}
+{"claim_id": "fiqa:4981:0", "verdict": "supported", "rationale": "Passage describes wealthbot as an open source wealth management platform targeted at RIAs managing multiple portfolios."}
+{"claim_id": "fiqa:4981:1", "verdict": "supported", "rationale": "Passage lists rebalancing, portfolio accounting and tax loss harvesting."}
+{"claim_id": "fiqa:4981:2", "verdict": "supported", "rationale": "Passage describes it as an open source project to manage your stock portfolio."}
+{"claim_id": "fiqa:4981:3", "verdict": "not_found", "rationale": "Passage only points to a financial section of one list; it does not say such lists often include one or describe portfolio tools in it."}
+{"claim_id": "fiqa:1819:0", "verdict": "not_found", "rationale": "Passage is about paycheck-to-paycheck living and says nothing about stale checks."}
+{"claim_id": "fiqa:1819:1", "verdict": "not_found", "rationale": "Passage says nothing about employers owing wages on expired checks."}
+{"claim_id": "fiqa:1819:2", "verdict": "not_found", "rationale": "Passage says nothing about asking payroll to reissue a check."}
+{"claim_id": "fiqa:1819:3", "verdict": "not_found", "rationale": "Passage says nothing about unclaimed property offices."}
+{"claim_id": "fiqa:1915:0", "verdict": "supported", "rationale": "Passage states non-EU sellers of services to the UK must register for VAT above the threshold."}
+{"claim_id": "fiqa:1915:1", "verdict": "supported", "rationale": "Passage says VAT should have been charged at the time of sale, not months later."}
+{"claim_id": "fiqa:1915:2", "verdict": "supported", "rationale": "Passage states UK and EU law require prices displayed including relevant taxes."}
+{"claim_id": "fiqa:1915:3", "verdict": "supported", "rationale": "Passage says the US business might claim those rules don't apply to them."}
+{"claim_id": "fiqa:1915:4", "verdict": "supported", "rationale": "Passage treats the price as VAT-inclusive and says there is no legal way they can demand money now."}
+{"claim_id": "fiqa:3829:0", "verdict": "not_found", "rationale": "Passage mentions a prepaid Mastercard and bank-linked Visa Electron but does not state some Visa cards lack a bank account link."}
+{"claim_id": "fiqa:3829:1", "verdict": "supported", "rationale": "Passage says the issuer withdraws funds from the holder's bank account if a debit account is used."}
+{"claim_id": "fiqa:3829:2", "verdict": "supported", "rationale": "Passage says the issuer collects through billing if a credit account is used."}
+{"claim_id": "fiqa:3829:3", "verdict": "supported", "rationale": "Passage says the prepaid card only allows spending up to the amount paid into the card account."}
+{"claim_id": "fiqa:3829:4", "verdict": "supported", "rationale": "Passage describes the bank automatically paying off the whole VISA balance monthly from the chequing account."}
+{"claim_id": "fiqa:6441:0", "verdict": "supported", "rationale": "Passage says on a sale you don't receive funds until T+3."}
+{"claim_id": "fiqa:6441:1", "verdict": "supported", "rationale": "Passage says you cannot withdraw the money until it is settled."}
+{"claim_id": "fiqa:6441:2", "verdict": "supported", "rationale": "Passage says in a margin account regulations permit trading unsettled funds, available immediately."}
+{"claim_id": "fiqa:6441:3", "verdict": "supported", "rationale": "Passage describes the FINRA anti-free-riding rule for cash accounts where purchases are paid by sale of the same securities."}
+{"claim_id": "fiqa:6441:4", "verdict": "supported", "rationale": "Passage says it depends on the broker and describes one broker's specific limits."}
+{"claim_id": "fiqa:3781:0", "verdict": "supported", "rationale": "Passage says AMT depends not just on income but more on deductions used."}
+{"claim_id": "fiqa:3781:1", "verdict": "supported", "rationale": "Passage gives the 2015 AMT exemptions of $53,600 individual and $83,400 married filing jointly."}
+{"claim_id": "fiqa:3781:2", "verdict": "supported", "rationale": "Passage says income above the threshold plus paying a tiny amount of tax due to deductions leads to AMT."}
+{"claim_id": "fiqa:3781:3", "verdict": "not_found", "rationale": "Passage discusses option exercise triggering AMT but not that it affects people with moderate salaries."}
+{"claim_id": "fiqa:3781:4", "verdict": "not_found", "rationale": "Passage only gives 2015 exemption amounts; nothing about the 2017 tax law or several-hundred-thousand incomes."}
+{"claim_id": "fiqa:3791:0", "verdict": "supported", "rationale": "Passage says news references to the interest rate almost always mean the Fed-set federal funds rate."}
+{"claim_id": "fiqa:3791:1", "verdict": "supported", "rationale": "Passage says changing the federal funds rate affects all interest rates."}
+{"claim_id": "fiqa:3791:2", "verdict": "supported", "rationale": "Passage states the FOMC meets eight times a year to set the federal funds target."}
+{"claim_id": "fiqa:3791:3", "verdict": "supported", "rationale": "Passage says people generally mean the prime rate, defined as the rate banks lend to their most creditworthy customers."}
+{"claim_id": "fiqa:3791:4", "verdict": "supported", "rationale": "Passage says each person refers to what they look at and long vs short term rates can diverge."}
+{"claim_id": "fiqa:3822:0", "verdict": "supported", "rationale": "Passage says exchange rates are simply supply and demand."}
+{"claim_id": "fiqa:3822:1", "verdict": "not_found", "rationale": "Passage discusses supply and demand, not bank wires or exchange services vs airport counters."}
+{"claim_id": "fiqa:3822:2", "verdict": "not_found", "rationale": "Passage does not mention mid-market rates or spreads."}
+{"claim_id": "fiqa:3822:3", "verdict": "supported", "rationale": "Passage says the forex exposure is going forward as exchange rates change."}
+{"claim_id": "fiqa:3822:4", "verdict": "not_found", "rationale": "Passage does not discuss splitting a conversion into several transactions."}
+{"claim_id": "fiqa:4863:0", "verdict": "supported", "rationale": "Passage states bond price falls when yields rise."}
+{"claim_id": "fiqa:4863:1", "verdict": "supported", "rationale": "Passage says bond value is the PV of future cash flows discounted at the yield to maturity."}
+{"claim_id": "fiqa:4863:2", "verdict": "supported", "rationale": "Passage's method of discounting cash flows at the yield entails recomputing price with a new yield."}
+{"claim_id": "fiqa:4863:3", "verdict": "supported", "rationale": "Passage gives change in price = -price x modified duration x change in yield."}
+{"claim_id": "fiqa:4863:4", "verdict": "supported", "rationale": "Passage says a duration of 5 means a 5% price decrease per 1% yield increase."}
+{"claim_id": "fiqa:6792:0", "verdict": "supported", "rationale": "Passage says the set of orders at each point in time for a security is called the order book."}
+{"claim_id": "fiqa:6792:1", "verdict": "supported", "rationale": "Passage states the best ask is the lowest ask and the best bid is the highest bid."}
+{"claim_id": "fiqa:6792:2", "verdict": "not_found", "rationale": "Passage defines top of the book but does not say standard quotes show only the top of the book."}
+{"claim_id": "fiqa:6792:3", "verdict": "not_found", "rationale": "Passage does not mention Level 2 data, brokerage platforms, exchange feeds or fees."}
+{"claim_id": "fiqa:1877:0", "verdict": "supported", "rationale": "Passage says for a sole proprietor contributions are deducted from gross income and thus don't reduce it."}
+{"claim_id": "fiqa:1877:1", "verdict": "supported", "rationale": "Passage says for an S-Corp employer contributions are excluded from W-2 Box 1 and reduce gross income."}
+{"claim_id": "fiqa:1877:2", "verdict": "supported", "rationale": "Passage says sole proprietors can contribute up to 20% of net profits."}
+{"claim_id": "fiqa:1877:3", "verdict": "supported", "rationale": "Passage says Solo 401k limits are based on self-employment income, not total income."}
+{"claim_id": "fiqa:1877:4", "verdict": "not_found", "rationale": "Passage does not mention Form 1040 adjustments versus Schedule C expense."}
+{"claim_id": "fiqa:2296:0", "verdict": "supported", "rationale": "Passage states a true 0% loan is a losing proposition for the bank."}
+{"claim_id": "fiqa:2296:1", "verdict": "supported", "rationale": "Passage lists late payment fees, prepayment penalties and other clauses making it a good deal on average."}
+{"claim_id": "fiqa:2296:2", "verdict": "supported", "rationale": "Passage says the bank looks to make money on thousands of loans overall, not each loan."}
+{"claim_id": "fiqa:2296:3", "verdict": "supported", "rationale": "Passage says for retailers financing costs are baked into the sales price."}
+{"claim_id": "fiqa:2296:4", "verdict": "not_found", "rationale": "Passage explains collateral and LTV but not seizing collateral on default or 0% loan risk."}
+{"claim_id": "fiqa:5549:0", "verdict": "supported", "rationale": "Passage says you can invest in virtually anything considered an investment."}
+{"claim_id": "fiqa:5549:1", "verdict": "supported", "rationale": "Passage says this is great if your expertise is in an area not easily invested in via traditional securities."}
+{"claim_id": "fiqa:5549:2", "verdict": "supported", "rationale": "Passage calls custodian fees a sore spot and advises researching custodians."}
+{"claim_id": "fiqa:5549:3", "verdict": "not_found", "rationale": "Passage lists prohibited transactions as a con but the shown text does not say they can disqualify the IRA."}
+{"claim_id": "fiqa:9979:0", "verdict": "supported", "rationale": "Passage says gold has kept its value since ancient times and hedges against inflation."}
+{"claim_id": "fiqa:9979:1", "verdict": "supported", "rationale": "Passage describes GLD as a way to own gold without taking physical delivery."}
+{"claim_id": "fiqa:9979:2", "verdict": "supported", "rationale": "Passage argues GLD offers very little protection against serious inflation compared to physical."}
+{"claim_id": "fiqa:9979:3", "verdict": "supported", "rationale": "Passage says gold hedges inflation over long periods and spikes for other reasons short-term."}
+{"claim_id": "fiqa:9979:4", "verdict": "supported", "rationale": "Passage says gold is not an investment with no productive value, at best a hedge."}
+{"claim_id": "fiqa:10137:0", "verdict": "supported", "rationale": "Passage says it is absolutely legal for an F-1 student to trade stocks via US or non-US brokerages."}
+{"claim_id": "fiqa:10137:1", "verdict": "supported", "rationale": "Passage's exempt-individual rule implies students are nonresident for the first five calendar years."}
+{"claim_id": "fiqa:10137:2", "verdict": "supported", "rationale": "Passage says nonresident aliens file 1040NR and residents file 1040."}
+{"claim_id": "fiqa:10137:3", "verdict": "supported", "rationale": "Passage says some US brokers permit direct foreign-exchange purchases, naming Interactive Brokers."}
+{"claim_id": "fiqa:10137:4", "verdict": "supported", "rationale": "Passage says to account for dividends/capital gains on US taxes and university software may be inadequate."}
+{"claim_id": "fiqa:7205:0", "verdict": "supported", "rationale": "Passage says past option prices are available for many options but not for free."}
+{"claim_id": "fiqa:7205:1", "verdict": "supported", "rationale": "Passage names OptionMetrics as a source of past option prices."}
+{"claim_id": "fiqa:7205:2", "verdict": "supported", "rationale": "Passage says OptionMetrics data comes from the National Best Bid and Offer."}
+{"claim_id": "fiqa:7205:3", "verdict": "not_found", "rationale": "Passage does not mention brokerage platforms offering historical option charts."}
+{"claim_id": "fiqa:3091:0", "verdict": "supported", "rationale": "Passage treats taking a home mortgage as borrowing money, i.e. debt."}
+{"claim_id": "fiqa:3091:1", "verdict": "not_found", "rationale": "Passage gives one person's advice excluding a mortgage, not that many people distinguish mortgage from consumer debt."}
+{"claim_id": "fiqa:3091:2", "verdict": "supported", "rationale": "Passage states all debt costs interest and asks whether the benefit is worth the cost."}
+{"claim_id": "fiqa:3091:3", "verdict": "supported", "rationale": "Passage says the mortgage is secured by the house and default leads to foreclosure."}
+{"claim_id": "fiqa:3091:4", "verdict": "supported", "rationale": "Passage advises becoming debt free excluding a regular mortgage within 3-5 years."}
+{"claim_id": "fiqa:7911:0", "verdict": "supported", "rationale": "Passage says a stockbroker arranges buying and selling by finding buyers and sellers."}
+{"claim_id": "fiqa:7911:1", "verdict": "supported", "rationale": "Passage says the broker does not purchase stock for himself but arranges the trade."}
+{"claim_id": "fiqa:7911:2", "verdict": "supported", "rationale": "Passage says a trader purchases stock hoping to sell it for a gain."}
+{"claim_id": "fiqa:7911:3", "verdict": "supported", "rationale": "Passage says the trader uses a broker for purchase and sale."}
+{"claim_id": "fiqa:7911:4", "verdict": "supported", "rationale": "Passage says traders need a proven track record and stockbrokers need a license."}
+{"claim_id": "fiqa:2398:0", "verdict": "supported", "rationale": "Passage says landlords exchange space for regular payments with no drama."}
+{"claim_id": "fiqa:2398:1", "verdict": "supported", "rationale": "Passage says income or demonstrated assets show ability to pay rent, minimizing risk."}
+{"claim_id": "fiqa:2398:2", "verdict": "supported", "rationale": "Passage says Michigan landlords must deposit with a regulated financial institution or post a bond."}
+{"claim_id": "fiqa:2398:3", "verdict": "supported", "rationale": "Passage says the legislation has no mention of interest."}
+{"claim_id": "fiqa:2398:4", "verdict": "unverifiable", "rationale": "Generic advice to follow the law and document everything, not a checkable factual statement."}
+{"claim_id": "fiqa:503:0", "verdict": "supported", "rationale": "Passage says Equifax collects data about individuals and scores creditworthiness."}
+{"claim_id": "fiqa:503:1", "verdict": "not_found", "rationale": "Passage complains about collection without consent but does not state consumers cannot opt out."}
+{"claim_id": "fiqa:503:2", "verdict": "supported", "rationale": "Passage says Equifax was hacked and the data enables large-scale identity fraud."}
+{"claim_id": "fiqa:503:3", "verdict": "not_found", "rationale": "Passage does not mention opting out of prescreened offers or the phone number/website."}
+{"claim_id": "fiqa:503:4", "verdict": "not_found", "rationale": "Passage does not mention credit freezes."}
+{"claim_id": "fiqa:4306:0", "verdict": "supported", "rationale": "Passage says FX works like the stock market with buyers bidding and sellers asking."}
+{"claim_id": "fiqa:4306:1", "verdict": "supported", "rationale": "Passage says like the stock market there are swaps, futures and options."}
+{"claim_id": "fiqa:4306:2", "verdict": "supported", "rationale": "Passage says currencies go up and down based on supply and demand."}
+{"claim_id": "fiqa:4306:3", "verdict": "supported", "rationale": "Passage lists the state of the economy and fiscal policies as factors."}
+{"claim_id": "fiqa:4306:4", "verdict": "not_found", "rationale": "Passage does not mention interest rate differentials or central bank rates."}
+{"claim_id": "fiqa:2088:0", "verdict": "supported", "rationale": "Passage says privately-held company shares are not traded on a stock exchange."}
+{"claim_id": "fiqa:2088:1", "verdict": "supported", "rationale": "Passage says you would need to talk directly to the current owners."}
+{"claim_id": "fiqa:2088:2", "verdict": "not_found", "rationale": "Passage does not mention shareholder agreements or rights of first refusal."}
+{"claim_id": "fiqa:2088:3", "verdict": "not_found", "rationale": "Passage does not mention secondary marketplaces like Forge or EquityZen."}
+{"claim_id": "fiqa:5178:0", "verdict": "supported", "rationale": "Passage says it comes down to whether investing returns more than the 0.99% loan rate."}
+{"claim_id": "fiqa:5178:1", "verdict": "supported", "rationale": "Passage frames paying down high-interest debt as an investment paying that interest rate."}
+{"claim_id": "fiqa:5178:2", "verdict": "supported", "rationale": "Passage says with a 0.99% loan, investing may be better if you can yield more than 0.99%."}
+{"claim_id": "fiqa:5178:3", "verdict": "not_found", "rationale": "Passage does not discuss guaranteed versus uncertain returns."}
+{"claim_id": "fiqa:5178:4", "verdict": "supported", "rationale": "Passage says pay off higher-rate credit card debt before the mortgage."}
+{"claim_id": "fiqa:8247:0", "verdict": "not_found", "rationale": "Passage refers to another answer about gains but does not state gains are taxed as capital gains on sale."}
+{"claim_id": "fiqa:8247:1", "verdict": "supported", "rationale": "Passage refers to the usual long-term 15% rate for stocks and stock ETFs."}
+{"claim_id": "fiqa:8247:2", "verdict": "supported", "rationale": "Passage says precious metal ETFs like IAU are taxed at 28% as collectibles."}
+{"claim_id": "fiqa:8247:3", "verdict": "supported", "rationale": "Passage describes the wash sale rule for repurchase within 30 days before or after a loss sale."}
+{"claim_id": "fiqa:8247:4", "verdict": "not_found", "rationale": "Passage says ETFs have tax advantages but not that they distribute fewer capital gains."}
+{"claim_id": "fiqa:515:0", "verdict": "supported", "rationale": "Passage says the institution would need to see the LLC Operating Agreement."}
+{"claim_id": "fiqa:515:1", "verdict": "supported", "rationale": "Passage says the OA should state single-member status with all managerial powers and the member's equity allocation."}
+{"claim_id": "fiqa:515:2", "verdict": "supported", "rationale": "Passage says every LLC must have an OA though it need not be filed with the State."}
+{"claim_id": "fiqa:515:3", "verdict": "supported", "rationale": "Passage says a single-member LLC is a disregarded entity reflected on the owner's federal return."}
+{"claim_id": "fiqa:4465:0", "verdict": "supported", "rationale": "Passage advises spending time determining which charities make sense before donating."}
+{"claim_id": "fiqa:4465:1", "verdict": "not_found", "rationale": "Passage does not mention GiveWell, Charity Navigator or charity evaluators."}
+{"claim_id": "fiqa:4465:2", "verdict": "supported", "rationale": "Passage says a charitable trust can spread donations over a year or decade."}
+{"claim_id": "fiqa:4465:3", "verdict": "supported", "rationale": "Passage says a CAF account allows anonymous donations while the charity benefits from Gift Aid."}
+{"claim_id": "fiqa:4465:4", "verdict": "supported", "rationale": "Passage says donating to name-brand charities leads to more solicitations because charities sell donor info."}
+{"claim_id": "fiqa:68:0", "verdict": "supported", "rationale": "Passage says incorporating lets you deduct the costs of doing business."}
+{"claim_id": "fiqa:68:1", "verdict": "supported", "rationale": "Passage says only the business-use portion of a dual-use phone is deductible."}
+{"claim_id": "fiqa:68:2", "verdict": "supported", "rationale": "Passage says to keep itemized bills and receipts to support deductions."}
+{"claim_id": "fiqa:68:3", "verdict": "supported", "rationale": "Passage says charitable deductibility aims to provide an economic incentive to give to organizations improving community welfare."}
+{"claim_id": "fiqa:68:4", "verdict": "supported", "rationale": "Passage says the lower rate applies to income eligible for the small business deduction with a business limit."}
+{"claim_id": "fiqa:945:0", "verdict": "not_found", "rationale": "Passage does not state you owe tax where you physically work or mention France as the taxing country."}
+{"claim_id": "fiqa:945:1", "verdict": "supported", "rationale": "Passage says a non-US person outside the US doing contract work for a US employer generally pays no US tax."}
+{"claim_id": "fiqa:945:2", "verdict": "supported", "rationale": "Passage says the employer might withhold and remit to the IRS and you'd chase a refund."}
+{"claim_id": "fiqa:945:3", "verdict": "supported", "rationale": "Passage says the IRS taxes worldwide income of citizens and green card holders."}
+{"claim_id": "fiqa:945:4", "verdict": "supported", "rationale": "Passage mentions foreign taxes reducing US tax, the foreign tax credit, FEIE, and required annual returns."}
+{"claim_id": "fiqa:2790:0", "verdict": "supported", "rationale": "Passage says the primary reason for 20% down is avoiding PMI."}
+{"claim_id": "fiqa:2790:1", "verdict": "supported", "rationale": "Passage recommends against paying more than 20% to keep liquidity for emergencies and investments."}
+{"claim_id": "fiqa:2790:2", "verdict": "supported", "rationale": "Passage says to set extra money aside for retirement savings or an emergency fund."}
+{"claim_id": "fiqa:2790:3", "verdict": "supported", "rationale": "Passage says you can always make extra payments but can't easily get the money back."}
+{"claim_id": "fiqa:2790:4", "verdict": "supported", "rationale": "Passage gives the rule of thumb of mortgage plus property tax at most 28% of gross monthly income."}
+{"claim_id": "fiqa:6713:0", "verdict": "supported", "rationale": "Passage says counting your father as a dependent shouldn't by itself make him ineligible."}
+{"claim_id": "fiqa:6713:1", "verdict": "supported", "rationale": "Passage quotes that those who live together and purchase and prepare meals together are one household."}
+{"claim_id": "fiqa:6713:2", "verdict": "supported", "rationale": "Passage says if he lives and eats elsewhere he is not part of your household."}
+{"claim_id": "fiqa:6713:3", "verdict": "supported", "rationale": "Passage says SNAP has limits on countable resources such as bank accounts and income."}
+{"claim_id": "fiqa:6713:4", "verdict": "supported", "rationale": "Passage says the IRS won't care about benefit filings and the separate SNAP agency is the one that might."}
+{"claim_id": "fiqa:8512:0", "verdict": "supported", "rationale": "Passage says you can't transfer stocks from a brokerage account to a Roth IRA."}
+{"claim_id": "fiqa:8512:1", "verdict": "supported", "rationale": "Passage says only cash can be contributed, so sell stock and transfer cash."}
+{"claim_id": "fiqa:8512:2", "verdict": "supported", "rationale": "Passage states yearly Roth IRA limits of 5.5k."}
+{"claim_id": "fiqa:8512:3", "verdict": "supported", "rationale": "Passage says selling means settling up with the IRS on any gains."}
+{"claim_id": "fiqa:8512:4", "verdict": "not_found", "rationale": "Passage describes the new custodian handling a transfer of money but not an in-kind asset transfer."}
+{"claim_id": "fiqa:6787:0", "verdict": "not_found", "rationale": "Passage discusses Indian accounting treatment of wash sales and does not state a 30-day loss disallowance."}
+{"claim_id": "fiqa:6787:1", "verdict": "not_found", "rationale": "Passage does not mention tax-gain harvesting or resetting cost basis higher."}
+{"claim_id": "fiqa:6787:2", "verdict": "supported", "rationale": "Passage says holding over a year gets long-term capital gains rates."}
+{"claim_id": "fiqa:6787:3", "verdict": "supported", "rationale": "Passage says NIIT applies if modified adjusted income exceeds the threshold."}
+{"claim_id": "fiqa:6787:4", "verdict": "supported", "rationale": "Passage says broke-company shares trade so shareholders can realize losses for tax purposes."}
+{"claim_id": "fiqa:4999:0", "verdict": "supported", "rationale": "Passage says the best source is the company's Investor Relations section."}
+{"claim_id": "fiqa:4999:1", "verdict": "supported", "rationale": "Passage says the 10-K has annual statements and the 10-Q quarterly."}
+{"claim_id": "fiqa:4999:2", "verdict": "not_found", "rationale": "This passage does not mention EDGAR or that filings are free."}
+{"claim_id": "fiqa:4999:3", "verdict": "supported", "rationale": "Passage says normalized balance sheets and income statements are on Google, Yahoo, MSN finance pages."}
+{"claim_id": "fiqa:4999:4", "verdict": "supported", "rationale": "Passage says SEDAR compiles financial statements for Canadian companies."}
+{"claim_id": "fiqa:6080:0", "verdict": "supported", "rationale": "Passage says ScholarShare is the state's 529 plan, legitimately authorized by California."}
+{"claim_id": "fiqa:6080:1", "verdict": "supported", "rationale": "Passage says California does not offer a state tax deduction for 529 contributions."}
+{"claim_id": "fiqa:6080:2", "verdict": "supported", "rationale": "Passage says without the deduction you can pick another state's plan with better fees or options."}
+{"claim_id": "fiqa:6080:3", "verdict": "supported", "rationale": "Passage says you have to at least look at the annual fees before choosing."}
+{"claim_id": "fiqa:4955:0", "verdict": "supported", "rationale": "Passage states bond value is the PV of expected future cash flows."}
+{"claim_id": "fiqa:4955:1", "verdict": "supported", "rationale": "Passage says YTM is equivalent to the discount rate for the cash flows."}
+{"claim_id": "fiqa:4955:2", "verdict": "supported", "rationale": "Passage describes discounting all future cash flows at the yield to get the price."}
+{"claim_id": "fiqa:4955:3", "verdict": "supported", "rationale": "Passage says the basic approach to valuing a bond is TVM."}
+{"claim_id": "fiqa:4955:4", "verdict": "not_found", "rationale": "Passage's example has coupon above yield and price above par but states no general rule."}

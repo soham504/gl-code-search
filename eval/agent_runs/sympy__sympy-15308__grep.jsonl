@@ -1,0 +1,3 @@
+{"tool": "issue", "args": [], "out_chars": 287, "read_path": null}
+{"tool": "grep", "args": ["-n", "def _print_Tr\\|def _print_MatPow\\|def _print_Basic", "sympy/printing/latex.py"], "out_chars": 0, "read_path": null}
+{"tool": "grep", "args": ["def _print_(Tr|MatPow|Basic|Trace)", "sympy/printing"], "out_chars": 1258, "read_path": null}

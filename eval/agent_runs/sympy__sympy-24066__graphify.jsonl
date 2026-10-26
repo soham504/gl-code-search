@@ -1,0 +1,4 @@
+{"tool": "issue", "args": [], "out_chars": 588, "read_path": null}
+{"tool": "grep", "args": ["-n", "def _collect_factor_and_dimension", "sympy/physics/units"], "out_chars": 0, "read_path": null}
+{"tool": "grep", "args": ["def _collect_factor_and_dimension", "sympy/physics/units"], "out_chars": 189, "read_path": null}
+{"tool": "read", "args": ["sympy/physics/units/unitsystem.py", "150", "205"], "out_chars": 2759, "read_path": "sympy/physics/units/unitsystem.py"}

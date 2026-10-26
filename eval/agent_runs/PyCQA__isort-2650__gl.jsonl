@@ -1,0 +1,3 @@
+{"tool": "issue", "args": [], "out_chars": 2173, "read_path": null}
+{"tool": "grep", "args": ["-n", "def hanging_indent_with_parentheses"], "out_chars": 0, "read_path": null}
+{"tool": "gl", "args": ["symbol", "hanging_indent_with_parentheses"], "out_chars": 59, "read_path": null}

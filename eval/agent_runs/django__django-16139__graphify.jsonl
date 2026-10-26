@@ -1,0 +1,2 @@
+{"tool": "issue", "args": [], "out_chars": 1412, "read_path": null}
+{"tool": "grep", "args": ["password.help_text.format", "django"], "out_chars": 107, "read_path": null}

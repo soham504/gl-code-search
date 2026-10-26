@@ -1,0 +1,1262 @@
+{
+ "n": 20,
+ "summary": {
+  "grep": {
+   "acc1": 1,
+   "acc5": 1,
+   "calls": 4.3,
+   "reads": 0.75,
+   "files_read": 0.7,
+   "wasted_files_read": 0.05,
+   "tool_chars": 2900.15,
+   "special_calls": 0
+  },
+  "graphify": {
+   "acc1": 1,
+   "acc5": 1,
+   "calls": 3.05,
+   "reads": 0.6,
+   "files_read": 0.6,
+   "wasted_files_read": 0.05,
+   "tool_chars": 3097.7,
+   "special_calls": 0
+  },
+  "gl": {
+   "acc1": 1,
+   "acc5": 1,
+   "calls": 3.05,
+   "reads": 0.65,
+   "files_read": 0.55,
+   "wasted_files_read": 0.05,
+   "tool_chars": 2852.85,
+   "special_calls": 0
+  }
+ },
+ "paired": {
+  "graphify": {
+   "acc1": {
+    "mean": 0,
+    "ci95": [
+     0,
+     0
+    ]
+   },
+   "acc5": {
+    "mean": 0,
+    "ci95": [
+     0,
+     0
+    ]
+   },
+   "calls": {
+    "mean": -1.25,
+    "ci95": [
+     -2.35,
+     -0.45
+    ]
+   },
+   "wasted_files_read": {
+    "mean": 0,
+    "ci95": [
+     0,
+     0
+    ]
+   },
+   "tool_chars": {
+    "mean": 197.55,
+    "ci95": [
+     -389.5,
+     871.9
+    ]
+   }
+  },
+  "gl": {
+   "acc1": {
+    "mean": 0,
+    "ci95": [
+     0,
+     0
+    ]
+   },
+   "acc5": {
+    "mean": 0,
+    "ci95": [
+     0,
+     0
+    ]
+   },
+   "calls": {
+    "mean": -1.25,
+    "ci95": [
+     -2.35,
+     -0.45
+    ]
+   },
+   "wasted_files_read": {
+    "mean": 0,
+    "ci95": [
+     0,
+     0
+    ]
+   },
+   "tool_chars": {
+    "mean": -47.3,
+    "ci95": [
+     -615.05,
+     652.5
+    ]
+   }
+  }
+ },
+ "runs": [
+  {
+   "id": "django__django-16139",
+   "cond": "grep",
+   "gold": [
+    "django/contrib/auth/forms.py"
+   ],
+   "answer": [
+    "django/contrib/auth/forms.py"
+   ],
+   "acc1": 1,
+   "acc5": 1,
+   "calls": 3,
+   "reads": 0,
+   "files_read": 0,
+   "wasted_files_read": 0,
+   "tool_chars": 1586,
+   "special_calls": 0,
+   "confidence": "high"
+  },
+  {
+   "id": "django__django-16139",
+   "cond": "graphify",
+   "gold": [
+    "django/contrib/auth/forms.py"
+   ],
+   "answer": [
+    "django/contrib/auth/forms.py"
+   ],
+   "acc1": 1,
+   "acc5": 1,
+   "calls": 2,
+   "reads": 0,
+   "files_read": 0,
+   "wasted_files_read": 0,
+   "tool_chars": 1519,
+   "special_calls": 0,
+   "confidence": "high"
+  },
+  {
+   "id": "django__django-16139",
+   "cond": "gl",
+   "gold": [
+    "django/contrib/auth/forms.py"
+   ],
+   "answer": [
+    "django/contrib/auth/forms.py"
+   ],
+   "acc1": 1,
+   "acc5": 1,
+   "calls": 2,
+   "reads": 0,
+   "files_read": 0,
+   "wasted_files_read": 0,
+   "tool_chars": 1521,
+   "special_calls": 0,
+   "confidence": "high"
+  },
+  {
+   "id": "sympy__sympy-13773",
+   "cond": "grep",
+   "gold": [
+    "sympy/matrices/common.py"
+   ],
+   "answer": [
+    "sympy/matrices/common.py",
+    "sympy/matrices/expressions/matexpr.py"
+   ],
+   "acc1": 1,
+   "acc5": 1,
+   "calls": 6,
+   "reads": 3,
+   "files_read": 2,
+   "wasted_files_read": 1,
+   "tool_chars": 2886,
+   "special_calls": 0,
+   "confidence": "high"
+  },
+  {
+   "id": "sympy__sympy-13773",
+   "cond": "graphify",
+   "gold": [
+    "sympy/matrices/common.py"
+   ],
+   "answer": [
+    "sympy/matrices/common.py",
+    "sympy/matrices/expressions/matexpr.py"
+   ],
+   "acc1": 1,
+   "acc5": 1,
+   "calls": 5,
+   "reads": 2,
+   "files_read": 2,
+   "wasted_files_read": 1,
+   "tool_chars": 7060,
+   "special_calls": 0,
+   "confidence": "high"
+  },
+  {
+   "id": "sympy__sympy-13773",
+   "cond": "gl",
+   "gold": [
+    "sympy/matrices/common.py"
+   ],
+   "answer": [
+    "sympy/matrices/common.py",
+    "sympy/matrices/expressions/matexpr.py"
+   ],
+   "acc1": 1,
+   "acc5": 1,
+   "calls": 6,
+   "reads": 3,
+   "files_read": 2,
+   "wasted_files_read": 1,
+   "tool_chars": 2799,
+   "special_calls": 0,
+   "confidence": "high"
+  },
+  {
+   "id": "django__django-12497",
+   "cond": "grep",
+   "gold": [
+    "django/db/models/fields/related.py"
+   ],
+   "answer": [
+    "django/db/models/fields/related.py"
+   ],
+   "acc1": 1,
+   "acc5": 1,
+   "calls": 13,
+   "reads": 1,
+   "files_read": 1,
+   "wasted_files_read": 0,
+   "tool_chars": 4221,
+   "special_calls": 0,
+   "confidence": "high"
+  },
+  {
+   "id": "django__django-12497",
+   "cond": "graphify",
+   "gold": [
+    "django/db/models/fields/related.py"
+   ],
+   "answer": [
+    "django/db/models/fields/related.py"
+   ],
+   "acc1": 1,
+   "acc5": 1,
+   "calls": 3,
+   "reads": 1,
+   "files_read": 1,
+   "wasted_files_read": 0,
+   "tool_chars": 2012,
+   "special_calls": 0,
+   "confidence": "high"
+  },
+  {
+   "id": "django__django-12497",
+   "cond": "gl",
+   "gold": [
+    "django/db/models/fields/related.py"
+   ],
+   "answer": [
+    "django/db/models/fields/related.py"
+   ],
+   "acc1": 1,
+   "acc5": 1,
+   "calls": 3,
+   "reads": 0,
+   "files_read": 0,
+   "wasted_files_read": 0,
+   "tool_chars": 1228,
+   "special_calls": 0,
+   "confidence": "high"
+  },
+  {
+   "id": "django__django-15320",
+   "cond": "grep",
+   "gold": [
+    "django/db/models/expressions.py"
+   ],
+   "answer": [
+    "django/db/models/expressions.py"
+   ],
+   "acc1": 1,
+   "acc5": 1,
+   "calls": 4,
+   "reads": 1,
+   "files_read": 1,
+   "wasted_files_read": 0,
+   "tool_chars": 3198,
+   "special_calls": 0,
+   "confidence": "high"
+  },
+  {
+   "id": "django__django-15320",
+   "cond": "graphify",
+   "gold": [
+    "django/db/models/expressions.py"
+   ],
+   "answer": [
+    "django/db/models/expressions.py"
+   ],
+   "acc1": 1,
+   "acc5": 1,
+   "calls": 4,
+   "reads": 1,
+   "files_read": 1,
+   "wasted_files_read": 0,
+   "tool_chars": 3590,
+   "special_calls": 0,
+   "confidence": "high"
+  },
+  {
+   "id": "django__django-15320",
+   "cond": "gl",
+   "gold": [
+    "django/db/models/expressions.py"
+   ],
+   "answer": [
+    "django/db/models/expressions.py"
+   ],
+   "acc1": 1,
+   "acc5": 1,
+   "calls": 4,
+   "reads": 1,
+   "files_read": 1,
+   "wasted_files_read": 0,
+   "tool_chars": 3651,
+   "special_calls": 0,
+   "confidence": "high"
+  },
+  {
+   "id": "django__django-12284",
+   "cond": "grep",
+   "gold": [
+    "django/db/models/fields/__init__.py"
+   ],
+   "answer": [
+    "django/db/models/fields/__init__.py"
+   ],
+   "acc1": 1,
+   "acc5": 1,
+   "calls": 4,
+   "reads": 1,
+   "files_read": 1,
+   "wasted_files_read": 0,
+   "tool_chars": 2597,
+   "special_calls": 0,
+   "confidence": "high"
+  },
+  {
+   "id": "django__django-12284",
+   "cond": "graphify",
+   "gold": [
+    "django/db/models/fields/__init__.py"
+   ],
+   "answer": [
+    "django/db/models/fields/__init__.py"
+   ],
+   "acc1": 1,
+   "acc5": 1,
+   "calls": 2,
+   "reads": 0,
+   "files_read": 0,
+   "wasted_files_read": 0,
+   "tool_chars": 1182,
+   "special_calls": 0,
+   "confidence": "high"
+  },
+  {
+   "id": "django__django-12284",
+   "cond": "gl",
+   "gold": [
+    "django/db/models/fields/__init__.py"
+   ],
+   "answer": [
+    "django/db/models/fields/__init__.py"
+   ],
+   "acc1": 1,
+   "acc5": 1,
+   "calls": 2,
+   "reads": 0,
+   "files_read": 0,
+   "wasted_files_read": 0,
+   "tool_chars": 1252,
+   "special_calls": 0,
+   "confidence": "high"
+  },
+  {
+   "id": "sympy__sympy-15308",
+   "cond": "grep",
+   "gold": [
+    "sympy/printing/latex.py"
+   ],
+   "answer": [
+    "sympy/printing/latex.py"
+   ],
+   "acc1": 1,
+   "acc5": 1,
+   "calls": 3,
+   "reads": 0,
+   "files_read": 0,
+   "wasted_files_read": 0,
+   "tool_chars": 1545,
+   "special_calls": 0,
+   "confidence": "high"
+  },
+  {
+   "id": "sympy__sympy-15308",
+   "cond": "graphify",
+   "gold": [
+    "sympy/printing/latex.py"
+   ],
+   "answer": [
+    "sympy/printing/latex.py"
+   ],
+   "acc1": 1,
+   "acc5": 1,
+   "calls": 3,
+   "reads": 0,
+   "files_read": 0,
+   "wasted_files_read": 0,
+   "tool_chars": 2077,
+   "special_calls": 0,
+   "confidence": "high"
+  },
+  {
+   "id": "sympy__sympy-15308",
+   "cond": "gl",
+   "gold": [
+    "sympy/printing/latex.py"
+   ],
+   "answer": [
+    "sympy/printing/latex.py"
+   ],
+   "acc1": 1,
+   "acc5": 1,
+   "calls": 2,
+   "reads": 0,
+   "files_read": 0,
+   "wasted_files_read": 0,
+   "tool_chars": 1008,
+   "special_calls": 0,
+   "confidence": "high"
+  },
+  {
+   "id": "scikit-learn__scikit-learn-13439",
+   "cond": "grep",
+   "gold": [
+    "sklearn/pipeline.py"
+   ],
+   "answer": [
+    "sklearn/pipeline.py"
+   ],
+   "acc1": 1,
+   "acc5": 1,
+   "calls": 2,
+   "reads": 0,
+   "files_read": 0,
+   "wasted_files_read": 0,
+   "tool_chars": 1350,
+   "special_calls": 0,
+   "confidence": "high"
+  },
+  {
+   "id": "scikit-learn__scikit-learn-13439",
+   "cond": "graphify",
+   "gold": [
+    "sklearn/pipeline.py"
+   ],
+   "answer": [
+    "sklearn/pipeline.py"
+   ],
+   "acc1": 1,
+   "acc5": 1,
+   "calls": 2,
+   "reads": 0,
+   "files_read": 0,
+   "wasted_files_read": 0,
+   "tool_chars": 1407,
+   "special_calls": 0,
+   "confidence": "high"
+  },
+  {
+   "id": "scikit-learn__scikit-learn-13439",
+   "cond": "gl",
+   "gold": [
+    "sklearn/pipeline.py"
+   ],
+   "answer": [
+    "sklearn/pipeline.py"
+   ],
+   "acc1": 1,
+   "acc5": 1,
+   "calls": 2,
+   "reads": 0,
+   "files_read": 0,
+   "wasted_files_read": 0,
+   "tool_chars": 1407,
+   "special_calls": 0,
+   "confidence": "high"
+  },
+  {
+   "id": "matplotlib__matplotlib-18869",
+   "cond": "grep",
+   "gold": [
+    "lib/matplotlib/__init__.py"
+   ],
+   "answer": [
+    "lib/matplotlib/__init__.py"
+   ],
+   "acc1": 1,
+   "acc5": 1,
+   "calls": 4,
+   "reads": 1,
+   "files_read": 1,
+   "wasted_files_read": 0,
+   "tool_chars": 3847,
+   "special_calls": 0,
+   "confidence": "high"
+  },
+  {
+   "id": "matplotlib__matplotlib-18869",
+   "cond": "graphify",
+   "gold": [
+    "lib/matplotlib/__init__.py"
+   ],
+   "answer": [
+    "lib/matplotlib/__init__.py"
+   ],
+   "acc1": 1,
+   "acc5": 1,
+   "calls": 4,
+   "reads": 1,
+   "files_read": 1,
+   "wasted_files_read": 0,
+   "tool_chars": 3847,
+   "special_calls": 0,
+   "confidence": "high"
+  },
+  {
+   "id": "matplotlib__matplotlib-18869",
+   "cond": "gl",
+   "gold": [
+    "lib/matplotlib/__init__.py"
+   ],
+   "answer": [
+    "lib/matplotlib/__init__.py"
+   ],
+   "acc1": 1,
+   "acc5": 1,
+   "calls": 2,
+   "reads": 0,
+   "files_read": 0,
+   "wasted_files_read": 0,
+   "tool_chars": 2559,
+   "special_calls": 0,
+   "confidence": "high"
+  },
+  {
+   "id": "django__django-11620",
+   "cond": "grep",
+   "gold": [
+    "django/views/debug.py"
+   ],
+   "answer": [
+    "django/views/debug.py"
+   ],
+   "acc1": 1,
+   "acc5": 1,
+   "calls": 6,
+   "reads": 1,
+   "files_read": 1,
+   "wasted_files_read": 0,
+   "tool_chars": 2365,
+   "special_calls": 0,
+   "confidence": "high"
+  },
+  {
+   "id": "django__django-11620",
+   "cond": "graphify",
+   "gold": [
+    "django/views/debug.py"
+   ],
+   "answer": [
+    "django/views/debug.py",
+    "django/urls/resolvers.py"
+   ],
+   "acc1": 1,
+   "acc5": 1,
+   "calls": 4,
+   "reads": 1,
+   "files_read": 1,
+   "wasted_files_read": 0,
+   "tool_chars": 2842,
+   "special_calls": 0,
+   "confidence": "high"
+  },
+  {
+   "id": "django__django-11620",
+   "cond": "gl",
+   "gold": [
+    "django/views/debug.py"
+   ],
+   "answer": [
+    "django/views/debug.py",
+    "django/urls/resolvers.py"
+   ],
+   "acc1": 1,
+   "acc5": 1,
+   "calls": 4,
+   "reads": 1,
+   "files_read": 1,
+   "wasted_files_read": 0,
+   "tool_chars": 2842,
+   "special_calls": 0,
+   "confidence": "high"
+  },
+  {
+   "id": "sympy__sympy-11897",
+   "cond": "grep",
+   "gold": [
+    "sympy/printing/latex.py"
+   ],
+   "answer": [
+    "sympy/printing/latex.py"
+   ],
+   "acc1": 1,
+   "acc5": 1,
+   "calls": 5,
+   "reads": 1,
+   "files_read": 1,
+   "wasted_files_read": 0,
+   "tool_chars": 4964,
+   "special_calls": 0,
+   "confidence": "high"
+  },
+  {
+   "id": "sympy__sympy-11897",
+   "cond": "graphify",
+   "gold": [
+    "sympy/printing/latex.py"
+   ],
+   "answer": [
+    "sympy/printing/latex.py"
+   ],
+   "acc1": 1,
+   "acc5": 1,
+   "calls": 3,
+   "reads": 1,
+   "files_read": 1,
+   "wasted_files_read": 0,
+   "tool_chars": 7322,
+   "special_calls": 0,
+   "confidence": "high"
+  },
+  {
+   "id": "sympy__sympy-11897",
+   "cond": "gl",
+   "gold": [
+    "sympy/printing/latex.py"
+   ],
+   "answer": [
+    "sympy/printing/latex.py"
+   ],
+   "acc1": 1,
+   "acc5": 1,
+   "calls": 3,
+   "reads": 1,
+   "files_read": 1,
+   "wasted_files_read": 0,
+   "tool_chars": 4964,
+   "special_calls": 0,
+   "confidence": "high"
+  },
+  {
+   "id": "django__django-11848",
+   "cond": "grep",
+   "gold": [
+    "django/utils/http.py"
+   ],
+   "answer": [
+    "django/utils/http.py"
+   ],
+   "acc1": 1,
+   "acc5": 1,
+   "calls": 2,
+   "reads": 0,
+   "files_read": 0,
+   "wasted_files_read": 0,
+   "tool_chars": 625,
+   "special_calls": 0,
+   "confidence": "high"
+  },
+  {
+   "id": "django__django-11848",
+   "cond": "graphify",
+   "gold": [
+    "django/utils/http.py"
+   ],
+   "answer": [
+    "django/utils/http.py"
+   ],
+   "acc1": 1,
+   "acc5": 1,
+   "calls": 2,
+   "reads": 0,
+   "files_read": 0,
+   "wasted_files_read": 0,
+   "tool_chars": 625,
+   "special_calls": 0,
+   "confidence": "high"
+  },
+  {
+   "id": "django__django-11848",
+   "cond": "gl",
+   "gold": [
+    "django/utils/http.py"
+   ],
+   "answer": [
+    "django/utils/http.py"
+   ],
+   "acc1": 1,
+   "acc5": 1,
+   "calls": 2,
+   "reads": 0,
+   "files_read": 0,
+   "wasted_files_read": 0,
+   "tool_chars": 733,
+   "special_calls": 0,
+   "confidence": "high"
+  },
+  {
+   "id": "sympy__sympy-24066",
+   "cond": "grep",
+   "gold": [
+    "sympy/physics/units/unitsystem.py"
+   ],
+   "answer": [
+    "sympy/physics/units/unitsystem.py"
+   ],
+   "acc1": 1,
+   "acc5": 1,
+   "calls": 5,
+   "reads": 1,
+   "files_read": 1,
+   "wasted_files_read": 0,
+   "tool_chars": 3504,
+   "special_calls": 0,
+   "confidence": "high"
+  },
+  {
+   "id": "sympy__sympy-24066",
+   "cond": "graphify",
+   "gold": [
+    "sympy/physics/units/unitsystem.py"
+   ],
+   "answer": [
+    "sympy/physics/units/unitsystem.py"
+   ],
+   "acc1": 1,
+   "acc5": 1,
+   "calls": 4,
+   "reads": 1,
+   "files_read": 1,
+   "wasted_files_read": 0,
+   "tool_chars": 3536,
+   "special_calls": 0,
+   "confidence": "high"
+  },
+  {
+   "id": "sympy__sympy-24066",
+   "cond": "gl",
+   "gold": [
+    "sympy/physics/units/unitsystem.py"
+   ],
+   "answer": [
+    "sympy/physics/units/unitsystem.py"
+   ],
+   "acc1": 1,
+   "acc5": 1,
+   "calls": 4,
+   "reads": 1,
+   "files_read": 1,
+   "wasted_files_read": 0,
+   "tool_chars": 3536,
+   "special_calls": 0,
+   "confidence": "high"
+  },
+  {
+   "id": "django__django-15996",
+   "cond": "grep",
+   "gold": [
+    "django/db/migrations/serializer.py"
+   ],
+   "answer": [
+    "django/db/migrations/serializer.py"
+   ],
+   "acc1": 1,
+   "acc5": 1,
+   "calls": 4,
+   "reads": 1,
+   "files_read": 1,
+   "wasted_files_read": 0,
+   "tool_chars": 1474,
+   "special_calls": 0,
+   "confidence": "high"
+  },
+  {
+   "id": "django__django-15996",
+   "cond": "graphify",
+   "gold": [
+    "django/db/migrations/serializer.py"
+   ],
+   "answer": [
+    "django/db/migrations/serializer.py"
+   ],
+   "acc1": 1,
+   "acc5": 1,
+   "calls": 3,
+   "reads": 0,
+   "files_read": 0,
+   "wasted_files_read": 0,
+   "tool_chars": 667,
+   "special_calls": 0,
+   "confidence": "high"
+  },
+  {
+   "id": "django__django-15996",
+   "cond": "gl",
+   "gold": [
+    "django/db/migrations/serializer.py"
+   ],
+   "answer": [
+    "django/db/migrations/serializer.py"
+   ],
+   "acc1": 1,
+   "acc5": 1,
+   "calls": 3,
+   "reads": 0,
+   "files_read": 0,
+   "wasted_files_read": 0,
+   "tool_chars": 665,
+   "special_calls": 0,
+   "confidence": "high"
+  },
+  {
+   "id": "sphinx-doc__sphinx-8713",
+   "cond": "grep",
+   "gold": [
+    "sphinx/ext/napoleon/docstring.py"
+   ],
+   "answer": [
+    "sphinx/ext/napoleon/docstring.py"
+   ],
+   "acc1": 1,
+   "acc5": 1,
+   "calls": 2,
+   "reads": 0,
+   "files_read": 0,
+   "wasted_files_read": 0,
+   "tool_chars": 1807,
+   "special_calls": 0,
+   "confidence": "high"
+  },
+  {
+   "id": "sphinx-doc__sphinx-8713",
+   "cond": "graphify",
+   "gold": [
+    "sphinx/ext/napoleon/docstring.py"
+   ],
+   "answer": [
+    "sphinx/ext/napoleon/docstring.py"
+   ],
+   "acc1": 1,
+   "acc5": 1,
+   "calls": 2,
+   "reads": 0,
+   "files_read": 0,
+   "wasted_files_read": 0,
+   "tool_chars": 2028,
+   "special_calls": 0,
+   "confidence": "high"
+  },
+  {
+   "id": "sphinx-doc__sphinx-8713",
+   "cond": "gl",
+   "gold": [
+    "sphinx/ext/napoleon/docstring.py"
+   ],
+   "answer": [
+    "sphinx/ext/napoleon/docstring.py"
+   ],
+   "acc1": 1,
+   "acc5": 1,
+   "calls": 2,
+   "reads": 0,
+   "files_read": 0,
+   "wasted_files_read": 0,
+   "tool_chars": 2022,
+   "special_calls": 0,
+   "confidence": "high"
+  },
+  {
+   "id": "scikit-learn__scikit-learn-25638",
+   "cond": "grep",
+   "gold": [
+    "sklearn/utils/multiclass.py"
+   ],
+   "answer": [
+    "sklearn/utils/multiclass.py",
+    "sklearn/utils/validation.py"
+   ],
+   "acc1": 1,
+   "acc5": 1,
+   "calls": 4,
+   "reads": 1,
+   "files_read": 1,
+   "wasted_files_read": 0,
+   "tool_chars": 5567,
+   "special_calls": 0,
+   "confidence": "high"
+  },
+  {
+   "id": "scikit-learn__scikit-learn-25638",
+   "cond": "graphify",
+   "gold": [
+    "sklearn/utils/multiclass.py"
+   ],
+   "answer": [
+    "sklearn/utils/multiclass.py",
+    "sklearn/utils/validation.py"
+   ],
+   "acc1": 1,
+   "acc5": 1,
+   "calls": 4,
+   "reads": 1,
+   "files_read": 1,
+   "wasted_files_read": 0,
+   "tool_chars": 5414,
+   "special_calls": 0,
+   "confidence": "high"
+  },
+  {
+   "id": "scikit-learn__scikit-learn-25638",
+   "cond": "gl",
+   "gold": [
+    "sklearn/utils/multiclass.py"
+   ],
+   "answer": [
+    "sklearn/utils/multiclass.py",
+    "sklearn/utils/validation.py"
+   ],
+   "acc1": 1,
+   "acc5": 1,
+   "calls": 3,
+   "reads": 1,
+   "files_read": 1,
+   "wasted_files_read": 0,
+   "tool_chars": 5482,
+   "special_calls": 0,
+   "confidence": "high"
+  },
+  {
+   "id": "sympy__sympy-24152",
+   "cond": "grep",
+   "gold": [
+    "sympy/physics/quantum/tensorproduct.py"
+   ],
+   "answer": [
+    "sympy/physics/quantum/tensorproduct.py"
+   ],
+   "acc1": 1,
+   "acc5": 1,
+   "calls": 3,
+   "reads": 0,
+   "files_read": 0,
+   "wasted_files_read": 0,
+   "tool_chars": 2390,
+   "special_calls": 0,
+   "confidence": "high"
+  },
+  {
+   "id": "sympy__sympy-24152",
+   "cond": "graphify",
+   "gold": [
+    "sympy/physics/quantum/tensorproduct.py"
+   ],
+   "answer": [
+    "sympy/physics/quantum/tensorproduct.py"
+   ],
+   "acc1": 1,
+   "acc5": 1,
+   "calls": 1,
+   "reads": 0,
+   "files_read": 0,
+   "wasted_files_read": 0,
+   "tool_chars": 2297,
+   "special_calls": 0,
+   "confidence": "high"
+  },
+  {
+   "id": "sympy__sympy-24152",
+   "cond": "gl",
+   "gold": [
+    "sympy/physics/quantum/tensorproduct.py"
+   ],
+   "answer": [
+    "sympy/physics/quantum/tensorproduct.py"
+   ],
+   "acc1": 1,
+   "acc5": 1,
+   "calls": 2,
+   "reads": 0,
+   "files_read": 0,
+   "wasted_files_read": 0,
+   "tool_chars": 2494,
+   "special_calls": 0,
+   "confidence": "high"
+  },
+  {
+   "id": "sympy__sympy-22840",
+   "cond": "grep",
+   "gold": [
+    "sympy/simplify/cse_main.py"
+   ],
+   "answer": [
+    "sympy/simplify/cse_main.py"
+   ],
+   "acc1": 1,
+   "acc5": 1,
+   "calls": 4,
+   "reads": 1,
+   "files_read": 1,
+   "wasted_files_read": 0,
+   "tool_chars": 5643,
+   "special_calls": 0,
+   "confidence": "high"
+  },
+  {
+   "id": "sympy__sympy-22840",
+   "cond": "graphify",
+   "gold": [
+    "sympy/simplify/cse_main.py"
+   ],
+   "answer": [
+    "sympy/simplify/cse_main.py"
+   ],
+   "acc1": 1,
+   "acc5": 1,
+   "calls": 3,
+   "reads": 0,
+   "files_read": 0,
+   "wasted_files_read": 0,
+   "tool_chars": 4012,
+   "special_calls": 0,
+   "confidence": "high"
+  },
+  {
+   "id": "sympy__sympy-22840",
+   "cond": "gl",
+   "gold": [
+    "sympy/simplify/cse_main.py"
+   ],
+   "answer": [
+    "sympy/simplify/cse_main.py"
+   ],
+   "acc1": 1,
+   "acc5": 1,
+   "calls": 3,
+   "reads": 1,
+   "files_read": 1,
+   "wasted_files_read": 0,
+   "tool_chars": 5643,
+   "special_calls": 0,
+   "confidence": "high"
+  },
+  {
+   "id": "django__django-12589",
+   "cond": "grep",
+   "gold": [
+    "django/db/models/sql/query.py"
+   ],
+   "answer": [
+    "django/db/models/sql/query.py"
+   ],
+   "acc1": 1,
+   "acc5": 1,
+   "calls": 6,
+   "reads": 1,
+   "files_read": 1,
+   "wasted_files_read": 0,
+   "tool_chars": 4522,
+   "special_calls": 0,
+   "confidence": "high"
+  },
+  {
+   "id": "django__django-12589",
+   "cond": "graphify",
+   "gold": [
+    "django/db/models/sql/query.py"
+   ],
+   "answer": [
+    "django/db/models/sql/query.py"
+   ],
+   "acc1": 1,
+   "acc5": 1,
+   "calls": 3,
+   "reads": 1,
+   "files_read": 1,
+   "wasted_files_read": 0,
+   "tool_chars": 4394,
+   "special_calls": 0,
+   "confidence": "high"
+  },
+  {
+   "id": "django__django-12589",
+   "cond": "gl",
+   "gold": [
+    "django/db/models/sql/query.py"
+   ],
+   "answer": [
+    "django/db/models/sql/query.py"
+   ],
+   "acc1": 1,
+   "acc5": 1,
+   "calls": 4,
+   "reads": 1,
+   "files_read": 1,
+   "wasted_files_read": 0,
+   "tool_chars": 4256,
+   "special_calls": 0,
+   "confidence": "high"
+  },
+  {
+   "id": "pydata__xarray-4248",
+   "cond": "grep",
+   "gold": [
+    "xarray/core/formatting.py"
+   ],
+   "answer": [
+    "xarray/core/formatting.py",
+    "xarray/core/formatting_html.py"
+   ],
+   "acc1": 1,
+   "acc5": 1,
+   "calls": 2,
+   "reads": 0,
+   "files_read": 0,
+   "wasted_files_read": 0,
+   "tool_chars": 1149,
+   "special_calls": 0,
+   "confidence": "medium"
+  },
+  {
+   "id": "pydata__xarray-4248",
+   "cond": "graphify",
+   "gold": [
+    "xarray/core/formatting.py"
+   ],
+   "answer": [
+    "xarray/core/formatting.py"
+   ],
+   "acc1": 1,
+   "acc5": 1,
+   "calls": 3,
+   "reads": 1,
+   "files_read": 1,
+   "wasted_files_read": 0,
+   "tool_chars": 3782,
+   "special_calls": 0,
+   "confidence": "medium"
+  },
+  {
+   "id": "pydata__xarray-4248",
+   "cond": "gl",
+   "gold": [
+    "xarray/core/formatting.py"
+   ],
+   "answer": [
+    "xarray/core/formatting.py"
+   ],
+   "acc1": 1,
+   "acc5": 1,
+   "calls": 4,
+   "reads": 2,
+   "files_read": 1,
+   "wasted_files_read": 0,
+   "tool_chars": 6475,
+   "special_calls": 0,
+   "confidence": "high"
+  },
+  {
+   "id": "pytest-dev__pytest-5495",
+   "cond": "grep",
+   "gold": [
+    "src/_pytest/assertion/util.py"
+   ],
+   "answer": [
+    "src/_pytest/assertion/util.py"
+   ],
+   "acc1": 1,
+   "acc5": 1,
+   "calls": 4,
+   "reads": 1,
+   "files_read": 1,
+   "wasted_files_read": 0,
+   "tool_chars": 2763,
+   "special_calls": 0,
+   "confidence": "high"
+  },
+  {
+   "id": "pytest-dev__pytest-5495",
+   "cond": "graphify",
+   "gold": [
+    "src/_pytest/assertion/util.py"
+   ],
+   "answer": [
+    "src/_pytest/assertion/util.py"
+   ],
+   "acc1": 1,
+   "acc5": 1,
+   "calls": 4,
+   "reads": 1,
+   "files_read": 1,
+   "wasted_files_read": 0,
+   "tool_chars": 2341,
+   "special_calls": 0,
+   "confidence": "high"
+  },
+  {
+   "id": "pytest-dev__pytest-5495",
+   "cond": "gl",
+   "gold": [
+    "src/_pytest/assertion/util.py"
+   ],
+   "answer": [
+    "src/_pytest/assertion/util.py"
+   ],
+   "acc1": 1,
+   "acc5": 1,
+   "calls": 4,
+   "reads": 1,
+   "files_read": 1,
+   "wasted_files_read": 0,
+   "tool_chars": 2520,
+   "special_calls": 0,
+   "confidence": "high"
+  }
+ ]
+}

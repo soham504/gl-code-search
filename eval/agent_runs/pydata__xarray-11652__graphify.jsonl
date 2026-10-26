@@ -1,0 +1,11 @@
+{"tool": "issue", "args": [], "out_chars": 303, "read_path": null}
+{"tool": "grep", "args": ["-n", "def test_sel", "xarray/tests/test_indexes.py"], "out_chars": 0, "read_path": null}
+{"tool": "grep", "args": ["-n", "exceeds index depth|too many indexers|def sel", "xarray/core/indexes.py"], "out_chars": 0, "read_path": null}
+{"tool": "grep", "args": ["-n", "def sel\\|too many\\|depth", "xarray/core/indexes.py"], "out_chars": 0, "read_path": null}
+{"tool": "grep", "args": ["-n", "def test_sel", "xarray/tests/test_indexes.py"], "out_chars": 0, "read_path": null}
+{"tool": "find", "args": ["indexes.py"], "out_chars": 50, "read_path": null}
+{"tool": "grep", "args": ["def sel"], "out_chars": 511, "read_path": null}
+{"tool": "read", "args": ["xarray/core/indexes.py", "1315", "1440"], "out_chars": 6691, "read_path": "xarray/core/indexes.py"}
+{"tool": "grep", "args": ["-n", "too many\\|1, 2, 3\\|def test_sel", "xarray/tests/test_indexes.py"], "out_chars": 0, "read_path": null}
+{"tool": "grep", "args": ["test_sel", "xarray/tests/test_indexes.py"], "out_chars": 443, "read_path": null}
+{"tool": "read", "args": ["xarray/tests/test_indexes.py", "504", "535"], "out_chars": 1622, "read_path": "xarray/tests/test_indexes.py"}

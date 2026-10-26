@@ -1,0 +1,204 @@
+Unconditional set_env overrides retain an earlier marker
+
+## Issue
+
+An unconditional `set_env` value retains the marker from an earlier value of the same variable. If the earlier marker is false, the variable is omitted even though the later assignment is unconditional.
+
+The same happens when a later `file|.env` overrides a conditional value. Expected: `FOO=unconditional` is included.
+
+## Environment
+
+macOS 26.6.2, CPython 3.14.7, tox main at 99f44217141bba52b00882efec7ab2682f6271a9.
+
+<details>
+<summary>Host environment packages</summary>
+
+```console
+Package                       Version         Editable project location
+----------------------------- --------------- --------------------------------------------------------------------------
+accessible-pygments           0.0.5
+alabaster                     1.0.0
+annotated-types               0.8.0
+anyio                         4.15.1
+argcomplete                   3.7.2
+argon2-cffi                   25.1.0
+argon2-cffi-bindings          26.1.0
+ast_serialize                 0.11.2
+attrs                         26.1.0
+babel                         2.18.0
+beautifulsoup4                4.15.0
+build                         1.6.1
+cachetools                    7.2.0
+certifi                       2026.7.22
+cffi                          2.1.1
+cfgv                          3.5.0
+chardet                       7.6.0
+charset-normalizer            3.5.1
+check-manifest                0.51
+check-wheel-contents          0.6.3
+click                         8.5.0
+colorama                      0.4.6
+covdefaults                   2.3.0
+coverage                      7.16.1
+defusedxml                    0.7.1
+detect-test-pollution         1.2.0
+devpi-client                  7.3.0
+devpi-common                  4.1.1
+devpi-process                 1.2.0
+devpi-server                  6.20.3
+diff_cover                    10.5.1
+distlib                       0.4.3
+docutils                      0.22.4
+execnet                       2.1.2
+filelock                      3.32.7
+flaky                         3.8.1
+furo                          2025.12.19
+gitdb                         4.0.12
+GitPython                     3.1.62
+h11                           0.16.0
+hatch-vcs                     0.5.0
+hatchling                     1.32.3
+httpcore                      1.0.9
+httpx                         0.28.1
+hupper                        1.12.1
+id                            1.6.1
+identify                      2.6.19
+idna                          3.20
+imagesize                     2.0.1
+iniconfig                     2.3.0
+itsdangerous                  2.2.0
+jaraco.classes                3.4.0
+jaraco.context                6.1.2
+jaraco.functools              4.6.0
+Jinja2                        3.1.6
+keyring                       25.7.0
+lazy                          2.0
+legacy-cgi                    2.6.4
+librt                         0.15.0
+markdown-it-py                4.2.0
+MarkupSafe                    3.0.3
+mdurl                         0.1.2
+more-itertools                11.1.0
+mypy                          2.3.1
+mypy_extensions               1.1.0
+nh3                           0.3.7
+nodeenv                       1.10.0
+packaging                     26.3
+packaging-legacy              23.0.post0
+passlib                       1.7.4
+PasteDeploy                   3.1.0
+pathspec                      1.1.1
+pdm-backend                   2.4.9
+pip                           26.2.1
+pkginfo                       1.13
+plaster                       1.1.2
+plaster-pastedeploy           1.0.1
+platformdirs                  4.11.11
+pluggy                        1.6.0
+pre_commit                    4.6.2
+pre-commit-uv                 4.3.0
+psutil                        7.2.2
+py                            1.11.0
+pycparser                     3.0
+pydantic                      2.13.5
+pydantic_core                 2.46.5
+Pygments                      2.21.0
+pyproject-api                 1.11.2
+pyproject_hooks               1.3.3
+pyramid                       2.1
+pyrefly                       1.3.1
+pytest                        9.1.1
+pytest-cov                    7.1.0
+pytest-mock                   3.15.1
+pytest-timeout                2.4.0
+pytest-xdist                  3.8.0
+python-dateutil               2.9.0.post0
+python-discovery              1.6.1
+PyYAML                        6.0.3
+re-assert                     1.1.0
+readme_renderer               46.0
+regex                         2026.9.10
+repoze-lru                    0.8
+requests                      2.34.2
+requests-toolbelt             1.0.0
+rfc3986                       2.0.0
+rich                          15.0.0
+roman-numerals                4.1.0
+ruamel.yaml                   0.19.1
+setuptools                    81.0.0
+setuptools-scm                10.2.3
+six                           1.17.0
+smmap                         5.0.3
+snowballstemmer               3.1.1
+soupsieve                     2.9.2
+Sphinx                        9.1.0
+sphinx-argparse-cli           1.23.0
+sphinx-autodoc-typehints      3.13.7
+sphinx-basic-ng               1.0.0b2
+sphinx-copybutton             0.5.2
+sphinx_inline_tabs            2025.12.21.14
+sphinx-issues                 6.0.0
+sphinx-llm                    1.0.0
+sphinx-markdown-builder       0.6.11
+sphinx-reredirects            1.1.0
+sphinxcontrib-applehelp       2.0.0
+sphinxcontrib-devhelp         2.0.0
+sphinxcontrib-htmlhelp        2.1.0
+sphinxcontrib-jsmath          1.0.1
+sphinxcontrib-mermaid         2.1.1
+sphinxcontrib-qthelp          2.0.0
+sphinxcontrib-serializinghtml 2.0.0
+sphinxcontrib-towncrier       0.5.0a0
+strictyaml                    1.7.3
+tabulate                      0.10.0
+time-machine                  3.5.1
+tombi                         1.5.5
+tomli_w                       1.2.0
+tomlkit                       0.15.1
+towncrier                     26.9.0
+tox                           4.62.0          /Users/jakewang/Desktop/Personal/open-source-contributor/repos-batch20/tox
+translationstring             1.4
+trove-classifiers             2026.6.1.19
+truststore                    0.10.4
+twine                         7.0.0
+ty                            0.0.82
+types-colorama                0.4.15.20260508
+types-docutils                0.23.0.20260917
+typing_extensions             4.16.0
+typing-inspection             0.4.4
+urllib3                       2.8.0
+uv                            0.12.17
+vcs-versioning                2.4.1
+venusian                      3.1.1
+virtualenv                    21.7.15
+waitress                      3.0.2
+WebOb                         1.8.11
+wheel                         0.48.0
+wheel-filename                1.4.2
+zope.deprecation              6.0
+zope.interface                8.6
+```
+
+</details>
+
+## Output of running tox
+
+`tox c -e py -k set_env --hashseed 1` produces:
+
+```console
+[testenv:py]
+set_env =
+  PIP_DISABLE_PIP_VERSION_CHECK=1
+  PYTHONHASHSEED=1
+  PYTHONIOENCODING=utf-8
+```
+
+## Minimal example
+
+```ini
+[testenv]
+package = skip
+set_env =
+    FOO=conditional; sys_platform == 'nonexistent'
+    FOO=unconditional
+```

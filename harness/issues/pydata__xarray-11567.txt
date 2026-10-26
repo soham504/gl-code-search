@@ -1,0 +1,155 @@
+Rechunking a multi-dimensional cftime array along a subset of its dimensions raises an error
+
+### What happened?
+
+Following #10527, attempting to rechunk a multi-dimensional cftime array along a subset of its dimensions raises an error.
+
+### What did you expect to happen?
+
+I would expect this to succeed.
+
+### Minimal Complete Verifiable Example
+
+```Python
+# /// script
+# requires-python = ">=3.11"
+# dependencies = [
+#   "xarray[complete]@git+https://github.com/pydata/xarray.git@main",
+# ]
+# ///
+#
+# This script automatically imports the development branch of xarray to check for issues.
+# Please delete this header if you have _not_ tested this script with `uv run`!
+
+import xarray as xr
+xr.show_versions()
+
+times = xr.date_range("2000", periods=6, use_cftime=True)
+times = times.to_numpy().reshape((2, 3))
+da = xr.DataArray(times, dims=["x", "y"])
+da.chunk().chunk({"x": "1"})
+```
+
+### Steps to reproduce
+
+_No response_
+
+### MVCE confirmation
+
+- [x] Minimal example — the example is as focused as reasonably possible to demonstrate the underlying issue in xarray.
+- [x] Complete example — the example is self-contained, including all data and the text of any traceback.
+- [x] Verifiable example — the example copy & pastes into an IPython prompt or [Binder notebook](https://mybinder.org/v2/gh/pydata/xarray/main?urlpath=lab/tree/doc/examples/blank_template.ipynb), returning the result.
+- [x] New issue — a search of GitHub Issues suggests this is not a duplicate.
+- [x] Recent environment — the issue occurs with the latest version of xarray and its dependencies.
+
+### Relevant log output
+
+```Python
+Traceback (most recent call last):
+  File "<python-input-4>", line 1, in <module>
+    da.chunk().chunk({"x": "1"})
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+  File "/Users/spencer/software/xarray/xarray/core/dataarray.py", line 1617, in chunk
+    ds = self._to_temp_dataset().chunk(
+        chunk_mapping,
+    ...<5 lines>...
+        from_array_kwargs=from_array_kwargs,
+    )
+  File "/Users/spencer/software/xarray/xarray/core/dataset.py", line 2694, in chunk
+    k: _maybe_chunk(
+       ~~~~~~~~~~~~^
+        k,
+        ^^
+    ...<7 lines>...
+        from_array_kwargs=from_array_kwargs.copy(),
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/Users/spencer/software/xarray/xarray/structure/chunks.py", line 110, in _maybe_chunk
+    var = var.chunk(
+        chunks,
+        chunked_array_type=chunked_array_type,
+        from_array_kwargs=from_array_kwargs,
+    )
+  File "/Users/spencer/software/xarray/xarray/core/variable.py", line 2747, in chunk
+    return super().chunk(
+           ~~~~~~~~~~~~~^
+        chunks=chunks,
+        ^^^^^^^^^^^^^^
+    ...<2 lines>...
+        **chunks_kwargs,
+        ^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/Users/spencer/software/xarray/xarray/namedarray/core.py", line 843, in chunk
+    data_chunked = chunkmanager.rechunk(data_old, chunks)  # type: ignore[arg-type]
+  File "/Users/spencer/software/xarray/xarray/namedarray/daskmanager.py", line 297, in rechunk
+    return super().rechunk(data, chunks, **kwargs)  # type: ignore[arg-type]
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/spencer/software/xarray/xarray/namedarray/parallelcompat.py", line 359, in rechunk
+    chunks2 = _get_chunk(data, chunks, self, preferred_chunks={})  # type: ignore[arg-type]
+  File "/Users/spencer/software/xarray/xarray/namedarray/utils.py", line 222, in _get_chunk
+    preferred_chunk_shape = tuple(
+        itertools.starmap(preferred_chunks.get, zip(dims, shape, strict=True))
+    )
+ValueError: zip() argument 2 is longer than argument 1
+```
+
+### Anything else we need to know?
+
+_No response_
+
+### Environment
+
+<details>
+
+INSTALLED VERSIONS
+------------------
+commit: cacf35d31f527290747b581b49b2dc32d6bad5cc
+python: 3.13.14 | packaged by conda-forge | (main, Jun 12 2026, 09:44:24) [Clang 19.1.7 ]
+python-bits: 64
+OS: Darwin
+OS-release: 25.6.0
+machine: arm64
+processor: arm
+byteorder: little
+LC_ALL: None
+LANG: en_US.UTF-8
+LOCALE: ('en_US', 'UTF-8')
+libhdf5: 2.1.0
+libnetcdf: 4.10.0
+
+xarray: 2025.4.1.dev568+ga48f3152c.d20260829
+pandas: 3.0.3
+numpy: 2.4.6
+scipy: 1.18.0
+netCDF4: 1.7.4
+pydap: 3.5.10
+h5netcdf: 1.8.1
+h5py: 3.16.0
+zarr: 3.2.1
+cftime: 1.6.5
+nc_time_axis: 1.4.1
+iris: 3.15.0
+bottleneck: 1.6.0
+dask: 2026.6.0
+distributed: 2026.6.0
+matplotlib: 3.11.0
+cartopy: 0.25.0
+seaborn: 0.13.2
+numbagg: 0.9.4
+fsspec: 2026.6.0
+cupy: None
+pint: 0.25.3
+sparse: 0.19.0
+flox: 0.11.2
+numpy_groupies: 0.11.3
+setuptools: 82.0.1
+pip: None
+conda: None
+pytest: 9.1.1
+mypy: 2.1.0
+IPython: 9.15.0
+sphinx: None
+
+</details>

@@ -1,0 +1,144 @@
+Inconsistent import behavior between `ignore_data_tracks` and `ignore_video_tracks`
+
+On `beet import`, when you have those types on their default values, if an album is not found and you select ID, ignore_video_tracks=yes will even not find the album. ignore_data_tracks=yes will find it.
+
+Even though there is no semantic difference between them in the docs: 
+- https://beets.readthedocs.io/en/stable/reference/config.html#ignore-data-tracks
+- https://beets.readthedocs.io/en/stable/reference/config.html#ignore-video-tracks
+
+### Problem
+
+When I try to import 3f9d3f93-a79b-43d1-8344-4c0dc83cd16c with ignore_data_tracks=yes will find it.
+But when I try to import b76a7a24-cacd-4200-8be2-f873c0f76872 witth ignore_video_tracks=yes it will not find it.
+
+### Setup
+
+* OS: NixOS
+* Python version: 3.14.6
+* beets version: 2.12.0
+* Turning off plugins made problem go away (yes/no): no
+
+<!--
+You can turn off plugins temporarily by passing --plugins= on the command line:
+
+$ beet --plugins= version
+-->
+
+My configuration (output of `beet config`) is:
+
+```yaml
+aunique:
+    bracket: '[]'
+    disambiguators:
+    - albumtype
+    - year
+    - label
+    - catalognum
+    - albumdisambig
+    - releasegroupdisambig
+    keys: [albumartist, album]
+directory: /mnt/media/music/library
+embedart:
+    auto: yes
+fetchart:
+    auto: yes
+    sources:
+    - filesystem
+    - coverart
+    - itunes
+    - amazon
+    - albumart
+    - fanarttv
+
+import:
+    autotag: yes
+    bell: yes
+    copy: no
+    duplicate_action: skip
+    log: /mnt/media/music/library/.beets/import.log
+    move: yes
+    quiet: no
+    quiet_fallback: skip
+    write: yes
+lastgenre:
+    auto: yes
+    source: album
+# --------------- Main ---------------
+
+library: /mnt/media/music/library/beets.db
+lyrics:
+    auto: yes
+    sources: [lrclib, genius, tekstowo]
+    synced: yes
+    auto_ignore:
+    translate:
+        api_key: REDACTED
+        from_languages: []
+        to_language:
+    dist_thresh: 0.11
+    google_API_key: REDACTED
+    google_engine_ID: REDACTED
+    genius_api_key: REDACTED
+    fallback:
+    force: no
+    keep_synced: no
+    local: no
+    print: no
+
+original_date: yes
+paths:
+    comp: Compilations/($year) $album/$track $title
+    default: $albumartist/($year) $album/$track $title
+    singleton: $albumartist/($year) $album/$track $title
+
+# --------------- Tagging ---------------
+
+per_disc_numbering: yes
+
+# --------------- Plugins ---------------
+
+plugins: [duplicates, lyrics, musicbrainz]
+replace:
+    '[\\/]': _
+    '[\x00-\x1f\\?*:"<>|]': _
+    ^\.: _
+terminal_encoding: utf-8
+
+# --------------- Performance ---------------
+
+threaded: yes
+
+ui:
+    color: yes
+disabled_plugins: []
+duplicates:
+    album: no
+    checksum: ''
+    copy: ''
+    count: no
+    delete: no
+    format: ''
+    full: no
+    keys: []
+    merge: no
+    move: ''
+    path: no
+    tiebreak: {}
+    strict: no
+    tag: ''
+    remove: no
+musicbrainz:
+    search_limit: 5
+    data_source_mismatch_penalty: 0.5
+    search_query_ascii: no
+    genres: no
+    genres_tag: genre
+    external_ids:
+        discogs: no
+        bandcamp: no
+        spotify: no
+        deezer: no
+        tidal: no
+    extra_tags: []
+    aliases_as_credits: no
+```

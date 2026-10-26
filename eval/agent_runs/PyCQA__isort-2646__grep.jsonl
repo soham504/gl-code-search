@@ -1,0 +1,2 @@
+{"tool": "issue", "args": [], "out_chars": 2151, "read_path": null}
+{"tool": "read", "args": ["isort/literal.py", "1", "120"], "out_chars": 4593, "read_path": "isort/literal.py"}

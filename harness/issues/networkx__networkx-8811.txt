@@ -1,0 +1,83 @@
+all_shortest_paths and related APIs accept method="unweighted", silently ignoring weight instead of raising the documented ValueError
+
+## Summary
+
+`all_shortest_paths`, `single_source_all_shortest_paths`, and `all_pairs_all_shortest_paths` accept `method="unweighted"` explicitly, even though the docstring documents only `"dijkstra"` and `"bellman-ford"` as supported values.
+
+Unlike `shortest_path()` and `shortest_path_length()`, these functions do not validate `method` before using it. As a result, passing method="unweighted" performs an unweighted search even when weight is provided, instead of raising the documented ValueError.
+
+## Reproduction
+
+```python
+import networkx as nx
+
+G = nx.Graph()
+G.add_edge("A", "B", weight=100)
+G.add_edge("A", "C", weight=1)
+G.add_edge("C", "D", weight=1)
+G.add_edge("D", "B", weight=1)
+
+# Weighted shortest path
+print(list(nx.all_shortest_paths(G, "A", "B", weight="weight", method="dijkstra")))
+# [['A', 'C', 'D', 'B']]
+
+# shortest_path() raises the documented ValueError
+try:
+    nx.shortest_path(G, "A", "B", weight="weight", method="unweighted")
+except ValueError as e:
+    print(e)
+
+# all_shortest_paths() performs an unweighted search instead
+print(list(nx.all_shortest_paths(G, "A", "B", weight="weight", method="unweighted")))
+# [['A', 'B']]
+```
+
+## Expected behavior
+
+Passing any unsupported `method` value, including `"unweighted"`, should raise `ValueError`, matching the documented API and the behavior of `shortest_path()` and `shortest_path_length()`.
+
+## Actual behavior
+
+The functions accept `method="unweighted"` and perform an unweighted search, effectively ignoring the supplied weight argument.
+
+## Root cause
+
+```python
+method = "unweighted" if weight is None else method
+if method == "unweighted":
+    ...
+elif method == "dijkstra":
+    ...
+elif method == "bellman-ford":
+    ...
+else:
+    raise ValueError(...)
+```
+
+`shortest_path` and `shortest_path_length`, in the same file, validate before assigning the internal `"unweighted"` sentinel:
+
+```diff
++if method not in ("dijkstra", "bellman-ford"):
++    raise ValueError(f"method not supported: {method}")
+ method = "unweighted" if weight is None else method
+ if method == "unweighted":
+     
+```
+
+That guard is missing in the three functions below.
+
+## Affected functions
+
+-`all_shortest_paths`
+-`single_source_all_shortest_paths`
+-`all_pairs_all_shortest_paths (inherits the behavior via single_source_all_shortest_paths)`
+
+## Backward compatibility
+
+Existing tests (`test_bad_method`, `test_single_source_all_shortest_paths_bad_method`) already assert `ValueError` is raised for garbage `method` values like `"SPAM"`,but I couldn't find tests covering method="unweighted" for these functions.
+
+## Suggested fix
+
+Apply the same validate-before-assign guard used in `shortest_path`/`shortest_path_length` to the three functions above, plus a test using `method="unweighted"` explicitly (not just a garbage string) on each.
+
+I'm happy to open a PR if this is considered unintended. I wanted to raise the issue first in case the behavioral difference is intentional for backward compatibility.

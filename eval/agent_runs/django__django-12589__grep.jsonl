@@ -1,0 +1,6 @@
+{"tool": "issue", "args": [], "out_chars": 2416, "read_path": null}
+{"tool": "grep", "args": ["-n", "def set_group_by\\|allow_alias\\|def get_group_by_cols", "django/db/models/sql/query.py", "django/db/models/expressions.py"], "out_chars": 0, "read_path": null}
+{"tool": "grep", "args": ["-n", "def set_group_by|alias=None|get_group_by_cols\\(alias", "django/db/models/sql"], "out_chars": 0, "read_path": null}
+{"tool": "grep", "args": ["def set_group_by"], "out_chars": 84, "read_path": null}
+{"tool": "grep", "args": ["get_group_by_cols\\(alias"], "out_chars": 114, "read_path": null}
+{"tool": "read", "args": ["django/db/models/sql/query.py", "1921", "1955"], "out_chars": 1908, "read_path": "django/db/models/sql/query.py"}

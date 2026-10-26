@@ -1,0 +1,1 @@
+{"analyzer":"english","dataset":"scifact","docs":5183,"index_build":"559ms","latency_mean":"1.630873ms","latency_p50":"1.673834ms","latency_p99":"2.795709ms","ndcg@10":0.6944,"queries":300}

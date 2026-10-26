@@ -1,0 +1,2 @@
+{"tool": "issue", "args": [], "out_chars": 3397, "read_path": null}
+{"tool": "grep", "args": ["def auto_table_layout|available_ratio", "weasyprint/layout/table.py"], "out_chars": 302, "read_path": null}

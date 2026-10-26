@@ -1,0 +1,4 @@
+{"tool": "issue", "args": [], "out_chars": 879, "read_path": null}
+{"tool": "grep", "args": ["-n", "_get_FIELD_display\\|get_%s_display", "django/db/models"], "out_chars": 0, "read_path": null}
+{"tool": "grep", "args": ["_display", "django/db/models"], "out_chars": 373, "read_path": null}
+{"tool": "read", "args": ["django/db/models/fields/__init__.py", "750", "775"], "out_chars": 1345, "read_path": "django/db/models/fields/__init__.py"}

@@ -1,0 +1,1285 @@
+{
+ "n": 20,
+ "summary": {
+  "grep": {
+   "acc1": 0.85,
+   "acc5": 0.9,
+   "calls": 4.6,
+   "reads": 1.8,
+   "files_read": 1.4,
+   "wasted_files_read": 0.55,
+   "tool_chars": 9088.35,
+   "special_calls": 0
+  },
+  "graphify": {
+   "acc1": 0.85,
+   "acc5": 0.9,
+   "calls": 5.75,
+   "reads": 1.85,
+   "files_read": 1.5,
+   "wasted_files_read": 0.7,
+   "tool_chars": 8887.7,
+   "special_calls": 0
+  },
+  "gl": {
+   "acc1": 0.85,
+   "acc5": 0.9,
+   "calls": 4.4,
+   "reads": 1.45,
+   "files_read": 1.25,
+   "wasted_files_read": 0.55,
+   "tool_chars": 8104.7,
+   "special_calls": 0.3
+  }
+ },
+ "paired": {
+  "graphify": {
+   "acc1": {
+    "mean": 0,
+    "ci95": [
+     0,
+     0
+    ]
+   },
+   "acc5": {
+    "mean": 0,
+    "ci95": [
+     0,
+     0
+    ]
+   },
+   "calls": {
+    "mean": 1.15,
+    "ci95": [
+     -0.15,
+     2.9
+    ]
+   },
+   "wasted_files_read": {
+    "mean": 0.15,
+    "ci95": [
+     -0.1,
+     0.4
+    ]
+   },
+   "tool_chars": {
+    "mean": -200.65,
+    "ci95": [
+     -1445.55,
+     1250.35
+    ]
+   }
+  },
+  "gl": {
+   "acc1": {
+    "mean": 0,
+    "ci95": [
+     0,
+     0
+    ]
+   },
+   "acc5": {
+    "mean": 0,
+    "ci95": [
+     0,
+     0
+    ]
+   },
+   "calls": {
+    "mean": -0.2,
+    "ci95": [
+     -0.9,
+     0.65
+    ]
+   },
+   "wasted_files_read": {
+    "mean": 0,
+    "ci95": [
+     -0.3,
+     0.3
+    ]
+   },
+   "tool_chars": {
+    "mean": -983.65,
+    "ci95": [
+     -2595,
+     451.15
+    ]
+   }
+  }
+ },
+ "runs": [
+  {
+   "id": "pydata__xarray-11567",
+   "cond": "grep",
+   "gold": [
+    "xarray/namedarray/parallelcompat.py"
+   ],
+   "answer": [
+    "xarray/namedarray/parallelcompat.py",
+    "xarray/namedarray/utils.py",
+    "xarray/namedarray/core.py"
+   ],
+   "acc1": 1,
+   "acc5": 1,
+   "calls": 4,
+   "reads": 3,
+   "files_read": 3,
+   "wasted_files_read": 2,
+   "tool_chars": 13060,
+   "special_calls": 0,
+   "confidence": "high"
+  },
+  {
+   "id": "pydata__xarray-11567",
+   "cond": "graphify",
+   "gold": [
+    "xarray/namedarray/parallelcompat.py"
+   ],
+   "answer": [
+    "xarray/namedarray/parallelcompat.py",
+    "xarray/namedarray/utils.py",
+    "xarray/namedarray/core.py"
+   ],
+   "acc1": 1,
+   "acc5": 1,
+   "calls": 5,
+   "reads": 4,
+   "files_read": 4,
+   "wasted_files_read": 3,
+   "tool_chars": 12595,
+   "special_calls": 0,
+   "confidence": "high"
+  },
+  {
+   "id": "pydata__xarray-11567",
+   "cond": "gl",
+   "gold": [
+    "xarray/namedarray/parallelcompat.py"
+   ],
+   "answer": [
+    "xarray/namedarray/parallelcompat.py",
+    "xarray/namedarray/utils.py"
+   ],
+   "acc1": 1,
+   "acc5": 1,
+   "calls": 4,
+   "reads": 3,
+   "files_read": 3,
+   "wasted_files_read": 2,
+   "tool_chars": 13309,
+   "special_calls": 0,
+   "confidence": "high"
+  },
+  {
+   "id": "beetbox__beets-7056",
+   "cond": "grep",
+   "gold": [
+    "beets/util/__init__.py"
+   ],
+   "answer": [
+    "beets/dbcore/pathutils.py",
+    "beets/util/__init__.py"
+   ],
+   "acc1": 0,
+   "acc5": 1,
+   "calls": 15,
+   "reads": 10,
+   "files_read": 5,
+   "wasted_files_read": 4,
+   "tool_chars": 30275,
+   "special_calls": 0,
+   "confidence": "high"
+  },
+  {
+   "id": "beetbox__beets-7056",
+   "cond": "graphify",
+   "gold": [
+    "beets/util/__init__.py"
+   ],
+   "answer": [
+    "beetsplug/permissions.py",
+    "beets/util/__init__.py",
+    "beets/library/models.py"
+   ],
+   "acc1": 0,
+   "acc5": 1,
+   "calls": 19,
+   "reads": 8,
+   "files_read": 5,
+   "wasted_files_read": 4,
+   "tool_chars": 29142,
+   "special_calls": 0,
+   "confidence": "medium"
+  },
+  {
+   "id": "beetbox__beets-7056",
+   "cond": "gl",
+   "gold": [
+    "beets/util/__init__.py"
+   ],
+   "answer": [
+    "beets/dbcore/pathutils.py",
+    "beets/util/__init__.py"
+   ],
+   "acc1": 0,
+   "acc5": 1,
+   "calls": 17,
+   "reads": 6,
+   "files_read": 4,
+   "wasted_files_read": 3,
+   "tool_chars": 17815,
+   "special_calls": 2,
+   "confidence": "high"
+  },
+  {
+   "id": "PyCQA__isort-2646",
+   "cond": "grep",
+   "gold": [
+    "isort/core.py",
+    "isort/literal.py"
+   ],
+   "answer": [
+    "isort/literal.py",
+    "isort/core.py"
+   ],
+   "acc1": 1,
+   "acc5": 1,
+   "calls": 2,
+   "reads": 1,
+   "files_read": 1,
+   "wasted_files_read": 0,
+   "tool_chars": 6744,
+   "special_calls": 0,
+   "confidence": "high"
+  },
+  {
+   "id": "PyCQA__isort-2646",
+   "cond": "graphify",
+   "gold": [
+    "isort/core.py",
+    "isort/literal.py"
+   ],
+   "answer": [
+    "isort/literal.py",
+    "isort/core.py"
+   ],
+   "acc1": 1,
+   "acc5": 1,
+   "calls": 2,
+   "reads": 1,
+   "files_read": 1,
+   "wasted_files_read": 0,
+   "tool_chars": 6744,
+   "special_calls": 0,
+   "confidence": "high"
+  },
+  {
+   "id": "PyCQA__isort-2646",
+   "cond": "gl",
+   "gold": [
+    "isort/core.py",
+    "isort/literal.py"
+   ],
+   "answer": [
+    "isort/literal.py",
+    "isort/core.py"
+   ],
+   "acc1": 1,
+   "acc5": 1,
+   "calls": 2,
+   "reads": 1,
+   "files_read": 1,
+   "wasted_files_read": 0,
+   "tool_chars": 6744,
+   "special_calls": 0,
+   "confidence": "high"
+  },
+  {
+   "id": "beetbox__beets-7036",
+   "cond": "grep",
+   "gold": [
+    "beets/events.py",
+    "beets/plugins.py"
+   ],
+   "answer": [
+    "beetsplug/hook.py"
+   ],
+   "acc1": 0,
+   "acc5": 0,
+   "calls": 2,
+   "reads": 1,
+   "files_read": 1,
+   "wasted_files_read": 1,
+   "tool_chars": 6653,
+   "special_calls": 0,
+   "confidence": "high"
+  },
+  {
+   "id": "beetbox__beets-7036",
+   "cond": "graphify",
+   "gold": [
+    "beets/events.py",
+    "beets/plugins.py"
+   ],
+   "answer": [
+    "beetsplug/hook.py"
+   ],
+   "acc1": 0,
+   "acc5": 0,
+   "calls": 2,
+   "reads": 1,
+   "files_read": 1,
+   "wasted_files_read": 1,
+   "tool_chars": 6653,
+   "special_calls": 0,
+   "confidence": "high"
+  },
+  {
+   "id": "beetbox__beets-7036",
+   "cond": "gl",
+   "gold": [
+    "beets/events.py",
+    "beets/plugins.py"
+   ],
+   "answer": [
+    "beetsplug/hook.py"
+   ],
+   "acc1": 0,
+   "acc5": 0,
+   "calls": 2,
+   "reads": 1,
+   "files_read": 1,
+   "wasted_files_read": 1,
+   "tool_chars": 6653,
+   "special_calls": 0,
+   "confidence": "high"
+  },
+  {
+   "id": "beetbox__beets-6953",
+   "cond": "grep",
+   "gold": [
+    "beetsplug/edit.py"
+   ],
+   "answer": [
+    "beetsplug/edit.py"
+   ],
+   "acc1": 1,
+   "acc5": 1,
+   "calls": 4,
+   "reads": 1,
+   "files_read": 1,
+   "wasted_files_read": 0,
+   "tool_chars": 10094,
+   "special_calls": 0,
+   "confidence": "high"
+  },
+  {
+   "id": "beetbox__beets-6953",
+   "cond": "graphify",
+   "gold": [
+    "beetsplug/edit.py"
+   ],
+   "answer": [
+    "beetsplug/edit.py"
+   ],
+   "acc1": 1,
+   "acc5": 1,
+   "calls": 4,
+   "reads": 1,
+   "files_read": 1,
+   "wasted_files_read": 0,
+   "tool_chars": 10094,
+   "special_calls": 0,
+   "confidence": "high"
+  },
+  {
+   "id": "beetbox__beets-6953",
+   "cond": "gl",
+   "gold": [
+    "beetsplug/edit.py"
+   ],
+   "answer": [
+    "beetsplug/edit.py"
+   ],
+   "acc1": 1,
+   "acc5": 1,
+   "calls": 4,
+   "reads": 1,
+   "files_read": 1,
+   "wasted_files_read": 0,
+   "tool_chars": 10697,
+   "special_calls": 0,
+   "confidence": "high"
+  },
+  {
+   "id": "tox-dev__tox-4073",
+   "cond": "grep",
+   "gold": [
+    "src/tox/config/loader/replacer.py"
+   ],
+   "answer": [
+    "src/tox/config/loader/replacer.py"
+   ],
+   "acc1": 1,
+   "acc5": 1,
+   "calls": 3,
+   "reads": 0,
+   "files_read": 0,
+   "wasted_files_read": 0,
+   "tool_chars": 1901,
+   "special_calls": 0,
+   "confidence": "high"
+  },
+  {
+   "id": "tox-dev__tox-4073",
+   "cond": "graphify",
+   "gold": [
+    "src/tox/config/loader/replacer.py"
+   ],
+   "answer": [
+    "src/tox/config/loader/replacer.py"
+   ],
+   "acc1": 1,
+   "acc5": 1,
+   "calls": 3,
+   "reads": 0,
+   "files_read": 0,
+   "wasted_files_read": 0,
+   "tool_chars": 1901,
+   "special_calls": 0,
+   "confidence": "high"
+  },
+  {
+   "id": "tox-dev__tox-4073",
+   "cond": "gl",
+   "gold": [
+    "src/tox/config/loader/replacer.py"
+   ],
+   "answer": [
+    "src/tox/config/loader/replacer.py"
+   ],
+   "acc1": 1,
+   "acc5": 1,
+   "calls": 3,
+   "reads": 0,
+   "files_read": 0,
+   "wasted_files_read": 0,
+   "tool_chars": 1901,
+   "special_calls": 0,
+   "confidence": "high"
+  },
+  {
+   "id": "networkx__networkx-8798",
+   "cond": "grep",
+   "gold": [
+    "networkx/algorithms/traversal/breadth_first_search.py"
+   ],
+   "answer": [
+    "networkx/algorithms/traversal/breadth_first_search.py"
+   ],
+   "acc1": 1,
+   "acc5": 1,
+   "calls": 4,
+   "reads": 1,
+   "files_read": 1,
+   "wasted_files_read": 0,
+   "tool_chars": 3675,
+   "special_calls": 0,
+   "confidence": "high"
+  },
+  {
+   "id": "networkx__networkx-8798",
+   "cond": "graphify",
+   "gold": [
+    "networkx/algorithms/traversal/breadth_first_search.py"
+   ],
+   "answer": [
+    "networkx/algorithms/traversal/breadth_first_search.py"
+   ],
+   "acc1": 1,
+   "acc5": 1,
+   "calls": 2,
+   "reads": 0,
+   "files_read": 0,
+   "wasted_files_read": 0,
+   "tool_chars": 894,
+   "special_calls": 0,
+   "confidence": "high"
+  },
+  {
+   "id": "networkx__networkx-8798",
+   "cond": "gl",
+   "gold": [
+    "networkx/algorithms/traversal/breadth_first_search.py"
+   ],
+   "answer": [
+    "networkx/algorithms/traversal/breadth_first_search.py"
+   ],
+   "acc1": 1,
+   "acc5": 1,
+   "calls": 2,
+   "reads": 0,
+   "files_read": 0,
+   "wasted_files_read": 0,
+   "tool_chars": 915,
+   "special_calls": 1,
+   "confidence": "high"
+  },
+  {
+   "id": "Kozea__WeasyPrint-2855",
+   "cond": "grep",
+   "gold": [
+    "weasyprint/formatting_structure/build.py"
+   ],
+   "answer": [
+    "weasyprint/formatting_structure/build.py"
+   ],
+   "acc1": 1,
+   "acc5": 1,
+   "calls": 3,
+   "reads": 1,
+   "files_read": 1,
+   "wasted_files_read": 0,
+   "tool_chars": 6573,
+   "special_calls": 0,
+   "confidence": "high"
+  },
+  {
+   "id": "Kozea__WeasyPrint-2855",
+   "cond": "graphify",
+   "gold": [
+    "weasyprint/formatting_structure/build.py"
+   ],
+   "answer": [
+    "weasyprint/formatting_structure/build.py"
+   ],
+   "acc1": 1,
+   "acc5": 1,
+   "calls": 18,
+   "reads": 5,
+   "files_read": 3,
+   "wasted_files_read": 2,
+   "tool_chars": 17021,
+   "special_calls": 0,
+   "confidence": "high"
+  },
+  {
+   "id": "Kozea__WeasyPrint-2855",
+   "cond": "gl",
+   "gold": [
+    "weasyprint/formatting_structure/build.py"
+   ],
+   "answer": [
+    "weasyprint/formatting_structure/build.py"
+   ],
+   "acc1": 1,
+   "acc5": 1,
+   "calls": 9,
+   "reads": 3,
+   "files_read": 3,
+   "wasted_files_read": 2,
+   "tool_chars": 13880,
+   "special_calls": 0,
+   "confidence": "high"
+  },
+  {
+   "id": "Kozea__WeasyPrint-2843",
+   "cond": "grep",
+   "gold": [
+    "weasyprint/text/fonts.py"
+   ],
+   "answer": [
+    "weasyprint/text/fonts.py"
+   ],
+   "acc1": 1,
+   "acc5": 1,
+   "calls": 4,
+   "reads": 1,
+   "files_read": 1,
+   "wasted_files_read": 0,
+   "tool_chars": 6266,
+   "special_calls": 0,
+   "confidence": "high"
+  },
+  {
+   "id": "Kozea__WeasyPrint-2843",
+   "cond": "graphify",
+   "gold": [
+    "weasyprint/text/fonts.py"
+   ],
+   "answer": [
+    "weasyprint/text/fonts.py"
+   ],
+   "acc1": 1,
+   "acc5": 1,
+   "calls": 4,
+   "reads": 1,
+   "files_read": 1,
+   "wasted_files_read": 0,
+   "tool_chars": 6266,
+   "special_calls": 0,
+   "confidence": "high"
+  },
+  {
+   "id": "Kozea__WeasyPrint-2843",
+   "cond": "gl",
+   "gold": [
+    "weasyprint/text/fonts.py"
+   ],
+   "answer": [
+    "weasyprint/text/fonts.py"
+   ],
+   "acc1": 1,
+   "acc5": 1,
+   "calls": 4,
+   "reads": 1,
+   "files_read": 1,
+   "wasted_files_read": 0,
+   "tool_chars": 6559,
+   "special_calls": 0,
+   "confidence": "high"
+  },
+  {
+   "id": "Kozea__WeasyPrint-2842",
+   "cond": "grep",
+   "gold": [
+    "weasyprint/layout/table.py"
+   ],
+   "answer": [
+    "weasyprint/layout/table.py"
+   ],
+   "acc1": 1,
+   "acc5": 1,
+   "calls": 2,
+   "reads": 1,
+   "files_read": 1,
+   "wasted_files_read": 0,
+   "tool_chars": 6481,
+   "special_calls": 0,
+   "confidence": "high"
+  },
+  {
+   "id": "Kozea__WeasyPrint-2842",
+   "cond": "graphify",
+   "gold": [
+    "weasyprint/layout/table.py"
+   ],
+   "answer": [
+    "weasyprint/layout/table.py"
+   ],
+   "acc1": 1,
+   "acc5": 1,
+   "calls": 2,
+   "reads": 1,
+   "files_read": 1,
+   "wasted_files_read": 0,
+   "tool_chars": 6481,
+   "special_calls": 0,
+   "confidence": "high"
+  },
+  {
+   "id": "Kozea__WeasyPrint-2842",
+   "cond": "gl",
+   "gold": [
+    "weasyprint/layout/table.py"
+   ],
+   "answer": [
+    "weasyprint/layout/table.py"
+   ],
+   "acc1": 1,
+   "acc5": 1,
+   "calls": 2,
+   "reads": 0,
+   "files_read": 0,
+   "wasted_files_read": 0,
+   "tool_chars": 3699,
+   "special_calls": 0,
+   "confidence": "high"
+  },
+  {
+   "id": "beetbox__beets-6989",
+   "cond": "grep",
+   "gold": [
+    "beetsplug/tidal/__init__.py",
+    "beetsplug/tidal/api.py",
+    "beetsplug/tidal/api_types.py"
+   ],
+   "answer": [
+    "beetsplug/tidal/api.py",
+    "beetsplug/tidal/__init__.py",
+    "beetsplug/tidal/api_types.py"
+   ],
+   "acc1": 1,
+   "acc5": 1,
+   "calls": 6,
+   "reads": 3,
+   "files_read": 3,
+   "wasted_files_read": 0,
+   "tool_chars": 9014,
+   "special_calls": 0,
+   "confidence": "high"
+  },
+  {
+   "id": "beetbox__beets-6989",
+   "cond": "graphify",
+   "gold": [
+    "beetsplug/tidal/__init__.py",
+    "beetsplug/tidal/api.py",
+    "beetsplug/tidal/api_types.py"
+   ],
+   "answer": [
+    "beetsplug/tidal/api.py",
+    "beetsplug/tidal/__init__.py",
+    "beetsplug/tidal/api_types.py"
+   ],
+   "acc1": 1,
+   "acc5": 1,
+   "calls": 6,
+   "reads": 3,
+   "files_read": 3,
+   "wasted_files_read": 0,
+   "tool_chars": 8503,
+   "special_calls": 0,
+   "confidence": "high"
+  },
+  {
+   "id": "beetbox__beets-6989",
+   "cond": "gl",
+   "gold": [
+    "beetsplug/tidal/__init__.py",
+    "beetsplug/tidal/api.py",
+    "beetsplug/tidal/api_types.py"
+   ],
+   "answer": [
+    "beetsplug/tidal/api.py",
+    "beetsplug/tidal/__init__.py",
+    "beetsplug/tidal/api_types.py"
+   ],
+   "acc1": 1,
+   "acc5": 1,
+   "calls": 6,
+   "reads": 3,
+   "files_read": 3,
+   "wasted_files_read": 0,
+   "tool_chars": 8221,
+   "special_calls": 0,
+   "confidence": "high"
+  },
+  {
+   "id": "PyCQA__isort-2650",
+   "cond": "grep",
+   "gold": [
+    "isort/wrap_modes.py"
+   ],
+   "answer": [
+    "isort/wrap_modes.py"
+   ],
+   "acc1": 1,
+   "acc5": 1,
+   "calls": 5,
+   "reads": 2,
+   "files_read": 1,
+   "wasted_files_read": 0,
+   "tool_chars": 5853,
+   "special_calls": 0,
+   "confidence": "high"
+  },
+  {
+   "id": "PyCQA__isort-2650",
+   "cond": "graphify",
+   "gold": [
+    "isort/wrap_modes.py"
+   ],
+   "answer": [
+    "isort/wrap_modes.py"
+   ],
+   "acc1": 1,
+   "acc5": 1,
+   "calls": 5,
+   "reads": 2,
+   "files_read": 1,
+   "wasted_files_read": 0,
+   "tool_chars": 5853,
+   "special_calls": 0,
+   "confidence": "high"
+  },
+  {
+   "id": "PyCQA__isort-2650",
+   "cond": "gl",
+   "gold": [
+    "isort/wrap_modes.py"
+   ],
+   "answer": [
+    "isort/wrap_modes.py"
+   ],
+   "acc1": 1,
+   "acc5": 1,
+   "calls": 3,
+   "reads": 0,
+   "files_read": 0,
+   "wasted_files_read": 0,
+   "tool_chars": 2232,
+   "special_calls": 1,
+   "confidence": "high"
+  },
+  {
+   "id": "beetbox__beets-6836",
+   "cond": "grep",
+   "gold": [
+    "beetsplug/musicbrainz.py"
+   ],
+   "answer": [
+    "beetsplug/musicbrainz.py",
+    "beetsplug/_utils/musicbrainz.py"
+   ],
+   "acc1": 1,
+   "acc5": 1,
+   "calls": 7,
+   "reads": 4,
+   "files_read": 3,
+   "wasted_files_read": 2,
+   "tool_chars": 20129,
+   "special_calls": 0,
+   "confidence": "medium"
+  },
+  {
+   "id": "beetbox__beets-6836",
+   "cond": "graphify",
+   "gold": [
+    "beetsplug/musicbrainz.py"
+   ],
+   "answer": [
+    "beetsplug/musicbrainz.py",
+    "beets/autotag/match.py"
+   ],
+   "acc1": 1,
+   "acc5": 1,
+   "calls": 8,
+   "reads": 2,
+   "files_read": 2,
+   "wasted_files_read": 1,
+   "tool_chars": 12249,
+   "special_calls": 0,
+   "confidence": "medium"
+  },
+  {
+   "id": "beetbox__beets-6836",
+   "cond": "gl",
+   "gold": [
+    "beetsplug/musicbrainz.py"
+   ],
+   "answer": [
+    "beetsplug/musicbrainz.py"
+   ],
+   "acc1": 1,
+   "acc5": 1,
+   "calls": 4,
+   "reads": 2,
+   "files_read": 1,
+   "wasted_files_read": 0,
+   "tool_chars": 16675,
+   "special_calls": 0,
+   "confidence": "medium"
+  },
+  {
+   "id": "pydata__xarray-11672",
+   "cond": "grep",
+   "gold": [
+    "xarray/core/datatree.py"
+   ],
+   "answer": [
+    "xarray/core/datatree.py"
+   ],
+   "acc1": 1,
+   "acc5": 1,
+   "calls": 4,
+   "reads": 1,
+   "files_read": 1,
+   "wasted_files_read": 0,
+   "tool_chars": 10244,
+   "special_calls": 0,
+   "confidence": "high"
+  },
+  {
+   "id": "pydata__xarray-11672",
+   "cond": "graphify",
+   "gold": [
+    "xarray/core/datatree.py"
+   ],
+   "answer": [
+    "xarray/core/datatree.py"
+   ],
+   "acc1": 1,
+   "acc5": 1,
+   "calls": 4,
+   "reads": 1,
+   "files_read": 1,
+   "wasted_files_read": 0,
+   "tool_chars": 10477,
+   "special_calls": 0,
+   "confidence": "high"
+  },
+  {
+   "id": "pydata__xarray-11672",
+   "cond": "gl",
+   "gold": [
+    "xarray/core/datatree.py"
+   ],
+   "answer": [
+    "xarray/core/datatree.py"
+   ],
+   "acc1": 1,
+   "acc5": 1,
+   "calls": 4,
+   "reads": 1,
+   "files_read": 1,
+   "wasted_files_read": 0,
+   "tool_chars": 9745,
+   "special_calls": 0,
+   "confidence": "high"
+  },
+  {
+   "id": "networkx__networkx-8811",
+   "cond": "grep",
+   "gold": [
+    "networkx/algorithms/shortest_paths/generic.py"
+   ],
+   "answer": [
+    "networkx/algorithms/shortest_paths/generic.py"
+   ],
+   "acc1": 1,
+   "acc5": 1,
+   "calls": 3,
+   "reads": 0,
+   "files_read": 0,
+   "wasted_files_read": 0,
+   "tool_chars": 3489,
+   "special_calls": 0,
+   "confidence": "high"
+  },
+  {
+   "id": "networkx__networkx-8811",
+   "cond": "graphify",
+   "gold": [
+    "networkx/algorithms/shortest_paths/generic.py"
+   ],
+   "answer": [
+    "networkx/algorithms/shortest_paths/generic.py"
+   ],
+   "acc1": 1,
+   "acc5": 1,
+   "calls": 3,
+   "reads": 0,
+   "files_read": 0,
+   "wasted_files_read": 0,
+   "tool_chars": 3489,
+   "special_calls": 0,
+   "confidence": "high"
+  },
+  {
+   "id": "networkx__networkx-8811",
+   "cond": "gl",
+   "gold": [
+    "networkx/algorithms/shortest_paths/generic.py"
+   ],
+   "answer": [
+    "networkx/algorithms/shortest_paths/generic.py"
+   ],
+   "acc1": 1,
+   "acc5": 1,
+   "calls": 2,
+   "reads": 0,
+   "files_read": 0,
+   "wasted_files_read": 0,
+   "tool_chars": 4021,
+   "special_calls": 0,
+   "confidence": "high"
+  },
+  {
+   "id": "tox-dev__tox-4076",
+   "cond": "grep",
+   "gold": [
+    "src/tox/config/set_env.py"
+   ],
+   "answer": [
+    "src/tox/config/set_env.py"
+   ],
+   "acc1": 1,
+   "acc5": 1,
+   "calls": 4,
+   "reads": 2,
+   "files_read": 1,
+   "wasted_files_read": 0,
+   "tool_chars": 18686,
+   "special_calls": 0,
+   "confidence": "high"
+  },
+  {
+   "id": "tox-dev__tox-4076",
+   "cond": "graphify",
+   "gold": [
+    "src/tox/config/set_env.py"
+   ],
+   "answer": [
+    "src/tox/config/set_env.py"
+   ],
+   "acc1": 1,
+   "acc5": 1,
+   "calls": 5,
+   "reads": 2,
+   "files_read": 1,
+   "wasted_files_read": 0,
+   "tool_chars": 17916,
+   "special_calls": 0,
+   "confidence": "high"
+  },
+  {
+   "id": "tox-dev__tox-4076",
+   "cond": "gl",
+   "gold": [
+    "src/tox/config/set_env.py"
+   ],
+   "answer": [
+    "src/tox/config/set_env.py"
+   ],
+   "acc1": 1,
+   "acc5": 1,
+   "calls": 4,
+   "reads": 2,
+   "files_read": 1,
+   "wasted_files_read": 0,
+   "tool_chars": 18686,
+   "special_calls": 0,
+   "confidence": "high"
+  },
+  {
+   "id": "pydata__xarray-11652",
+   "cond": "grep",
+   "gold": [
+    "xarray/plot/utils.py"
+   ],
+   "answer": [
+    "xarray/core/indexes.py"
+   ],
+   "acc1": 0,
+   "acc5": 0,
+   "calls": 5,
+   "reads": 2,
+   "files_read": 2,
+   "wasted_files_read": 2,
+   "tool_chars": 10648,
+   "special_calls": 0,
+   "confidence": "high"
+  },
+  {
+   "id": "pydata__xarray-11652",
+   "cond": "graphify",
+   "gold": [
+    "xarray/plot/utils.py"
+   ],
+   "answer": [
+    "xarray/core/indexes.py"
+   ],
+   "acc1": 0,
+   "acc5": 0,
+   "calls": 11,
+   "reads": 2,
+   "files_read": 2,
+   "wasted_files_read": 2,
+   "tool_chars": 9620,
+   "special_calls": 0,
+   "confidence": "high"
+  },
+  {
+   "id": "pydata__xarray-11652",
+   "cond": "gl",
+   "gold": [
+    "xarray/plot/utils.py"
+   ],
+   "answer": [
+    "xarray/core/indexes.py"
+   ],
+   "acc1": 0,
+   "acc5": 0,
+   "calls": 5,
+   "reads": 2,
+   "files_read": 2,
+   "wasted_files_read": 2,
+   "tool_chars": 7883,
+   "special_calls": 0,
+   "confidence": "high"
+  },
+  {
+   "id": "pydata__xarray-11790",
+   "cond": "grep",
+   "gold": [
+    "doc/conf.py"
+   ],
+   "answer": [
+    "doc/conf.py"
+   ],
+   "acc1": 1,
+   "acc5": 1,
+   "calls": 6,
+   "reads": 1,
+   "files_read": 1,
+   "wasted_files_read": 0,
+   "tool_chars": 3434,
+   "special_calls": 0,
+   "confidence": "high"
+  },
+  {
+   "id": "pydata__xarray-11790",
+   "cond": "graphify",
+   "gold": [
+    "doc/conf.py"
+   ],
+   "answer": [
+    "doc/conf.py"
+   ],
+   "acc1": 1,
+   "acc5": 1,
+   "calls": 4,
+   "reads": 1,
+   "files_read": 1,
+   "wasted_files_read": 0,
+   "tool_chars": 2800,
+   "special_calls": 0,
+   "confidence": "medium"
+  },
+  {
+   "id": "pydata__xarray-11790",
+   "cond": "gl",
+   "gold": [
+    "doc/conf.py"
+   ],
+   "answer": [
+    "doc/conf.py"
+   ],
+   "acc1": 1,
+   "acc5": 1,
+   "calls": 4,
+   "reads": 1,
+   "files_read": 1,
+   "wasted_files_read": 0,
+   "tool_chars": 2699,
+   "special_calls": 1,
+   "confidence": "high"
+  },
+  {
+   "id": "sqlfluff__sqlfluff-8179",
+   "cond": "grep",
+   "gold": [
+    "src/sqlfluff/rules/convention/CV10.py"
+   ],
+   "answer": [
+    "src/sqlfluff/rules/convention/CV10.py"
+   ],
+   "acc1": 1,
+   "acc5": 1,
+   "calls": 3,
+   "reads": 0,
+   "files_read": 0,
+   "wasted_files_read": 0,
+   "tool_chars": 3246,
+   "special_calls": 0,
+   "confidence": "high"
+  },
+  {
+   "id": "sqlfluff__sqlfluff-8179",
+   "cond": "graphify",
+   "gold": [
+    "src/sqlfluff/rules/convention/CV10.py"
+   ],
+   "answer": [
+    "src/sqlfluff/rules/convention/CV10.py"
+   ],
+   "acc1": 1,
+   "acc5": 1,
+   "calls": 3,
+   "reads": 0,
+   "files_read": 0,
+   "wasted_files_read": 0,
+   "tool_chars": 4183,
+   "special_calls": 0,
+   "confidence": "high"
+  },
+  {
+   "id": "sqlfluff__sqlfluff-8179",
+   "cond": "gl",
+   "gold": [
+    "src/sqlfluff/rules/convention/CV10.py"
+   ],
+   "answer": [
+    "src/sqlfluff/rules/convention/CV10.py"
+   ],
+   "acc1": 1,
+   "acc5": 1,
+   "calls": 2,
+   "reads": 0,
+   "files_read": 0,
+   "wasted_files_read": 0,
+   "tool_chars": 3058,
+   "special_calls": 1,
+   "confidence": "high"
+  },
+  {
+   "id": "Kozea__WeasyPrint-2943",
+   "cond": "grep",
+   "gold": [
+    "weasyprint/svg/text.py"
+   ],
+   "answer": [
+    "weasyprint/svg/text.py"
+   ],
+   "acc1": 1,
+   "acc5": 1,
+   "calls": 6,
+   "reads": 1,
+   "files_read": 1,
+   "wasted_files_read": 0,
+   "tool_chars": 5302,
+   "special_calls": 0,
+   "confidence": "high"
+  },
+  {
+   "id": "Kozea__WeasyPrint-2943",
+   "cond": "graphify",
+   "gold": [
+    "weasyprint/svg/text.py"
+   ],
+   "answer": [
+    "weasyprint/svg/text.py"
+   ],
+   "acc1": 1,
+   "acc5": 1,
+   "calls": 5,
+   "reads": 2,
+   "files_read": 2,
+   "wasted_files_read": 1,
+   "tool_chars": 4873,
+   "special_calls": 0,
+   "confidence": "high"
+  },
+  {
+   "id": "Kozea__WeasyPrint-2943",
+   "cond": "gl",
+   "gold": [
+    "weasyprint/svg/text.py"
+   ],
+   "answer": [
+    "weasyprint/svg/text.py"
+   ],
+   "acc1": 1,
+   "acc5": 1,
+   "calls": 5,
+   "reads": 2,
+   "files_read": 2,
+   "wasted_files_read": 1,
+   "tool_chars": 6702,
+   "special_calls": 0,
+   "confidence": "high"
+  }
+ ]
+}

@@ -1,0 +1,2 @@
+{"tool": "issue", "args": [], "out_chars": 1188, "read_path": null}
+{"tool": "grep", "args": ["def __getitem__|def _iter", "sklearn/pipeline.py"], "out_chars": 162, "read_path": null}

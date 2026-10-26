@@ -1,0 +1,4 @@
+{"tool": "issue", "args": [], "out_chars": 839, "read_path": null}
+{"tool": "grep", "args": ["-n", "def bfs_successors", "networkx"], "out_chars": 0, "read_path": null}
+{"tool": "grep", "args": ["def bfs_successors"], "out_chars": 129, "read_path": null}
+{"tool": "read", "args": ["networkx/algorithms/traversal/breadth_first_search.py", "356", "430"], "out_chars": 2707, "read_path": "networkx/algorithms/traversal/breadth_first_search.py"}

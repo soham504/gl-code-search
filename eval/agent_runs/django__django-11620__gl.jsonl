@@ -1,0 +1,4 @@
+{"tool": "issue", "args": [], "out_chars": 889, "read_path": null}
+{"tool": "grep", "args": ["-n", "Resolver404|resolve\\(", "django/views/debug.py"], "out_chars": 0, "read_path": null}
+{"tool": "grep", "args": ["Resolver404", "django/views"], "out_chars": 177, "read_path": null}
+{"tool": "read", "args": ["django/views/debug.py", "455", "500"], "out_chars": 1776, "read_path": "django/views/debug.py"}

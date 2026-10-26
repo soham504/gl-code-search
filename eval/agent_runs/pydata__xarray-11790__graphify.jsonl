@@ -1,0 +1,4 @@
+{"tool": "issue", "args": [], "out_chars": 317, "read_path": null}
+{"tool": "grep", "args": ["-i", "tutorials|redirect", "doc"], "out_chars": 110, "read_path": null}
+{"tool": "ls", "args": ["doc"], "out_chars": 309, "read_path": null}
+{"tool": "read", "args": ["doc/conf.py", "300", "340"], "out_chars": 2064, "read_path": "doc/conf.py"}

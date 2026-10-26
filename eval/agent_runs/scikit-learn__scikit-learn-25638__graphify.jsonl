@@ -1,0 +1,4 @@
+{"tool": "issue", "args": [], "out_chars": 1572, "read_path": null}
+{"tool": "grep", "args": ["-n", "def type_of_target\\|object\\|is_multilabel", "sklearn/utils/multiclass.py"], "out_chars": 0, "read_path": null}
+{"tool": "grep", "args": ["def type_of_target|def is_multilabel|object|def unique_labels", "sklearn/utils/multiclass.py"], "out_chars": 982, "read_path": null}
+{"tool": "read", "args": ["sklearn/utils/multiclass.py", "280", "350"], "out_chars": 2860, "read_path": "sklearn/utils/multiclass.py"}

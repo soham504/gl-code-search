@@ -1,0 +1,4 @@
+{"tool": "issue", "args": [], "out_chars": 938, "read_path": null}
+{"tool": "grep", "args": ["-n", "class Subquery", "django/db/models/expressions.py"], "out_chars": 0, "read_path": null}
+{"tool": "grep", "args": ["class Subquery", "django/db/models"], "out_chars": 140, "read_path": null}
+{"tool": "read", "args": ["django/db/models/expressions.py", "1141", "1190"], "out_chars": 2120, "read_path": "django/db/models/expressions.py"}

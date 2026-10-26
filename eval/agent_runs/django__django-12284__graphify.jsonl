@@ -1,0 +1,2 @@
+{"tool": "issue", "args": [], "out_chars": 879, "read_path": null}
+{"tool": "grep", "args": ["_display", "django/db/models/fields/__init__.py"], "out_chars": 303, "read_path": null}

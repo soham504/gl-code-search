@@ -1,0 +1,66 @@
+hook: rejects plugin-defined events since 2.14
+
+
+`hook` plugin configuration no longer works with plugin-defined events since 2.14.
+
+### Problem
+
+The plugin [beets-alternatives](https://github.com/geigerzaehler/beets-alternatives) defines the custom `alternative.item_update` event. Before 2.14 I was able to listen to these events by configuring the `hook` plugin.
+
+```yaml
+plugins: alternatives hook
+alternatives:
+  myplayer:
+    directory: ./player
+    query: myplayer:true
+hook:
+  hooks:
+    - event: alternatives.item_updated
+      command: notify-send "beets-alternatives updated {item.title}"
+```
+
+After upgrading to 2.14, running any `beet` command prints the following error (but does not fail the command):
+
+```
+beet --config test-config.yaml alt update myplayer
+'musicbrainz.enabled' configuration option is deprecated and will be removed in version 3.0.0. Use 'plugins' configuration to explicitly add 'musicbrainz' instead.
+** error loading plugin hook
+Traceback (most recent call last):
+  File ".../.venv/lib/python3.10/site-packages/confuse/templates.py", line 382, in convert
+    return self.convert_choices(self.choices, value)
+  File "/home/thomas/.local/share/uv/python/cpython-3.10-linux-x86_64-gnu/lib/python3.10/functools.py", line 926, in _method
+    return method.__get__(obj, cls)(*args, **kwargs)
+  File ".../.venv/lib/python3.10/site-packages/confuse/templates.py", line 362, in _
+    return choices[choices.index(value)]
+ValueError: 'alternatives.item_updated' is not in list
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File ".../.venv/lib/python3.10/site-packages/beets/plugins.py", line 537, in _get_plugin
+    return obj()
+  File ".../.venv/lib/python3.10/site-packages/beetsplug/hook.py", line 47, in __init__
+    hook_event: EventType = hook["event"].as_choice(choices=ALL_EVENTS)
+  File ".../.venv/lib/python3.10/site-packages/confuse/core.py", line 341, in as_choice
+    return self.get(templates.Choice(choices))
+  File ".../.venv/lib/python3.10/site-packages/confuse/core.py", line 322, in get
+    return templates.as_template(template).value(self, template)
+  File ".../.venv/lib/python3.10/site-packages/confuse/templates.py", line 100, in value
+    return self.convert(value, view)
+  File ".../.venv/lib/python3.10/site-packages/confuse/templates.py", line 384, in convert
+    self.fail(
+  File ".../.venv/lib/python3.10/site-packages/confuse/templates.py", line 141, in fail
+    raise exc_class(f"{view.name}: {message}")
+confuse.exceptions.ConfigValueError: hook.hooks#0.event: must be one of ['after_write', 'before_item_moved', 'item_copied', 'item_hardlinked', 'item_linked', 'item_moved', 'item_reflinked', 'before_choose_candidate', 'import_task_before_choice', 'import_task_created', 'import_task_apply', 'import_task_choice', 'import_task_files', 'import_task_start', 'import', 'album_imported', 'album_removed', 'art_set', 'albuminfo_received', 'trackinfo_received', 'album_matched', 'cli_exit', 'library_opened', 'database_change', 'import_begin', 'item_imported', 'item_removed', 'write', 'mb_album_extract', 'mb_track_extract', 'pluginload', 'smartplaylist_update', 'after_convert'], not 'alternatives.item_updated'
+```
+
+Then running `beet alt update` the configured hook command is never triggered.
+
+### Investigation
+
+Bisecting, this regressed between 2.13.1 and 2.14.0, specifically in #6940 ("typing: type the rest of plugins"). That PR added a runtime `as_choice(choices=ALL_EVENTS)` check to `beetsplug/hook.py`:
+
+```diff
+-            hook_event = hook["event"].as_str()
++            hook_event: EventType = hook["event"].as_choice(choices=ALL_EVENTS)
+```

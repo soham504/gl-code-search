@@ -1,0 +1,4 @@
+{"tool": "issue", "args": [], "out_chars": 2724, "read_path": null}
+{"tool": "grep", "args": ["-i", "item-only|albumfields", "beetsplug/edit.py"], "out_chars": 531, "read_path": null}
+{"tool": "read", "args": ["beetsplug/edit.py", "370", "490"], "out_chars": 5291, "read_path": "beetsplug/edit.py"}
+{"tool": "grep", "args": ["def |importer_edit\\(|albumfields|item_fields", "beetsplug/edit.py"], "out_chars": 2151, "read_path": null}

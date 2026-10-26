@@ -1,0 +1,207 @@
+edit: Keep rejected `albumfields` entries visible when editing import candidates
+
+## Problem
+
+When I choose the `edit [C]andidates` option for an album import, item-only fields configured in both `albumfields` and `itemfields` disappear from the editor entirely.
+
+My (broken) configuration is:
+
+```yaml
+edit:
+  ignore_fields: []
+  albumfields:
+    - album
+    - artist
+    - artists
+    - artist_sort
+    - artwork
+    - artpath
+    - title
+    - label
+    - year
+    - month
+    - day
+    - track
+    - catalognum
+    - album
+    - albumartist
+    - albumstatus
+    - albumtype
+    - albumtypes
+    - catalognum
+    - comments
+    - comp
+    - country
+    - data_source
+    - data_url
+    - day
+    - disctitle
+    - genre
+    - media
+    - label
+    - mb_albumid
+    - mb_artistid
+    - mediums
+    - medium
+    - medium_total
+    - path
+    - albumtotal
+    - month
+    - style
+    - year
+  itemfields:
+    - album
+    - albumartist
+    - album_id
+    - artist
+    - artists
+    - artist_sort
+    - artwork
+    - title
+    - label
+    - year
+    - month
+    - day
+    - track
+    - catalognum
+    - albumstatus
+    - albumtype
+    - albumtypes
+    - artwork_url
+    - bpm
+    - comments
+    - country
+    - cuelist
+    - data_source
+    - data_url
+    - disc
+    - disctitle
+    - disctotal
+    - genre
+    - genres
+    - index
+    - length
+    - lyrics
+    - mb_albumid
+    - mb_artistid
+    - mb_releasegroup_id
+    - mb_releasetrack_id
+    - mb_trackid
+    - media
+    - medium
+    - medium_index
+    - medium_total
+    - mediums
+    - path
+    - play_count
+    - rating
+    - skip_count
+    - style
+    - track_alt
+    - track_id
+    - tracklist
+    - tracktotal
+    - visual_url
+```
+
+Beets prints:
+
+```text
+edit: ignoring item-only fields configured in albumfields: artist, artist_sort, artists, comments, disctitle, mb_artistid, media, path, title, track
+```
+
+The editor then contains:
+
+```yaml
+album: einzelgänger
+albumartist: nthng
+albumstatus: Official
+albumtype: album
+albumtypes:
+- album
+catalognum: ''
+comp: false
+country: NL
+data_source: bandcamp
+day: 4
+label: nthng
+mb_albumid: https://nthng.bandcamp.com/album/einzelg-nger
+month: 5
+style: electronic
+year: 2023
+---
+album_id: null
+bpm: 140
+disc: 1
+disctotal: 1
+genres: []
+id: -1
+length: '7:32'
+lyrics: ''
+mb_trackid: https://nthng.bandcamp.com/track/monk-teknois
+play_count: 1
+rating: 0.6875
+track_alt: null
+tracktotal: 17
+---
+```
+
+None of the fields named in the warning appears in the per-track document, even though each is also configured in `itemfields`. The importer derives track fields by subtracting all configured `albumfields` from `itemfields`, including fields subsequently rejected from the album header.
+
+Removing the warned item-only fields from `albumfields`, while leaving them in `itemfields`, produces the expected per-track document:
+
+```yaml
+album: einzelgänger
+albumartist: nthng
+albumstatus: Official
+albumtype: album
+albumtypes:
+- album
+catalognum: ''
+comp: false
+country: NL
+data_source: bandcamp
+day: 4
+label: nthng
+mb_albumid: https://nthng.bandcamp.com/album/einzelg-nger
+month: 5
+style: electronic
+year: 2023
+---
+album_id: null
+artist: nthng
+artist_sort: ''
+artists:
+- nthng
+bpm: 140
+comments: "all the songs that never found a home \n\n2015 - 2022"
+disc: 1
+disctitle: ''
+disctotal: 1
+genres: []
+id: -1
+length: '7:32'
+lyrics: ''
+mb_artistid: https://nthng.bandcamp.com
+mb_trackid: https://nthng.bandcamp.com/track/monk-teknois
+media: Digital Media
+path: /mnt/music/Music/nthng/einzelganger/05_monkteknois.flac
+play_count: 1
+rating: 0.6875
+title: monk teknois
+track_alt: null
+tracktotal: 17
+---
+```
+
+This configuration change is a workaround, but users should not need to avoid overlap between `albumfields` and `itemfields`: the plugin already identifies the overlapping entries as unsuitable for the album header.
+
+## Expected behavior
+
+Fields rejected from the album header should remain in each per-track document when configured in `itemfields`. Only fields actually displayed in the album header should be removed from the track documents.
+
+## Suggested fix
+
+Derive the per-track exclusion set from the validated album-header fields rather than the raw `albumfields` configuration. Please add a regression test for overlapping item-only fields through the `edit Candidates` import flow.
+
+Tagging @arsaboo for visibility.

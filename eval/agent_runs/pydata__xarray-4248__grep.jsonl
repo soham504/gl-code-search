@@ -1,0 +1,2 @@
+{"tool": "issue", "args": [], "out_chars": 844, "read_path": null}
+{"tool": "grep", "args": ["def summarize_variable|def summarize_datavar|def summarize_coord|def _summarize_coord_multiindex", "xarray/core/formatting.py"], "out_chars": 305, "read_path": null}

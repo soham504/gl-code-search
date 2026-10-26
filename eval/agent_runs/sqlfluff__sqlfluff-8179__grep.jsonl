@@ -1,0 +1,3 @@
+{"tool": "issue", "args": [], "out_chars": 2971, "read_path": null}
+{"tool": "grep", "args": ["-n", "def \\|_normalize_preferred", "src/sqlfluff/rules/convention/CV10.py"], "out_chars": 0, "read_path": null}
+{"tool": "grep", "args": ["def ", "src/sqlfluff/rules/convention/CV10.py"], "out_chars": 275, "read_path": null}

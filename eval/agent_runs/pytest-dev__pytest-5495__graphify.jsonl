@@ -1,0 +1,4 @@
+{"tool": "issue", "args": [], "out_chars": 711, "read_path": null}
+{"tool": "grep", "args": ["-n", "first extra item\\|def _compare_eq_sequence\\|def _compare_eq_any\\|isdatacls\\|def assertrepr_compare", "src/_pytest/assertion/util.py"], "out_chars": 0, "read_path": null}
+{"tool": "grep", "args": ["first extra item|def _compare_eq_sequence"], "out_chars": 282, "read_path": null}
+{"tool": "read", "args": ["src/_pytest/assertion/util.py", "254", "292"], "out_chars": 1348, "read_path": "src/_pytest/assertion/util.py"}

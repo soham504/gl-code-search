@@ -1,0 +1,4 @@
+{"tool": "issue", "args": [], "out_chars": 2416, "read_path": null}
+{"tool": "grep", "args": ["def set_group_by", "django/db/models/sql/query.py"], "out_chars": 82, "read_path": null}
+{"tool": "grep", "args": ["get_group_by_cols\\(alias", "django/db/models/sql/query.py"], "out_chars": 112, "read_path": null}
+{"tool": "read", "args": ["django/db/models/sql/query.py", "1921", "1950"], "out_chars": 1646, "read_path": "django/db/models/sql/query.py"}

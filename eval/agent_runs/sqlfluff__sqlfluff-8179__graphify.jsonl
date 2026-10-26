@@ -1,0 +1,3 @@
+{"tool": "issue", "args": [], "out_chars": 2971, "read_path": null}
+{"tool": "grep", "args": ["-n", "def \\|orig_quote", "src/sqlfluff/rules/convention/CV10.py"], "out_chars": 0, "read_path": null}
+{"tool": "grep", "args": ["def |orig_quote", "src/sqlfluff/rules/convention/CV10.py"], "out_chars": 1212, "read_path": null}

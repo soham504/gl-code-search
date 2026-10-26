@@ -1,0 +1,3 @@
+{"tool": "issue", "args": [], "out_chars": 3369, "read_path": null}
+{"tool": "grep", "args": ["MatrixSymbol|is_Atom|def tree_cse|def _find_repeated|excluded_symbols", "sympy/simplify/cse_main.py"], "out_chars": 861, "read_path": null}
+{"tool": "read", "args": ["sympy/simplify/cse_main.py", "580", "625"], "out_chars": 1413, "read_path": "sympy/simplify/cse_main.py"}

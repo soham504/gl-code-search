@@ -1,0 +1,4 @@
+{"tool": "issue", "args": [], "out_chars": 711, "read_path": null}
+{"tool": "grep", "args": ["-n", "first extra item", "src"], "out_chars": 0, "read_path": null}
+{"tool": "grep", "args": ["extra item"], "out_chars": 196, "read_path": null}
+{"tool": "read", "args": ["src/_pytest/assertion/util.py", "250", "300"], "out_chars": 1856, "read_path": "src/_pytest/assertion/util.py"}

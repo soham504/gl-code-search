@@ -1,0 +1,5 @@
+{"tool": "issue", "args": [], "out_chars": 1338, "read_path": null}
+{"tool": "grep", "args": ["-n", "font_family\\|font-family", "weasyprint/svg"], "out_chars": 0, "read_path": null}
+{"tool": "grep", "args": ["font.family", "weasyprint/svg"], "out_chars": 304, "read_path": null}
+{"tool": "read", "args": ["weasyprint/svg/text.py", "20", "70"], "out_chars": 2139, "read_path": "weasyprint/svg/text.py"}
+{"tool": "read", "args": ["weasyprint/svg/__init__.py", "150", "170"], "out_chars": 1092, "read_path": "weasyprint/svg/__init__.py"}

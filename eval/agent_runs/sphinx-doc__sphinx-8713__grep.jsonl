@@ -1,0 +1,2 @@
+{"tool": "issue", "args": [], "out_chars": 1807, "read_path": null}
+{"tool": "grep", "args": ["-n", "def _parse_other_parameters_section", "sphinx/ext/napoleon/docstring.py"], "out_chars": 0, "read_path": null}

@@ -1,0 +1,12 @@
+__pycache__/
+.DS_Store
+.pytest_cache/
+.venv-graphify/
+.venv/
+*.pyc
+/bin/
+/data/
+*.egg-info/
+eval/pilot/*_evidence.jsonl
+eval/pilot/claims.jsonl
+eval/pilot/judge_input_*.jsonl

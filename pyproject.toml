@@ -1,0 +1,23 @@
+[project]
+name = "groundline"
+version = "0.1.0"
+description = "Claim verification, query performance prediction and eval for the Groundline answer engine"
+requires-python = ">=3.9"
+dependencies = []
+
+[project.optional-dependencies]
+dev = ["pytest>=8", "ruff>=0.5"]
+
+[tool.setuptools.packages.find]
+where = ["py"]
+
+[tool.pytest.ini_options]
+pythonpath = ["py"]
+testpaths = ["py/tests"]
+
+[tool.ruff]
+line-length = 120
+
+[tool.ruff.lint]
+select = ["E", "F", "B"]
+ignore = ["E501"]

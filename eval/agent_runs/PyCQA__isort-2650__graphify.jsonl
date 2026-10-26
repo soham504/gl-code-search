@@ -1,0 +1,5 @@
+{"tool": "issue", "args": [], "out_chars": 2173, "read_path": null}
+{"tool": "grep", "args": ["-n", "def hanging_indent_with_parentheses", "isort"], "out_chars": 0, "read_path": null}
+{"tool": "grep", "args": ["def hanging_indent_with_parentheses"], "out_chars": 87, "read_path": null}
+{"tool": "read", "args": ["isort/wrap_modes.py", "300", "345"], "out_chars": 2059, "read_path": "isort/wrap_modes.py"}
+{"tool": "read", "args": ["isort/wrap_modes.py", "345", "381"], "out_chars": 1534, "read_path": "isort/wrap_modes.py"}

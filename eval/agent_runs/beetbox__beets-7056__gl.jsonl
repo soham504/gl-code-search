@@ -1,0 +1,17 @@
+{"tool": "issue", "args": [], "out_chars": 1545, "read_path": null}
+{"tool": "read", "args": ["beetsplug/permissions.py", "1", "150"], "out_chars": 5119, "read_path": "beetsplug/permissions.py"}
+{"tool": "gl", "args": ["locate"], "out_chars": 736, "read_path": null}
+{"tool": "grep", "args": ["def syspath|def normpath|def ancestry|def bytestring_path", "beets/util"], "out_chars": 272, "read_path": null}
+{"tool": "read", "args": ["beets/util/__init__.py", "375", "450"], "out_chars": 2809, "read_path": "beets/util/__init__.py"}
+{"tool": "grep", "args": ["-n", "class PathType|def normalize|def from_sql|def to_sql|relative|replace\\(", "beets/dbcore/types.py"], "out_chars": 0, "read_path": null}
+{"tool": "gl", "args": ["symbol", "PathType"], "out_chars": 40, "read_path": null}
+{"tool": "read", "args": ["beets/dbcore/types.py", "400", "500"], "out_chars": 2574, "read_path": "beets/dbcore/types.py"}
+{"tool": "read", "args": ["beets/dbcore/types.py", "340", "400"], "out_chars": 2097, "read_path": "beets/dbcore/types.py"}
+{"tool": "find", "args": ["*pathutils*"], "out_chars": 27, "read_path": null}
+{"tool": "read", "args": ["beets/dbcore/pathutils.py"], "out_chars": 1849, "read_path": "beets/dbcore/pathutils.py"}
+{"tool": "grep", "args": ["-n", "-A6", "def path_as_posix", "beets/util/__init__.py"], "out_chars": 0, "read_path": null}
+{"tool": "grep", "args": ["-l", "path_as_posix"], "out_chars": 208, "read_path": null}
+{"tool": "grep", "args": ["-n", "path_as_posix", "beets"], "out_chars": 0, "read_path": null}
+{"tool": "grep", "args": ["path_as_posix", "beets/util/__init__.py"], "out_chars": 67, "read_path": null}
+{"tool": "grep", "args": ["path_as_posix", "beets/library/models.py"], "out_chars": 93, "read_path": null}
+{"tool": "read", "args": ["beets/util/__init__.py", "265", "275"], "out_chars": 379, "read_path": "beets/util/__init__.py"}

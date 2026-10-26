@@ -1,0 +1,22 @@
+[
+ "django__django-16139",
+ "sympy__sympy-13773",
+ "django__django-12497",
+ "django__django-15320",
+ "django__django-12284",
+ "sympy__sympy-15308",
+ "scikit-learn__scikit-learn-13439",
+ "matplotlib__matplotlib-18869",
+ "django__django-11620",
+ "sympy__sympy-11897",
+ "django__django-11848",
+ "sympy__sympy-24066",
+ "django__django-15996",
+ "sphinx-doc__sphinx-8713",
+ "scikit-learn__scikit-learn-25638",
+ "sympy__sympy-24152",
+ "sympy__sympy-22840",
+ "django__django-12589",
+ "pydata__xarray-4248",
+ "pytest-dev__pytest-5495"
+]

@@ -1,0 +1,5 @@
+The "Tutorials" link on http://xarray.dev is broken
+
+### What is your issue?
+
+https://xarray.dev contains `<a target="_blank" rel="noopener" class="chakra-link css-1b8nmcu" href="https://docs.xarray.dev/en/stable/tutorials-and-videos.html">Tutorials</a>` at the bottom of the page, but the targeted URL returns a 404.

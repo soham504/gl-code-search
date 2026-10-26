@@ -1,0 +1,2 @@
+{"tool": "issue", "args": [], "out_chars": 2971, "read_path": null}
+{"tool": "gl", "args": ["symbol", "_normalize_preferred_quoted_literal_style"], "out_chars": 87, "read_path": null}

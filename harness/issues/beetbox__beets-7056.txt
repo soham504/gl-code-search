@@ -1,0 +1,37 @@
+Permission plugin raises FileNotFoundError when title consists invalid path character
+
+### Problem
+
+When import this album: https://musicbrainz.org/release/d54e2b8b-c0f1-4672-9e26-c8450836e466
+
+Permission plugin led to this problem:
+
+```
+ File "/lsiopy/lib/python3.12/site-packages/beets/plugins.py", line 826, in send
+    if (r := handler(**arguments)) is not None
+             ^^^^^^^^^^^^^^^^^^^^
+  File "/lsiopy/lib/python3.12/site-packages/beets/plugins.py", line 272, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/lsiopy/lib/python3.12/site-packages/beetsplug/permissions.py", line 86, in fix_album
+    self.set_permissions(files=files, dirs=dirs)
+  File "/lsiopy/lib/python3.12/site-packages/beetsplug/permissions.py", line 112, in set_permissions
+    if not check_permissions(path, file_perm):
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/lsiopy/lib/python3.12/site-packages/beetsplug/permissions.py", line 40, in check_permissions
+    return oct(stat.S_IMODE(os.stat(syspath(path)).st_mode)) == oct(permission)
+                            ^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/Downloads/beets/Linkin Park/Reanimation (2002) [2002, WPCR-11293] [Enhanced CD FLAC]/12 Ntr/mssion.flac'
+```
+
+It seems permission plugin is not able to handle the file `12 Ntr/mssion.flac`.
+Disable the plugin can eliminate the error.
+
+
+### Setup
+
+* OS: Linux
+* Python version: 3.12.14
+* beets version: 2.14.1
+* Turning off plugins made problem go away (yes/no): yes
+

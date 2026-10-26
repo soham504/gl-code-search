@@ -1,0 +1,2 @@
+{"tool": "issue", "args": [], "out_chars": 839, "read_path": null}
+{"tool": "grep", "args": ["-l", "def bfs_successors"], "out_chars": 55, "read_path": null}

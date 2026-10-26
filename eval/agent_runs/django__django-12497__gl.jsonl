@@ -1,0 +1,3 @@
+{"tool": "issue", "args": [], "out_chars": 786, "read_path": null}
+{"tool": "grep", "args": ["-l", "If you want to create a recursive relationship"], "out_chars": 89, "read_path": null}
+{"tool": "grep", "args": ["If you want to create a recursive relationship|def _check_relationship_model", "django/db/models/fields/related.py"], "out_chars": 353, "read_path": null}

@@ -1,0 +1,3 @@
+{"tool": "issue", "args": [], "out_chars": 1412, "read_path": null}
+{"tool": "grep", "args": ["-n", "format(\"../password/\")", "django"], "out_chars": 0, "read_path": null}
+{"tool": "grep", "args": ["password/", "django/contrib/auth"], "out_chars": 174, "read_path": null}
