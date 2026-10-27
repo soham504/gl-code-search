@@ -7,6 +7,7 @@
 //	gl search QUERY...         ranked files with their best-matching lines
 //	gl symbol NAME             where NAME is defined
 //	gl mcp                     serve the three tools above over MCP (stdio)
+//	gl hook                    Claude Code UserPromptSubmit hook: inject a shortlist when confident
 package main
 
 import (
@@ -88,9 +89,10 @@ func main() {
 	k := flag.Int("k", 10, "results to show")
 	asJSON := flag.Bool("json", false, "locate: print results as JSON")
 	asMarkdown := flag.Bool("markdown", false, "locate: print an issue-comment-ready Markdown list")
+	gate := flag.Bool("gate", false, "locate: print nothing unless the ranking is confident (for bots)")
 	noCache := flag.Bool("no-cache", false, "do not read or write the analysis cache")
 	flag.Usage = func() {
-		fmt.Fprintln(os.Stderr, "usage: gl [-root DIR] [-k N] [-json] [-no-cache] locate < issue.txt | search QUERY... | symbol NAME | mcp | version")
+		fmt.Fprintln(os.Stderr, "usage: gl [-root DIR] [-k N] [-json] [-no-cache] locate < issue.txt | search QUERY... | symbol NAME | mcp | hook | version")
 	}
 	flag.Parse()
 	if flag.NArg() == 0 {
@@ -101,6 +103,9 @@ func main() {
 	switch cmd {
 	case "version":
 		fmt.Println("gl", version)
+		return
+	case "hook":
+		runHook(os.Stdin, os.Stdout, *root, *k)
 		return
 	case "mcp":
 		if err := serveMCP(os.Stdin, os.Stdout, *root, !*noCache); err != nil {
@@ -121,6 +126,9 @@ func main() {
 		issue := string(b)
 		if strings.TrimSpace(issue) == "" {
 			issue = rest
+		}
+		if *gate && !code.Confident(ix.Locate(issue, *k, code.Options{})) {
+			return
 		}
 		if *asJSON {
 			json.NewEncoder(os.Stdout).Encode(ix.Locate(issue, *k, code.Options{}))

@@ -5,7 +5,7 @@
 <circle cx="40" cy="17" r="6" fill="#febc2e"/>
 <circle cx="60" cy="17" r="6" fill="#28c840"/>
 <text x="20" y="58" fill="#7ee787" xml:space="preserve">$ gl -k 5 locate &lt; issue-7036.txt</text>
-<text x="20" y="78" fill="#9198a1" xml:space="preserve"># 307 files indexed in 16ms; most likely files for this issue:</text>
+<text x="20" y="78" fill="#9198a1" xml:space="preserve"># 307 files indexed in 35ms; most likely files for this issue:</text>
 <text x="20" y="98" fill="#f0f6fc" font-weight="700" xml:space="preserve"> 1. beetsplug/hook.py  (2.28; text match; in stack trace line 47; path mentio…</text>
 <text x="20" y="118" fill="#c9d1d9" xml:space="preserve"> 2. beets/plugins.py  (1.98; text match; in stack trace line 537; path mentio…</text>
 <text x="20" y="138" fill="#c9d1d9" xml:space="preserve"> 3. beets/events.py  (1.00; text match)</text>

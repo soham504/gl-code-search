@@ -1,0 +1,25 @@
+2026/10/27 00:19:11 swe_gym: 100/500
+2026/10/27 00:21:31 swe_gym: 200/500
+2026/10/27 00:23:02 skip getmoto__moto-5502: fetch getmoto/moto@76b127bba65771c1d3f279cd2c69309959b675d8: exit status 128: fatal: unable to access 'https://github.com/getmoto/moto.git/': Could not resolve host: github.com
+2026/10/27 00:23:02 skip conan-io__conan-13326: fetch conan-io/conan@00700331f59e1e01b53315fec786e7f78d7bced2: exit status 128: fatal: unable to access 'https://github.com/conan-io/conan.git/': Could not resolve host: github.com
+2026/10/27 00:23:04 skip pydantic__pydantic-9214: fetch pydantic/pydantic@7af856a1098406aea84bcadfd0f3de6b7901526c: exit status 128: fatal: unable to access 'https://github.com/pydantic/pydantic.git/': Could not resolve host: github.com
+2026/10/27 00:23:04 skip getmoto__moto-4874: fetch getmoto/moto@ecd7cf9d921a4a793609ce243e875c7c1466e654: exit status 128: fatal: unable to access 'https://github.com/getmoto/moto.git/': Could not resolve host: github.com
+2026/10/27 00:23:04 skip getmoto__moto-4934: fetch getmoto/moto@eed32a5f72fbdc0d33c4876d1b5439dfd1efd5d8: exit status 128: fatal: unable to access 'https://github.com/getmoto/moto.git/': Could not resolve host: github.com
+2026/10/27 00:23:04 skip getmoto__moto-6953: fetch getmoto/moto@9c0724e0d07ff79a0e807d2cbc28a506063dcd13: exit status 128: fatal: unable to access 'https://github.com/getmoto/moto.git/': Could not resolve host: github.com
+2026/10/27 00:23:04 skip iterative__dvc-1848: fetch iterative/dvc@0ae525a181b1ae68a3f8f625934352d6081489e1: exit status 128: fatal: unable to access 'https://github.com/iterative/dvc.git/': Could not resolve host: github.com
+2026/10/27 00:23:04 skip iterative__dvc-4568: fetch iterative/dvc@8b16af965c563dfa60596c4d198db9c1cfc48c9f: exit status 128: fatal: unable to access 'https://github.com/iterative/dvc.git/': Could not resolve host: github.com
+2026/10/27 00:23:04 skip bokeh__bokeh-13535: fetch bokeh/bokeh@59c2d44928910a03535e82547d4acd4dcd02e71f: exit status 128: fatal: unable to access 'https://github.com/bokeh/bokeh.git/': Could not resolve host: github.com
+2026/10/27 00:23:04 skip modin-project__modin-6263: fetch modin-project/modin@e987314820f4483ca00a5a2e19fdd88060e4a743: exit status 128: fatal: unable to access 'https://github.com/modin-project/modin.git/': Could not resolve host: github.com
+2026/10/27 00:23:04 skip Project-MONAI__MONAI-1116: fetch Project-MONAI/MONAI@d94c4d3a2c465717ba3fae01b7acea7fada9885b: exit status 128: fatal: unable to access 'https://github.com/Project-MONAI/MONAI.git/': Could not resolve host: github.com
+2026/10/27 00:23:04 skip Project-MONAI__MONAI-5119: fetch Project-MONAI/MONAI@59aeab098d439415c9be4c83df17d6dbf12c8ce9: exit status 128: fatal: unable to access 'https://github.com/Project-MONAI/MONAI.git/': Could not resolve host: github.com
+2026/10/27 00:23:08 skip python__mypy-11207: fetch python/mypy@8e82171a3e68a5180fab267cad4d2b7cfa1f5cdc: exit status 128: fatal: unable to access 'https://github.com/python/mypy.git/': Could not resolve host: github.com
+2026/10/27 00:23:08 skip modin-project__modin-6957: fetch modin-project/modin@a96a9a94ea20deb8f5ebcb54819d90756c54a33e: exit status 128: fatal: unable to access 'https://github.com/modin-project/modin.git/': Could not resolve host: github.com
+2026/10/27 00:23:08 skip Project-MONAI__MONAI-4686: fetch Project-MONAI/MONAI@b390b0956334325edc0e5000afb58e2be7cbe550: exit status 128: fatal: unable to access 'https://github.com/Project-MONAI/MONAI.git/': Could not resolve host: github.com
+2026/10/27 00:23:08 skip conan-io__conan-16028: fetch conan-io/conan@2dcaf42727d90421a5e73417c8f970377394237f: exit status 128: fatal: unable to access 'https://github.com/conan-io/conan.git/': Could not resolve host: github.com
+2026/10/27 00:23:12 skip modin-project__modin-6400: fetch modin-project/modin@2a6aafed41f7758d75dab88517c76b5cdb1905fc: exit status 128: fatal: unable to access 'https://github.com/modin-project/modin.git/': Could not resolve host: github.com
+2026/10/27 00:23:12 skip Project-MONAI__MONAI-5416: fetch Project-MONAI/MONAI@8925e3eea656dd1c24c90db70449c44d8ca0f044: exit status 128: fatal: unable to access 'https://github.com/Project-MONAI/MONAI.git/': Could not resolve host: github.com
+2026/10/27 00:23:12 skip modin-project__modin-6685: fetch modin-project/modin@e12b21703494dcbb8f7aa951b40ebe1d033307ba: exit status 128: fatal: unable to access 'https://github.com/modin-project/modin.git/': Could not resolve host: github.com
+2026/10/27 00:23:12 skip python__mypy-11585: fetch python/mypy@4996d571272adde83a3de2689c0147ca1be23f2c: exit status 128: fatal: unable to access 'https://github.com/python/mypy.git/': Could not resolve host: github.com
+2026/10/27 09:49:30 swe_gym: 300/500
+2026/10/27 09:51:33 swe_gym: 400/500
+2026/10/27 09:51:59 skip pandas-dev__pandas-58250: fetch pandas-dev/pandas@f86f9f2239fa80dfa636fb71cc919050e607473a: exit status 128: fatal: shallow file has changed since we read it

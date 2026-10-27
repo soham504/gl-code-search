@@ -1,20 +1,20 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="798" height="234" viewBox="0 0 798 234" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" role="img" aria-label="Top-1 file localization accuracy, BM25 versus gl, per benchmark">
+<svg xmlns="http://www.w3.org/2000/svg" width="798" height="438" viewBox="0 0 798 438" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" role="img" aria-label="Top-1 file localization accuracy, BM25 versus gl, per benchmark">
 <text x="0" y="22" font-size="17" font-weight="600" fill="#f0f6fc">Top-1 file localization accuracy</text>
 <text x="0" y="44" font-size="13" fill="#9198a1">Share of issues where the first-ranked file is one the real fix changed. Higher is better.</text>
 <circle cx="6" cy="68" r="5" fill="#d95926"/>
 <text x="16" y="72" font-size="13" fill="#f0f6fc">Plain BM25</text>
 <circle cx="116.80000000000001" cy="68" r="5" fill="#3987e5"/>
 <text x="126.80000000000001" y="72" font-size="13" fill="#f0f6fc">gl (this repo)</text>
-<line x1="292.6" y1="84" x2="292.6" y2="184" stroke="#3d444d" stroke-width="1"/>
-<text x="292.6" y="202" font-size="12" fill="#9198a1" text-anchor="middle">0%</text>
-<line x1="397.6" y1="84" x2="397.6" y2="184" stroke="#3d444d" stroke-width="1"/>
-<text x="397.6" y="202" font-size="12" fill="#9198a1" text-anchor="middle">25%</text>
-<line x1="502.6" y1="84" x2="502.6" y2="184" stroke="#3d444d" stroke-width="1"/>
-<text x="502.6" y="202" font-size="12" fill="#9198a1" text-anchor="middle">50%</text>
-<line x1="607.6" y1="84" x2="607.6" y2="184" stroke="#3d444d" stroke-width="1"/>
-<text x="607.6" y="202" font-size="12" fill="#9198a1" text-anchor="middle">75%</text>
-<line x1="712.6" y1="84" x2="712.6" y2="184" stroke="#3d444d" stroke-width="1"/>
-<text x="712.6" y="202" font-size="12" fill="#9198a1" text-anchor="middle">100%</text>
+<line x1="292.6" y1="84" x2="292.6" y2="388" stroke="#3d444d" stroke-width="1"/>
+<text x="292.6" y="406" font-size="12" fill="#9198a1" text-anchor="middle">0%</text>
+<line x1="397.6" y1="84" x2="397.6" y2="388" stroke="#3d444d" stroke-width="1"/>
+<text x="397.6" y="406" font-size="12" fill="#9198a1" text-anchor="middle">25%</text>
+<line x1="502.6" y1="84" x2="502.6" y2="388" stroke="#3d444d" stroke-width="1"/>
+<text x="502.6" y="406" font-size="12" fill="#9198a1" text-anchor="middle">50%</text>
+<line x1="607.6" y1="84" x2="607.6" y2="388" stroke="#3d444d" stroke-width="1"/>
+<text x="607.6" y="406" font-size="12" fill="#9198a1" text-anchor="middle">75%</text>
+<line x1="712.6" y1="84" x2="712.6" y2="388" stroke="#3d444d" stroke-width="1"/>
+<text x="712.6" y="406" font-size="12" fill="#9198a1" text-anchor="middle">100%</text>
 <text x="782.6400000000001" y="78" font-size="12" fill="#9198a1" text-anchor="end">gain</text>
 <text x="276.64000000000004" y="104" font-size="13" fill="#f0f6fc" text-anchor="end">SWE-bench Verified <tspan fill="#9198a1">· n=500</tspan></text>
 <line x1="393.4" y1="100" x2="499.3" y2="100" stroke="#3d444d" stroke-width="2" stroke-linecap="round"/>
@@ -26,9 +26,39 @@
 <circle cx="401.6" cy="134" r="5.5" fill="#d95926"><title>SWE-bench (full test): BM25 25.9%</title></circle>
 <circle cx="496.0" cy="134" r="5.5" fill="#3987e5"><title>SWE-bench (full test): gl 48.4%</title></circle>
 <text x="782.6400000000001" y="138" font-size="13" font-weight="600" fill="#f0f6fc" text-anchor="end">+22.5 pts</text>
-<text x="276.64000000000004" y="172" font-size="13" fill="#f0f6fc" text-anchor="end">Fresh post-cutoff issues (ours) <tspan fill="#9198a1">· n=28</tspan></text>
-<line x1="412.6" y1="168" x2="502.6" y2="168" stroke="#3d444d" stroke-width="2" stroke-linecap="round"/>
-<circle cx="412.6" cy="168" r="5.5" fill="#d95926"><title>Fresh post-cutoff issues (ours): BM25 28.6%</title></circle>
-<circle cx="502.6" cy="168" r="5.5" fill="#3987e5"><title>Fresh post-cutoff issues (ours): gl 50.0%</title></circle>
-<text x="782.6400000000001" y="172" font-size="13" font-weight="600" fill="#f0f6fc" text-anchor="end">+21.4 pts</text>
+<text x="276.64000000000004" y="172" font-size="13" fill="#f0f6fc" text-anchor="end">SWE-Gym (sample) <tspan fill="#9198a1">· n=479</tspan></text>
+<line x1="368.0" y1="168" x2="466.3" y2="168" stroke="#3d444d" stroke-width="2" stroke-linecap="round"/>
+<circle cx="368.0" cy="168" r="5.5" fill="#d95926"><title>SWE-Gym (sample): BM25 18.0%</title></circle>
+<circle cx="466.3" cy="168" r="5.5" fill="#3987e5"><title>SWE-Gym (sample): gl 41.3%</title></circle>
+<text x="782.6400000000001" y="172" font-size="13" font-weight="600" fill="#f0f6fc" text-anchor="end">+23.4 pts</text>
+<text x="276.64000000000004" y="206" font-size="13" fill="#f0f6fc" text-anchor="end">LocBench <tspan fill="#9198a1">· n=560</tspan></text>
+<line x1="400.6" y1="202" x2="499.6" y2="202" stroke="#3d444d" stroke-width="2" stroke-linecap="round"/>
+<circle cx="400.6" cy="202" r="5.5" fill="#d95926"><title>LocBench: BM25 25.7%</title></circle>
+<circle cx="499.6" cy="202" r="5.5" fill="#3987e5"><title>LocBench: gl 49.3%</title></circle>
+<text x="782.6400000000001" y="206" font-size="13" font-weight="600" fill="#f0f6fc" text-anchor="end">+23.6 pts</text>
+<text x="276.64000000000004" y="240" font-size="13" fill="#f0f6fc" text-anchor="end">SWE-bench-Live (sample) <tspan fill="#9198a1">· n=500</tspan></text>
+<line x1="410.2" y1="236" x2="474.9" y2="236" stroke="#3d444d" stroke-width="2" stroke-linecap="round"/>
+<circle cx="410.2" cy="236" r="5.5" fill="#d95926"><title>SWE-bench-Live (sample): BM25 28.0%</title></circle>
+<circle cx="474.9" cy="236" r="5.5" fill="#3987e5"><title>SWE-bench-Live (sample): gl 43.4%</title></circle>
+<text x="782.6400000000001" y="240" font-size="13" font-weight="600" fill="#f0f6fc" text-anchor="end">+15.4 pts</text>
+<text x="276.64000000000004" y="274" font-size="13" fill="#f0f6fc" text-anchor="end">SWE-rebench (sample) <tspan fill="#9198a1">· n=500</tspan></text>
+<line x1="453.9" y1="270" x2="539.6" y2="270" stroke="#3d444d" stroke-width="2" stroke-linecap="round"/>
+<circle cx="453.9" cy="270" r="5.5" fill="#d95926"><title>SWE-rebench (sample): BM25 38.4%</title></circle>
+<circle cx="539.6" cy="270" r="5.5" fill="#3987e5"><title>SWE-rebench (sample): gl 58.8%</title></circle>
+<text x="782.6400000000001" y="274" font-size="13" font-weight="600" fill="#f0f6fc" text-anchor="end">+20.4 pts</text>
+<text x="276.64000000000004" y="308" font-size="13" fill="#f0f6fc" text-anchor="end">SWE-bench Multilingual <tspan fill="#9198a1">· n=299</tspan></text>
+<line x1="371.3" y1="304" x2="444.3" y2="304" stroke="#3d444d" stroke-width="2" stroke-linecap="round"/>
+<circle cx="371.3" cy="304" r="5.5" fill="#d95926"><title>SWE-bench Multilingual: BM25 18.7%</title></circle>
+<circle cx="444.3" cy="304" r="5.5" fill="#3987e5"><title>SWE-bench Multilingual: gl 36.1%</title></circle>
+<text x="782.6400000000001" y="308" font-size="13" font-weight="600" fill="#f0f6fc" text-anchor="end">+17.4 pts</text>
+<text x="276.64000000000004" y="342" font-size="13" fill="#f0f6fc" text-anchor="end">SWE-PolyBench (sample) <tspan fill="#9198a1">· n=500</tspan></text>
+<line x1="348.1" y1="338" x2="407.7" y2="338" stroke="#3d444d" stroke-width="2" stroke-linecap="round"/>
+<circle cx="348.1" cy="338" r="5.5" fill="#d95926"><title>SWE-PolyBench (sample): BM25 13.2%</title></circle>
+<circle cx="407.7" cy="338" r="5.5" fill="#3987e5"><title>SWE-PolyBench (sample): gl 27.4%</title></circle>
+<text x="782.6400000000001" y="342" font-size="13" font-weight="600" fill="#f0f6fc" text-anchor="end">+14.2 pts</text>
+<text x="276.64000000000004" y="376" font-size="13" fill="#f0f6fc" text-anchor="end">Fresh post-cutoff issues (ours) <tspan fill="#9198a1">· n=28</tspan></text>
+<line x1="412.6" y1="372" x2="502.6" y2="372" stroke="#3d444d" stroke-width="2" stroke-linecap="round"/>
+<circle cx="412.6" cy="372" r="5.5" fill="#d95926"><title>Fresh post-cutoff issues (ours): BM25 28.6%</title></circle>
+<circle cx="502.6" cy="372" r="5.5" fill="#3987e5"><title>Fresh post-cutoff issues (ours): gl 50.0%</title></circle>
+<text x="782.6400000000001" y="376" font-size="13" font-weight="600" fill="#f0f6fc" text-anchor="end">+21.4 pts</text>
 </svg>

@@ -2,15 +2,20 @@ package main
 
 import (
 	"bufio"
+	"crypto/sha256"
 	"encoding/json"
 	"fmt"
 	"io"
+	"time"
+
+	"github.com/soham504/gl-code-search/go/internal/code"
 )
 
 // A minimal Model Context Protocol server over stdio: newline-delimited
-// JSON-RPC 2.0 exposing gl's locate/search/symbol as tools. The tree is
-// re-scanned on every call; the analysis cache makes that cheap, so results
-// always reflect files the agent has just edited.
+// JSON-RPC 2.0 exposing gl's locate/search/symbol as tools. The index stays
+// resident: each call re-lists and stats the tree (no file reads) and rebuilds
+// only when a file was added, removed or modified, so results always reflect
+// files the agent has just edited.
 
 type rpcRequest struct {
 	JSONRPC string          `json:"jsonrpc"`
@@ -50,7 +55,37 @@ var mcpTools = []map[string]any{
 		"inputSchema": schema("name", "Exact symbol name, e.g. QuerySet or parse_header")},
 }
 
+// resident keeps the last index and the file listing it was built from.
+type resident struct {
+	root  string
+	cache *code.Cache
+	ix    *code.Index
+	sig   string
+}
+
+func (r *resident) index() (*code.Index, time.Duration, error) {
+	start := time.Now()
+	files, err := code.LoadDir(r.root)
+	if err != nil {
+		return nil, 0, err
+	}
+	h := sha256.New()
+	for _, f := range files {
+		fmt.Fprintf(h, "%s\x00%d\x00%d\n", f.Path, f.Size, f.ModTime)
+	}
+	sig := string(h.Sum(nil))
+	if r.ix == nil || sig != r.sig {
+		r.ix, r.sig = code.BuildCached(files, r.cache), sig
+		r.cache.Save()
+	}
+	return r.ix, time.Since(start).Round(time.Millisecond), nil
+}
+
 func serveMCP(in io.Reader, out io.Writer, root string, useCache bool) error {
+	res := &resident{root: root}
+	if useCache {
+		res.cache = code.OpenCache(root)
+	}
 	sc := bufio.NewScanner(in)
 	sc.Buffer(make([]byte, 1<<20), 64<<20)
 	enc := json.NewEncoder(out)
@@ -83,7 +118,7 @@ func serveMCP(in io.Reader, out io.Writer, root string, useCache bool) error {
 		case "tools/list":
 			resp.Result = map[string]any{"tools": mcpTools}
 		case "tools/call":
-			resp.Result = callTool(req.Params, root, useCache)
+			resp.Result = callTool(req.Params, res)
 		default:
 			resp.Error = &rpcError{-32601, "method not found: " + req.Method}
 		}
@@ -94,7 +129,7 @@ func serveMCP(in io.Reader, out io.Writer, root string, useCache bool) error {
 	return sc.Err()
 }
 
-func callTool(params json.RawMessage, root string, useCache bool) map[string]any {
+func callTool(params json.RawMessage, res *resident) map[string]any {
 	var p struct {
 		Name      string            `json:"name"`
 		Arguments map[string]string `json:"arguments"`
@@ -105,7 +140,7 @@ func callTool(params json.RawMessage, root string, useCache bool) map[string]any
 	if err := json.Unmarshal(params, &p); err != nil {
 		return result("invalid arguments: "+err.Error(), true)
 	}
-	ix, took, err := load(root, useCache)
+	ix, took, err := res.index()
 	if err != nil {
 		return result("indexing failed: "+err.Error(), true)
 	}

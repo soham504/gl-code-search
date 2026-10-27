@@ -126,6 +126,14 @@ func evaluate(in instance, reposDir string, fetch bool) result {
 		ranks: map[string]int{},
 		lat:   map[string]time.Duration{},
 	}
+	// Evidence behind gl's top results, for calibrating a confidence gate offline.
+	var reasons [][]string
+	var scores []float64
+	for _, r := range ix.Locate(in.Problem, 6, code.Options{}) {
+		reasons = append(reasons, r.Reasons)
+		scores = append(scores, r.Score)
+	}
+	res.row["gl_top_reasons"], res.row["gl_top_scores"] = reasons, scores
 	for _, s := range systems {
 		t := time.Now()
 		ranked := s.rank(files, ix, in.Problem)

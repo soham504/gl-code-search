@@ -23,7 +23,7 @@
 
 **`gl` finds the files a bug report is about.** Point it at a repository and give it an issue. It ranks the source files most likely to need changes, in milliseconds on a laptop, with no LLM, no GPU and no index server.
 
-Engineers triaging issues need this, and so does every AI coding agent before it can write a fix. This repo also tests, with real fixes as ground truth, whether a better search tool actually makes those agents better.
+Across **10 benchmarks, 5,960 issues and about 750 repos**, it roughly doubles plain BM25's top-1 accuracy, every time scored against the files the real fix changed. It's built for places with no frontier model in the loop: triage bots, CI, small local models, and as a pre-fetched shortlist inside agent harnesses. The repo also reports an honest A/B showing that *offering* agents a better search tool doesn't change their accuracy.
 
 <p align="center">
   <img alt="Real gl output on a fresh beets issue" src="docs/assets/terminal.svg" width="88%">
@@ -53,14 +53,25 @@ Works on Python, JS/TS, Go, Rust, Java, Kotlin, Scala, C/C++, C#, Ruby and PHP. 
   </picture>
 </p>
 
-| Benchmark | Issues | BM25 Acc@1 | **gl Acc@1** | Gain (95% CI) | BM25 Acc@5 | **gl Acc@5** |
-|---|---|---|---|---|---|---|
-| SWE-bench Verified | 500 | 24.0% | **49.2%** | +25.2 [+21.0, +29.4] | 54.8% | **76.0%** |
-| SWE-bench (full test) | 2,294 | 25.9% | **48.4%** | +22.5 [+20.5, +24.4] | 56.2% | **75.0%** |
-| SWE-bench Lite | 300 | 25.7% | **48.3%** | +22.7 [+17.3, +28.0] | 55.0% | **72.0%** |
-| Fresh issues, opened after the model's cutoff | 28 | 28.6% | **50.0%** | +21.4 [+0.0, +42.9] | 57.1% | **71.4%** |
+| Benchmark | Issues | Repos | BM25 Acc@1 | **gl Acc@1** | Gain (95% CI) | BM25 Acc@5 | **gl Acc@5** |
+|---|---|---|---|---|---|---|---|
+| SWE-bench Verified | 500 | 12 | 24.0% | **49.2%** | +25.2 [+21.0, +29.4] | 54.8% | **76.0%** |
+| SWE-bench (full test) | 2,294 | 12 | 25.9% | **48.4%** | +22.5 [+20.5, +24.4] | 56.2% | **75.0%** |
+| SWE-Gym (sample) | 479 | 11 | 18.0% | **41.3%** | +23.4 [+19.2, +27.6] | 52.2% | **73.7%** |
+| LocBench | 560 | 165 | 25.7% | **49.3%** | +23.6 [+19.5, +27.7] | 55.0% | **75.0%** |
+| SWE-bench-Live (sample) | 500 | 133 | 28.0% | **43.4%** | +15.4 [+11.4, +19.4] | 55.8% | **68.8%** |
+| SWE-rebench (sample) | 500 | 351 | 38.4% | **58.8%** | +20.4 [+16.2, +24.6] | 77.0% | **85.2%** |
+| SWE-bench Multilingual (9 languages) | 299 | 41 | 18.7% | **36.1%** | +17.4 [+13.0, +22.1] | 43.8% | **62.9%** |
+| SWE-PolyBench (sample; mostly JS/TS) | 500 | 19 | 13.2% | **27.4%** | +14.2 [+10.8, +17.6] | 33.4% | **50.8%** |
+| Fresh issues, opened after the model's cutoff | 28 | 7 | 28.6% | **50.0%** | +21.4 [+0.0, +42.9] | 57.1% | **71.4%** |
 
-Acc@k is the share of issues where a file changed by the real fix is in the top k. Ground truth is always the actual fix, never our own labels. More benchmarks are running (SWE-Gym, LocBench, SWE-bench-Live, SWE-rebench, Multilingual, PolyBench); the full table with confidence intervals and per-language results is in [`eval/results/loc_summary.md`](eval/results/loc_summary.md).
+Acc@k is the share of issues where a file changed by the real fix is in the top k. Ground truth is always the actual fix, never our own labels. Samples are seeded (500 instances); 21 SWE-Gym instances were skipped because their commits are no longer fetchable. The 28-issue fresh set is small and should be read as a sanity check.
+
+**By language (pooled):**
+- **Large gains:** Python 27 → 49%, Go 15 → 42%, PHP 16 → 47%, Java 20 → 39%, Rust 15 → 33%, Ruby 18 → 34%, JavaScript 14 → 29%.
+- **Weak spots:** C 35 → 39% (C functions have no keyword for the regex symbol extractor to match) and TypeScript 9 → 14%.
+
+Full tables are in [`eval/results/loc_summary.md`](eval/results/loc_summary.md).
 
 <details>
 <summary><b>Where the gain comes from</b> (ablation on SWE-bench Lite)</summary>
@@ -106,6 +117,17 @@ claude mcp add gl -- gl mcp                                        # Claude Code
 { "mcpServers": { "gl": { "command": "gl", "args": ["mcp"] } } }
 ```
 <sub>Cursor: <code>.cursor/mcp.json</code>. Our A/B shows agents rarely pick a new tool unprompted, so tell yours to start with <code>locate</code>.</sub>
+</details>
+
+<details>
+<summary><b>Claude Code hook: shortlist injected before the agent starts</b></summary>
+
+Agents rarely choose to call a new tool, so the hook doesn't wait for one. `gl hook` runs on every prompt. When the ranking is confident, it adds the top files to the model's context (about 300 tokens, no tool call). Otherwise it does nothing.
+
+```json
+{ "hooks": { "UserPromptSubmit": [ { "hooks": [ { "type": "command", "command": "gl hook" } ] } ] } }
+```
+<sub>Add to <code>.claude/settings.json</code>. Whether this helps agents is exactly what the pilot experiment measures; see findings.</sub>
 </details>
 
 <details>
@@ -174,6 +196,21 @@ The agent A/B prompt and workflow are in [`harness/agent_ab.workflow.js`](harnes
 | `docs/findings.md` | Full write-up with limitations |
 | `go/cmd/bench`, `go/cmd/searchd`, `docs/archive/` | Earlier work: BM25 on BEIR, a self-graded grounding pilot (superseded) |
 </details>
+
+## Related work
+
+IR-based bug localization is an established research area. `gl` builds on it rather than inventing it:
+- **BugLocator** (Zhou et al., ICSE 2012) ranks files by bug-report similarity.
+- **BRTracer** (Wong et al., ICSME 2014) adds stack traces and segmentation.
+- **Locus** (Wen et al., ASE 2016) adds change histories.
+- **ABLoTS** (2024 replication) learns to combine signals.
+- In the LLM era, **Agentless** (Xia et al., 2024) localizes hierarchically with LLMs, **Aider's repo map** injects a tree-sitter + PageRank summary into every prompt, and **SweRank** (2025) trains code rankers.
+
+What's different here:
+- **No LLM or training at all.** It's one Go binary, with multi-language support and an incremental cache.
+- **Evaluated at scale.** 10 public and fresh benchmarks, with confidence intervals and ablations.
+- **Shipped as agent infrastructure.** MCP, a context-injection hook and an Action.
+- **Measured against agents.** A controlled A/B shows whether agents benefit at all.
 
 ## Limitations
 

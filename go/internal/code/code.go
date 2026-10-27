@@ -22,12 +22,30 @@ import (
 
 // File is one source file in the tree. Size and ModTime are set by LoadDir
 // and key the analysis cache; Symbols is filled in by Build when nil.
+// LoadDir leaves Content empty and records abs, so files whose analysis is
+// cached are never read; content is loaded on demand (see load).
 type File struct {
 	Path    string
 	Content string
 	Symbols []Symbol
 	Size    int64
 	ModTime int64
+	abs     string
+}
+
+// MaxFileSize skips generated and vendored blobs that would dominate ranking.
+const MaxFileSize = 1 << 20
+
+func (f *File) load() error {
+	if f.Content != "" || f.abs == "" {
+		return nil
+	}
+	b, err := os.ReadFile(f.abs)
+	if err != nil {
+		return err
+	}
+	f.Content = string(b)
+	return nil
 }
 
 // Symbol is a function, class or type definition.
@@ -74,36 +92,71 @@ var testRe = regexp.MustCompile(`(^|/)(tests?|testing|__tests__|spec|specs|testd
 // benchmarks exclude tests, and so does an engineer looking for the bug.
 func IsTest(path string) bool { return testRe.MatchString(path) }
 
-// LoadDir reads indexable files under root.
+// LoadDir lists indexable files under root without reading them. Inside a git
+// work tree it uses `git ls-files` (tracked plus untracked, honouring
+// .gitignore); otherwise it walks the tree, skipping hidden, dependency and
+// build directories. Unreadable entries and files over MaxFileSize are skipped
+// rather than failing the whole index.
 func LoadDir(root string) ([]File, error) {
-	var files []File
+	paths, err := gitListFiles(root)
+	if err != nil {
+		paths, err = walkFiles(root)
+		if err != nil {
+			return nil, err
+		}
+	}
+	files := make([]File, 0, len(paths))
+	for _, rel := range paths {
+		if !Indexable(rel) {
+			continue
+		}
+		abs := filepath.Join(root, filepath.FromSlash(rel))
+		info, err := os.Stat(abs)
+		if err != nil || !info.Mode().IsRegular() || info.Size() > MaxFileSize {
+			continue
+		}
+		files = append(files, File{Path: rel, Size: info.Size(), ModTime: info.ModTime().UnixNano(), abs: abs})
+	}
+	return files, nil
+}
+
+func gitListFiles(root string) ([]string, error) {
+	out, err := exec.Command("git", "-C", root, "ls-files", "-z", "--cached", "--others", "--exclude-standard").Output()
+	if err != nil {
+		return nil, err
+	}
+	var paths []string
+	for _, p := range strings.Split(string(out), "\x00") {
+		if p != "" {
+			paths = append(paths, p)
+		}
+	}
+	return paths, nil
+}
+
+var skipDirs = map[string]bool{"node_modules": true, "vendor": true, "graphify-out": true, "venv": true, "env": true,
+	"build": true, "dist": true, "target": true, "third_party": true, "site-packages": true, "__pycache__": true}
+
+func walkFiles(root string) ([]string, error) {
+	var paths []string
 	err := filepath.WalkDir(root, func(p string, d os.DirEntry, err error) error {
 		if err != nil {
-			return err
+			if p == root {
+				return err
+			}
+			return nil // unreadable entry: skip it, keep indexing the rest
 		}
 		if d.IsDir() {
-			if n := d.Name(); n != "." && (strings.HasPrefix(n, ".") || n == "node_modules" || n == "graphify-out") {
+			if n := d.Name(); p != root && (strings.HasPrefix(n, ".") || skipDirs[n]) {
 				return filepath.SkipDir
 			}
 			return nil
 		}
 		rel, _ := filepath.Rel(root, p)
-		rel = filepath.ToSlash(rel)
-		if !Indexable(rel) {
-			return nil
-		}
-		info, err := d.Info()
-		if err != nil {
-			return err
-		}
-		b, err := os.ReadFile(p)
-		if err != nil {
-			return err
-		}
-		files = append(files, File{Path: rel, Content: string(b), Size: info.Size(), ModTime: info.ModTime().UnixNano()})
+		paths = append(paths, filepath.ToSlash(rel))
 		return nil
 	})
-	return files, err
+	return paths, err
 }
 
 // LoadGit reads indexable files at commit sha from a (bare) git repository
@@ -244,8 +297,11 @@ func BuildCached(files []File, c *Cache) *Index {
 		e, hit := c.lookup(f)
 		if hit {
 			f.Symbols = e.Symbols
-		} else if f.Symbols == nil {
-			f.Symbols = parseSymbols(f.Content)
+		} else {
+			f.load() // on error the file is still indexed by its path
+			if f.Symbols == nil {
+				f.Symbols = parseSymbols(f.Content)
+			}
 		}
 		var title strings.Builder
 		title.WriteString(strings.TrimSuffix(f.Path, filepath.Ext(f.Path)))
@@ -418,7 +474,7 @@ func (ix *Index) Locate(issue string, k int, opt Options) []Result {
 // terms, so an agent can decide whether to open the file at all.
 func (ix *Index) Snippet(path, query string, n int) []string {
 	i, ok := ix.byPath[path]
-	if !ok {
+	if !ok || ix.files[i].load() != nil {
 		return nil
 	}
 	terms := map[string]bool{}
@@ -469,4 +525,35 @@ func (ix *Index) Definitions(name string) []string {
 		}
 	}
 	return out
+}
+
+// Strong reports whether r is backed by evidence beyond plain text overlap:
+// a stack-trace frame, a mentioned path or module, or a defined symbol.
+func Strong(r Result) bool {
+	for _, why := range r.Reasons {
+		if why != "text match" {
+			return true
+		}
+	}
+	return false
+}
+
+// ConfidentTopK is how many top results Confident inspects for strong
+// evidence. Chosen on a dev split (SWE-Gym) and evaluated on a held-out one
+// (SWE-bench Verified); see eval/results/gate.md.
+var ConfidentTopK = 3
+
+// Confident reports whether a ranking is trustworthy enough to show
+// unprompted (an issue comment or injected agent context): at least one of
+// the top ConfidentTopK results carries strong evidence.
+func Confident(rs []Result) bool {
+	for i, r := range rs {
+		if i >= ConfidentTopK {
+			break
+		}
+		if Strong(r) {
+			return true
+		}
+	}
+	return false
 }
